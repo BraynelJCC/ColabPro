@@ -16,6 +16,7 @@ body {
 
 .layout_padding {
   padding: 75px 0;
+  
 }
 
 .layout_padding2 {
@@ -485,7 +486,7 @@ a:focus {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  border-bottom: 1px solid #9be604;
+  border-bottom: 1px var(--maincolor);
 }
 
 .team_card {
@@ -508,12 +509,13 @@ a:focus {
 }
 
 .team_social {
-  display: flex;
+  display:flex;
+  width: 100px;
   justify-content: space-between;
 }
 
 .team_follow h6 {
-  color: #9be604;
+  color:var(--maincolor);
 }
 
 /* end team section */
@@ -688,23 +690,32 @@ a:focus {
   width: 55%;
   margin: 0 auto;
   background-color: #626262;
+  
 }
 
 /* footer section*/
-
+.info_img-box {
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  height: 100%;            
+}
 .footer_section {
   background-color: #191919;
   padding: 25px 20px;
+  
 }
 
 .footer_section p {
   color: #fefeff;
   margin: 0;
   text-align: center;
+  
 }
 
 .footer_section a {
   color: #fefeff;
+  
 }
 
 /* end footer section*/

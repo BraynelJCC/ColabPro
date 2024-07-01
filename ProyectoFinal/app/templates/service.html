@@ -1,0 +1,72 @@
+
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Login</title>
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="../static/css/bootstrap.css" />
+  <!-- fonts style -->
+  <!-- Custom styles for this template -->
+  <link href="../static/css/login.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="../static/css/responsive.css" rel="stylesheet" />
+  </head>
+  <body>
+      <div class="flex justify-center items-center h-screen">
+          <div class="rounded-lg border bg-card text-card-foreground shadow-sm w-full max-w-md p-6 sm:p-8">
+              <div class="flex flex-col space-y-1.5 p-6">
+                  <h3 class="whitespace-nowrap tracking-tight text-2xl font-bold">Welcome back</h3>
+                  <p class="text-sm text-gray-500">Sign in to your account to continue</p>
+              </div>
+              <div class="p-6 space-y-4">
+                  <form id="loginForm">
+                      <div class="space-y-2">
+                          <label class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70" for="email">
+                              Email
+                          </label>
+                          <input
+                              class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                              type="email"
+                              id="email"
+                              placeholder="m@example.com"
+                              required
+                          />
+                          <small id="emailError" class="text-red-500"></small>
+                      </div>
+                      <div class="space-y-2">
+                          <label class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70" for="password">
+                              Password
+                          </label>
+                          <input
+                              class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                              type="password"
+                              id="password"
+                              required
+                          />
+                          <small id="passwordError" class="text-red-500"></small>
+                      </div>
+                      <div class="p-6 flex justify-between items-center">
+                          <a class="text-sm text-gray-500 hover:underline" href="#">
+                              Forgot password?
+                          </a>
+                          <button
+                              class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 ml-auto"
+                              type="submit"
+                          >
+                              Sign in
+                          </button>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+  
+      <script src="../static/css/bootstrap.cssjquery-3.4.1.min.js"></script>
+      <script src="../static/css/bootstrap.cssBootstrap.js"></script>
+      <script src="../static/css/bootstrap.cssscript.js"></script>
+  </body>
+  </html>
+  

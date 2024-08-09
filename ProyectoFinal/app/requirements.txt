@@ -1,1 +1,4 @@
-
+Instal SQLite
+pip install pipenv
+pipenv shell
+pip install django

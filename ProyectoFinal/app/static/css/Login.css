@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
+
 * {
     margin: 0;
     padding: 0;
@@ -211,4 +212,15 @@ body {
 
 .container.active .toggle-right {
     transform: translateX(200%);
+}
+
+.messageDiv {
+    background-color: #0059FF;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    opacity: 0;
+    animation: fadeOut 7s forwards;
 }

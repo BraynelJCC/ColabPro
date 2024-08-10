@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*------------------------------------------------------------------
 [Master Stylesheet]
-Project:	Zapped
+Project: Colabpro
 ++++ Imports ++++
 ++++ Reset ++++
 ++++ Basic ++++
@@ -145,13 +145,13 @@ Project:	Zapped
 @import "../../vendors/owl.carousel/dist/assets/owl.theme.default.min.css";
 /*__________________________________________________________________;
 [Mixin]
-Project:	Zapped
+Project: Colabpro
 ___________________________________________________________________*/
 /*Shadow*/
 /*Table Variants*/
 /*__________________________________________________________________;
 [Colors]
-Project:	Zapped
+Project: Colabpro
 ___________________________________________________________________*/
 :root {
   --bs-blue: #2E90FA;
@@ -340,7 +340,7 @@ ul.hk-list.hk-list-sm li {
 
 a {
   text-decoration: none;
-  color: #6172F3;
+  color: #0059ff;
   -moz-transition: color 0.2s ease;
   -o-transition: color 0.2s ease;
   -webkit-transition: color 0.2s ease;
@@ -348,12 +348,12 @@ a {
 }
 a:hover {
   text-decoration: none;
-  color: #8794f6;
+  color: #0059ff;
 }
 a:focus {
   text-decoration: none;
   outline: none;
-  color: #8794f6;
+  color: #0059ff;
 }
 a.link-info {
   color: #06AED4 !important;
@@ -380,7 +380,7 @@ a.link-danger:hover, a.link-danger:focus {
   color: #ff7141 !important;
 }
 a.link-primary {
-  color: #6172F3 !important;
+  color: #0059ff !important;
 }
 a.link-primary:hover, a.link-primary:focus {
   color: #8794f6 !important;
@@ -434,7 +434,7 @@ a.link-low-em {
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  color: #262a2e;
+  color: #0059ff;
 }
 
 .heading-wth-icon {
@@ -553,7 +553,7 @@ a.link-url {
 }
 
 .name {
-  color: #262a2e !important;
+  color: #687583 !important;
   font-weight: 500;
 }
 
@@ -48721,8 +48721,8 @@ td.text-truncate, th.text-truncate {
 }
 
 .bg-gradient-primary {
-  background: #6172F3;
-  background: linear-gradient(45deg, #6172F3, #9a82fa) !important;
+  background: #0059ff;
+  background: linear-gradient(45deg, #0059ff, #9a82fa) !important;
 }
 
 .bg-gradient-info {
@@ -69850,7 +69850,7 @@ div.hopscotch-bubble.fade-in-left {
 /****************************/
 /*------------------------------------------------------------------
 [Header]
-Project:	Zapped
+Project: Colabpro
 -------------------------------------------------------------------*/
 /*Top Nav*/
 .hk-wrapper .hk-navbar {
@@ -70100,7 +70100,7 @@ Project:	Zapped
 }
 /*------------------------------------------------------------------
 [Footer]
-Project:	Zapped
+Project: Colabpro
 -------------------------------------------------------------------*/
 /*Footer*/
 [data-footer=simple].hk-wrapper .hk-pg-wrapper, .footer-simple-example.hk-wrapper .hk-pg-wrapper {
@@ -70303,7 +70303,7 @@ Project:	Zapped
 }
 /*------------------------------------------------------------------
 [Nav]
-Project:	Zapped
+Project: Colabpro
 -------------------------------------------------------------------*/
 /*Navbar*/
 .navbar .navbar-toggler-menu,
@@ -70877,7 +70877,7 @@ Project:	Zapped
 
 /*------------------------------------------------------------------
 [Icon Menu]
-Project:	Zapped
+Project: Colabpro
 -------------------------------------------------------------------*/
 /**Vertical Icon Navigation**/
 .hk-wrapper[data-layout=twocolumn] .hk-pg-wrapper {
@@ -71304,7 +71304,7 @@ Project:	Zapped
 }
 /*------------------------------------------------------------------
 [Drawer]
-Project:	Zapped
+Project: Colabpro
 -------------------------------------------------------------------*/
 /*Drawer*/
 .hk-wrapper .hk-drawer {
@@ -71456,7 +71456,7 @@ Project:	Zapped
 }
 /*------------------------------------------------------------------
 [Master Stylesheet]
-Project:	Zapped
+Project: Colabpro
 ++++ ChatApp ++++
 ++++ Chat Popup ++++
 ++++ Chatbot Popup ++++

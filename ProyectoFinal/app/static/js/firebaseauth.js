@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 .then((result) => {
                     const user = result.user;
                     console.log(user);
-                    window.location.href = '../templates/index.html';
+                    window.location.href = '../templates/tp/index.html';
                 })
                 .catch((error) => {
                     console.error("Error signing in with Google:", error.message);
@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 showMessage('Login Successful', 'singInMessage');
                 const user = userCredential.user;
                 localStorage.setItem('loggedInUserId', user.uid);
-                window.location.href = '../templates/index.html';
+                window.location.href = '../templates/tp/index.html';
             })
             .catch((error) => {
                 const errorCode = error.code;

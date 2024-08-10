@@ -16,8 +16,8 @@ Contact: contact@hencework.com
 		content="Project management Dashboard Template with reusable and flexible components for your SaaS web applications by hencework. Based on Bootstrap.">
 
 	<!-- Favicon -->
-	<link rel="shortcut icon" href="favicon.ico">
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="../images/favicon-32x32.png">
+	<link rel="icon" href="../images/favicon-32x32.png" type="image/x-icon">
 
 	<!-- CSS -->
 	<link href="dist/css/style.css" rel="stylesheet" type="text/css">
@@ -32,7 +32,7 @@ Contact: contact@hencework.com
 				<!-- Brand -->
 				<div class="menu-header">
 					<a class="navbar-brand" href="index.html">
-
+						<img class="brand-img img-fluid" src="dist/img/colabpro.png" alt="brand">
 					</a>
 				</div>
 				<!-- /Brand -->
@@ -121,8 +121,9 @@ Contact: contact@hencework.com
 									</a>
 								</li>
 								<li class="nav-item active">
-									<a class="nav-link" href="" data-bs-toggle="tooltip" data-bs-placement="right"
-										title="" data-bs-original-title="Chat" data-bs-trigger="hover">
+									<a class="nav-link" href="chats.html" data-bs-toggle="tooltip"
+										data-bs-placement="right" title="" data-bs-original-title="Chat"
+										data-bs-trigger="hover">
 										<span class="nav-icon-wrap"><span class="svg-icon"><svg
 													xmlns="http://www.w3.org/2000/svg"
 													class="icon icon-tabler icon-tabler-message" width="24" height="24"
@@ -545,7 +546,7 @@ Contact: contact@hencework.com
 													data-feather="align-left"></i></span></span></button>
 									<a class="chatapp-title dropdown-toggle link-dark" data-bs-toggle="dropdown"
 										href="#" role="button" aria-haspopup="true" aria-expanded="false">
-										<h1>Groups</h1>
+										<h1>Chat</h1>
 									</a>
 									<div class="dropdown-menu">
 										<a class="dropdown-item" href="chats.html"><span
@@ -600,11 +601,205 @@ Contact: contact@hencework.com
 							<div data-simplebar class="aside-body">
 								<form class="aside-search" role="search">
 									<input type="text" class="form-control rounded-input border-0 shadow-xl"
-										placeholder="Search Contacts">
+										placeholder="Search Chats">
 								</form>
+								<div class="frequent-contact">
+									<div class="title-sm text-primary"><span>Frequent contact</span></div>
+									<ul class="hk-list">
+										<li>
+											<div
+												class="avatar avatar-sm avatar-primary position-relative avatar-rounded">
+												<span class="initial-wrap">H</span>
+												<div
+													class="badge-icon badge-circle badge-icon-xxs text-white position-bottom-end-overflow-1">
+													<div class="badge-icon-wrap">
+														<i class="ri-group-fill text-light"></i>
+													</div>
+													<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 127 127">
+														<g data-name="Ellipse 302" transform="translate(8 8)"
+															stroke-width="3">
+															<circle cx="55.5" cy="55.5" r="55.5" stroke="currentColor">
+															</circle>
+															<circle cx="55.5" cy="55.5" r="59.5" fill="currentColor">
+															</circle>
+														</g>
+													</svg>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div
+												class="avatar avatar-sm avatar-primary position-relative avatar-rounded">
+												<img src="dist/img/avatar1.jpg" alt="user" class="avatar-img">
+												<div
+													class="badge-icon badge-circle badge-icon-xxs text-white position-bottom-end-overflow-1">
+													<div class="badge-icon-wrap">
+														<i class="ri-group-fill text-light"></i>
+													</div>
+													<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 127 127">
+														<g data-name="Ellipse 302" transform="translate(8 8)"
+															stroke-width="3">
+															<circle cx="55.5" cy="55.5" r="55.5" stroke="currentColor">
+															</circle>
+															<circle cx="55.5" cy="55.5" r="59.5" fill="currentColor">
+															</circle>
+														</g>
+													</svg>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div
+												class="avatar avatar-sm avatar-soft-danger avatar-rounded position-relative">
+												<span class="initial-wrap">W</span>
+												<span
+													class="badge badge-success badge-indicator badge-indicator-lg position-bottom-end-overflow-1"></span>
+											</div>
+										</li>
+										<li>
+											<div class="avatar avatar-sm avatar-rounded position-relative">
+												<img src="dist/img/avatar8.jpg" alt="user" class="avatar-img">
+												<span
+													class="badge badge-success badge-indicator badge-indicator-lg position-bottom-end-overflow-1"></span>
+											</div>
+										</li>
+									</ul>
+								</div>
 								<ul class="chat-contacts-list list-group list-group-flush">
 									<li class="list-group-item">
+										<div class="media">
+											<div class="media-head">
+												<div class="avatar avatar-sm avatar-rounded position-relative">
+													<img src="dist/img/avatar2.jpg" alt="user" class="avatar-img">
+													<span
+														class="badge badge-success badge-indicator badge-indicator-lg position-bottom-end-overflow-1"></span>
+												</div>
+											</div>
+											<div class="media-body">
+												<div>
+													<div class="user-name">Morgan Freeman</div>
+													<div class="user-last-chat">Please send some insights of
+														presentation</div>
+												</div>
+												<div>
+													<div class="last-chat-time">Yesterday</div>
+													<div class="badge badge-primary badge-sm badge-pill">15</div>
+													<div class="dropdown action-drp">
+														<a href="#"
+															class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover dropdown-toggle no-caret"
+															data-bs-toggle="dropdown"><span class="icon"><span
+																	class="feather-icon"><i
+																		data-feather="more-horizontal"></i></span></span></a>
+														<div class="dropdown-menu dropdown-menu-end">
+															<a class="dropdown-item" href="#">Mute Chat</a>
+															<a class="dropdown-item" href="#">Archive Chat</a>
+															<a class="dropdown-item" href="#">Delete Chat</a>
+															<a class="dropdown-item link-danger" href="#">Block</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="list-group-item">
 										<div class="media read-chat active-user">
+											<div class="media-head">
+												<div class="avatar avatar-sm avatar-rounded position-relative">
+													<img src="dist/img/avatar8.jpg" alt="user" class="avatar-img">
+													<span
+														class="badge badge-success badge-indicator badge-indicator-lg position-bottom-end-overflow-1"></span>
+												</div>
+											</div>
+											<div class="media-body">
+												<div>
+													<div class="user-name">Huma Therman</div>
+													<div class="user-last-chat">Typing<span class="one">.</span><span
+															class="two">.</span><span class="three">.</span></div>
+												</div>
+												<div>
+													<div class="last-chat-time">10:25 PM</div>
+													<div class="dropdown action-drp">
+														<a href="#"
+															class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover dropdown-toggle no-caret"
+															data-bs-toggle="dropdown"><span class="icon"><span
+																	class="feather-icon"><i
+																		data-feather="more-horizontal"></i></span></span></a>
+														<div class="dropdown-menu dropdown-menu-end">
+															<a class="dropdown-item" href="#">Mute Chat</a>
+															<a class="dropdown-item" href="#">Archive Chat</a>
+															<a class="dropdown-item" href="#">Delete Chat</a>
+															<a class="dropdown-item link-danger" href="#">Block</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="list-group-item">
+										<div class="media">
+											<div class="media-head">
+												<div class="avatar avatar-sm avatar-rounded">
+													<img src="dist/img/avatar13.jpg" alt="user" class="avatar-img">
+												</div>
+											</div>
+											<div class="media-body">
+												<div>
+													<div class="user-name">Charlie Chaplin</div>
+													<div class="user-last-chat">Hello mike, thank you for inviting</div>
+												</div>
+												<div>
+													<div class="last-chat-time">5 min</div>
+													<div class="badge badge-primary badge-sm badge-pill">2</div>
+													<div class="dropdown action-drp">
+														<a href="#"
+															class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover dropdown-toggle no-caret"
+															data-bs-toggle="dropdown"><span class="icon"><span
+																	class="feather-icon"><i
+																		data-feather="more-horizontal"></i></span></span></a>
+														<div class="dropdown-menu dropdown-menu-end">
+															<a class="dropdown-item" href="#">Mute Chat</a>
+															<a class="dropdown-item" href="#">Archive Chat</a>
+															<a class="dropdown-item" href="#">Delete Chat</a>
+															<a class="dropdown-item link-danger" href="#">Block</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="list-group-item">
+										<div class="media  read-chat">
+											<div class="media-head">
+												<div class="avatar avatar-sm avatar-soft-danger avatar-rounded">
+													<span class="initial-wrap">W</span>
+												</div>
+											</div>
+											<div class="media-body">
+												<div>
+													<div class="user-name">Winston Churchil</div>
+													<div class="user-last-chat">Show me what reports you have left</div>
+												</div>
+												<div>
+													<div class="last-chat-time">3:15 PM</div>
+													<div class="dropdown action-drp">
+														<a href="#"
+															class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover dropdown-toggle no-caret"
+															data-bs-toggle="dropdown"><span class="icon"><span
+																	class="feather-icon"><i
+																		data-feather="more-horizontal"></i></span></span></a>
+														<div class="dropdown-menu dropdown-menu-end">
+															<a class="dropdown-item" href="#">Mute Chat</a>
+															<a class="dropdown-item" href="#">Archive Chat</a>
+															<a class="dropdown-item" href="#">Delete Chat</a>
+															<a class="dropdown-item link-danger" href="#">Block</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="list-group-item">
+										<div class="media read-chat">
 											<div class="media-head">
 												<div
 													class="avatar avatar-sm avatar-primary position-relative avatar-rounded">
@@ -628,20 +823,23 @@ Contact: contact@hencework.com
 											</div>
 											<div class="media-body">
 												<div>
-													<div class="user-name">Developers Stage</div>
-													<div class="user-last-chat">Code builders & reviewers stage</div>
+													<div class="user-name">😐 Office Board</div>
+													<div class="user-last-chat">Huma: great work <span
+															class="text-primary">@jaquiline</span> you have done a great
+														job</div>
 												</div>
 												<div>
+													<div class="last-chat-time">Yesterday</div>
 													<div class="dropdown action-drp">
 														<a href="#"
 															class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover dropdown-toggle no-caret"
-															data-bs-toggle="dropdown"><span class="btn-icon-wrap"><span
+															data-bs-toggle="dropdown"><span class="icon"><span
 																	class="feather-icon"><i
 																		data-feather="more-horizontal"></i></span></span></a>
 														<div class="dropdown-menu dropdown-menu-end">
-															<a class="dropdown-item" href="#">Exit Group</a>
-															<a class="dropdown-item" href="#">Delete Group</a>
-															<a class="dropdown-item" href="#">Mute Group</a>
+															<a class="dropdown-item" href="#">Mute Chat</a>
+															<a class="dropdown-item" href="#">Archive Chat</a>
+															<a class="dropdown-item" href="#">Delete Chat</a>
 															<a class="dropdown-item link-danger" href="#">Block</a>
 														</div>
 													</div>
@@ -650,44 +848,31 @@ Contact: contact@hencework.com
 										</div>
 									</li>
 									<li class="list-group-item">
-										<div class="media">
+										<div class="media read-chat">
 											<div class="media-head">
-												<div
-													class="avatar avatar-sm avatar-primary position-relative avatar-rounded">
-													<img src="dist/img/avatar8.jpg" alt="user" class="avatar-img">
-													<div
-														class="badge-icon badge-circle badge-icon-xxs text-white position-bottom-end-overflow-1">
-														<div class="badge-icon-wrap">
-															<i class="ri-group-fill text-light"></i>
-														</div>
-														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 127 127">
-															<g data-name="Ellipse 302" transform="translate(8 8)"
-																stroke-width="3">
-																<circle cx="55.5" cy="55.5" r="55.5"
-																	stroke="currentColor"></circle>
-																<circle cx="55.5" cy="55.5" r="59.5"
-																	fill="currentColor"></circle>
-															</g>
-														</svg>
-													</div>
+												<div class="avatar avatar-sm avatar-rounded position-relative">
+													<img src="dist/img/avatar15.jpg" alt="user" class="avatar-img">
+													<span
+														class="badge badge-success badge-indicator badge-indicator-lg position-bottom-end-overflow-1"></span>
 												</div>
 											</div>
 											<div class="media-body">
 												<div>
-													<div class="user-name">Designer'ss</div>
-													<div class="user-last-chat">Don't know how I did it? 😍</div>
+													<div class="user-name">Boss Baby</div>
+													<div class="user-last-chat">Meeting in the morning</div>
 												</div>
 												<div>
+													<div class="last-chat-time">5:23 AM</div>
 													<div class="dropdown action-drp">
 														<a href="#"
 															class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover dropdown-toggle no-caret"
-															data-bs-toggle="dropdown"><span class="btn-icon-wrap"><span
+															data-bs-toggle="dropdown"><span class="icon"><span
 																	class="feather-icon"><i
 																		data-feather="more-horizontal"></i></span></span></a>
 														<div class="dropdown-menu dropdown-menu-end">
-															<a class="dropdown-item" href="#">Exit Group</a>
-															<a class="dropdown-item" href="#">Delete Group</a>
-															<a class="dropdown-item" href="#">Mute Group</a>
+															<a class="dropdown-item" href="#">Mute Chat</a>
+															<a class="dropdown-item" href="#">Archive Chat</a>
+															<a class="dropdown-item" href="#">Delete Chat</a>
 															<a class="dropdown-item link-danger" href="#">Block</a>
 														</div>
 													</div>
@@ -696,44 +881,29 @@ Contact: contact@hencework.com
 										</div>
 									</li>
 									<li class="list-group-item">
-										<div class="media">
+										<div class="media read-chat">
 											<div class="media-head">
-												<div
-													class="avatar avatar-sm avatar-primary position-relative avatar-rounded">
+												<div class="avatar avatar-sm avatar-primary avatar-rounded">
 													<span class="initial-wrap">H</span>
-													<div
-														class="badge-icon badge-circle badge-icon-xxs text-white position-bottom-end-overflow-1">
-														<div class="badge-icon-wrap">
-															<i class="ri-group-fill text-light"></i>
-														</div>
-														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 127 127">
-															<g data-name="Ellipse 302" transform="translate(8 8)"
-																stroke-width="3">
-																<circle cx="55.5" cy="55.5" r="55.5"
-																	stroke="currentColor"></circle>
-																<circle cx="55.5" cy="55.5" r="59.5"
-																	fill="currentColor"></circle>
-															</g>
-														</svg>
-													</div>
 												</div>
 											</div>
 											<div class="media-body">
 												<div>
 													<div class="user-name">Hencework</div>
-													<div class="user-last-chat">Hi There, I am using Zapped</div>
+													<div class="user-last-chat">give me the last copy of Zapped</div>
 												</div>
 												<div>
+													<div class="last-chat-time">24 Jan</div>
 													<div class="dropdown action-drp">
 														<a href="#"
 															class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover dropdown-toggle no-caret"
-															data-bs-toggle="dropdown"><span class="btn-icon-wrap"><span
+															data-bs-toggle="dropdown"><span class="icon"><span
 																	class="feather-icon"><i
 																		data-feather="more-horizontal"></i></span></span></a>
 														<div class="dropdown-menu dropdown-menu-end">
-															<a class="dropdown-item" href="#">Exit Group</a>
-															<a class="dropdown-item" href="#">Delete Group</a>
-															<a class="dropdown-item" href="#">Mute Group</a>
+															<a class="dropdown-item" href="#">Mute Chat</a>
+															<a class="dropdown-item" href="#">Archive Chat</a>
+															<a class="dropdown-item" href="#">Delete Chat</a>
 															<a class="dropdown-item link-danger" href="#">Block</a>
 														</div>
 													</div>
@@ -744,42 +914,30 @@ Contact: contact@hencework.com
 									<li class="list-group-item">
 										<div class="media">
 											<div class="media-head">
-												<div
-													class="avatar avatar-sm avatar-primary position-relative avatar-rounded">
-													<img src="dist/img/avatar5.jpg" alt="user" class="avatar-img">
-													<div
-														class="badge-icon badge-circle badge-icon-xxs text-white position-bottom-end-overflow-1">
-														<div class="badge-icon-wrap">
-															<i class="ri-group-fill text-light"></i>
-														</div>
-														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 127 127">
-															<g data-name="Ellipse 302" transform="translate(8 8)"
-																stroke-width="3">
-																<circle cx="55.5" cy="55.5" r="55.5"
-																	stroke="currentColor"></circle>
-																<circle cx="55.5" cy="55.5" r="59.5"
-																	fill="currentColor"></circle>
-															</g>
-														</svg>
-													</div>
+												<div class="avatar avatar-sm avatar-rounded position-relative">
+													<img src="dist/img/avatar3.jpg" alt="user" class="avatar-img">
+													<span
+														class="badge badge-success badge-indicator badge-indicator-lg position-bottom-end-overflow-1"></span>
 												</div>
 											</div>
 											<div class="media-body">
 												<div>
-													<div class="user-name">Support Team</div>
-													<div class="user-last-chat">contact@hencework.com</div>
+													<div class="user-name">Jaquiline Joker</div>
+													<div class="user-last-chat">This is my test chat msg last one</div>
 												</div>
 												<div>
+													<div class="last-chat-time">4:05 AM</div>
+													<div class="badge badge-primary badge-sm badge-pill">37</div>
 													<div class="dropdown action-drp">
 														<a href="#"
 															class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover dropdown-toggle no-caret"
-															data-bs-toggle="dropdown"><span class="btn-icon-wrap"><span
+															data-bs-toggle="dropdown"><span class="icon"><span
 																	class="feather-icon"><i
 																		data-feather="more-horizontal"></i></span></span></a>
 														<div class="dropdown-menu dropdown-menu-end">
-															<a class="dropdown-item" href="#">Exit Group</a>
-															<a class="dropdown-item" href="#">Delete Group</a>
-															<a class="dropdown-item" href="#">Mute Group</a>
+															<a class="dropdown-item" href="#">Mute Chat</a>
+															<a class="dropdown-item" href="#">Archive Chat</a>
+															<a class="dropdown-item" href="#">Delete Chat</a>
 															<a class="dropdown-item link-danger" href="#">Block</a>
 														</div>
 													</div>
@@ -788,44 +946,33 @@ Contact: contact@hencework.com
 										</div>
 									</li>
 									<li class="list-group-item">
-										<div class="media">
+										<div class="media read-chat">
 											<div class="media-head">
-												<div
-													class="avatar avatar-sm avatar-primary position-relative avatar-rounded">
+												<div class="avatar avatar-sm avatar-rounded position-relative">
 													<img src="dist/img/avatar7.jpg" alt="user" class="avatar-img">
-													<div
-														class="badge-icon badge-circle badge-icon-xxs text-white position-bottom-end-overflow-1">
-														<div class="badge-icon-wrap">
-															<i class="ri-group-fill text-light"></i>
-														</div>
-														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 127 127">
-															<g data-name="Ellipse 302" transform="translate(8 8)"
-																stroke-width="3">
-																<circle cx="55.5" cy="55.5" r="55.5"
-																	stroke="currentColor"></circle>
-																<circle cx="55.5" cy="55.5" r="59.5"
-																	fill="currentColor"></circle>
-															</g>
-														</svg>
-													</div>
+													<span
+														class="badge badge-success badge-indicator badge-indicator-lg position-bottom-end-overflow-1"></span>
 												</div>
 											</div>
 											<div class="media-body">
 												<div>
-													<div class="user-name">Zapped Team</div>
-													<div class="user-last-chat">Working on wonders :)</div>
+													<div class="user-name">Tom Cruz</div>
+													<div class="user-last-chat text-danger"><span
+															class="feather-icon fe-x me-1"><i
+																data-feather="phone-call"></i></span>Missed call</div>
 												</div>
 												<div>
+													<div class="last-chat-time">7:40PM</div>
 													<div class="dropdown action-drp">
 														<a href="#"
 															class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover dropdown-toggle no-caret"
-															data-bs-toggle="dropdown"><span class="btn-icon-wrap"><span
+															data-bs-toggle="dropdown"><span class="icon"><span
 																	class="feather-icon"><i
 																		data-feather="more-horizontal"></i></span></span></a>
 														<div class="dropdown-menu dropdown-menu-end">
-															<a class="dropdown-item" href="#">Exit Group</a>
-															<a class="dropdown-item" href="#">Delete Group</a>
-															<a class="dropdown-item" href="#">Mute Group</a>
+															<a class="dropdown-item" href="#">Mute Chat</a>
+															<a class="dropdown-item" href="#">Archive Chat</a>
+															<a class="dropdown-item" href="#">Delete Chat</a>
 															<a class="dropdown-item link-danger" href="#">Block</a>
 														</div>
 													</div>
@@ -834,44 +981,30 @@ Contact: contact@hencework.com
 										</div>
 									</li>
 									<li class="list-group-item">
-										<div class="media">
+										<div class="media read-chat">
 											<div class="media-head">
-												<div
-													class="avatar avatar-sm avatar-soft-danger position-relative avatar-rounded">
-													<span class="initial-wrap">M</span>
-													<div
-														class="badge-icon badge-circle badge-icon-xxs text-white position-bottom-end-overflow-1">
-														<div class="badge-icon-wrap">
-															<i class="ri-group-fill text-light"></i>
-														</div>
-														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 127 127">
-															<g data-name="Ellipse 302" transform="translate(8 8)"
-																stroke-width="3">
-																<circle cx="55.5" cy="55.5" r="55.5"
-																	stroke="currentColor"></circle>
-																<circle cx="55.5" cy="55.5" r="59.5"
-																	fill="currentColor"></circle>
-															</g>
-														</svg>
-													</div>
+												<div class="avatar avatar-sm avatar-rounded">
+													<img src="dist/img/avatar9.jpg" alt="user" class="avatar-img">
 												</div>
 											</div>
 											<div class="media-body">
 												<div>
-													<div class="user-name">Management</div>
-													<div class="user-last-chat">No calls, telepathy only</div>
+													<div class="user-name">Katherine Jones</div>
+													<div class="user-last-chat">Hi!!! I was wondering if you are free
+													</div>
 												</div>
 												<div>
+													<div class="last-chat-time">Yesterday</div>
 													<div class="dropdown action-drp">
 														<a href="#"
 															class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover dropdown-toggle no-caret"
-															data-bs-toggle="dropdown"><span class="btn-icon-wrap"><span
+															data-bs-toggle="dropdown"><span class="icon"><span
 																	class="feather-icon"><i
 																		data-feather="more-horizontal"></i></span></span></a>
 														<div class="dropdown-menu dropdown-menu-end">
-															<a class="dropdown-item" href="#">Exit Group</a>
-															<a class="dropdown-item" href="#">Delete Group</a>
-															<a class="dropdown-item" href="#">Mute Group</a>
+															<a class="dropdown-item" href="#">Mute Chat</a>
+															<a class="dropdown-item" href="#">Archive Chat</a>
+															<a class="dropdown-item" href="#">Delete Chat</a>
 															<a class="dropdown-item link-danger" href="#">Block</a>
 														</div>
 													</div>
@@ -879,23 +1012,37 @@ Contact: contact@hencework.com
 											</div>
 										</div>
 									</li>
-								</ul>
-								<div class="title-xs text-uppercase text-primary mt-4"><span>Channels</span></div>
-								<ul class="channels-list nav nav-light flex-column">
-									<li class="nav-item">
-										<a href="#" class="nav-link link-dark">#Developer</a>
-									</li>
-									<li class="nav-item">
-										<a href="#" class="nav-link link-dark">#Designer'ss</a>
-									</li>
-									<li class="nav-item">
-										<a href="#" class="nav-link link-dark">#HRManagement</a>
-									</li>
-									<li class="nav-item">
-										<a href="#" class="nav-link link-dark">#Team_goals</a>
-									</li>
-									<li class="nav-item">
-										<a href="#" class="nav-link link-dark">#Support_Hencework</a>
+									<li class="list-group-item">
+										<div class="media read-chat">
+											<div class="media-head">
+												<div class="avatar avatar-sm avatar-soft-info avatar-rounded">
+													<span class="initial-wrap">D</span>
+												</div>
+											</div>
+											<div class="media-body">
+												<div>
+													<div class="user-name">Danial Craig</div>
+													<div class="user-last-chat">Boss is looking for you in the office
+													</div>
+												</div>
+												<div>
+													<div class="last-chat-time">3:15PM</div>
+													<div class="dropdown action-drp">
+														<a href="#"
+															class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover dropdown-toggle no-caret"
+															data-bs-toggle="dropdown"><span class="icon"><span
+																	class="feather-icon"><i
+																		data-feather="more-horizontal"></i></span></span></a>
+														<div class="dropdown-menu dropdown-menu-end">
+															<a class="dropdown-item" href="#">Mute Chat</a>
+															<a class="dropdown-item" href="#">Archive Chat</a>
+															<a class="dropdown-item" href="#">Delete Chat</a>
+															<a class="dropdown-item link-danger" href="#">Block</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
 									</li>
 								</ul>
 							</div>
@@ -910,27 +1057,16 @@ Contact: contact@hencework.com
 								</a>
 								<div class="media">
 									<div class="media-head">
-										<div class="avatar avatar-sm avatar-primary position-relative avatar-rounded">
-											<img src="dist/img/avatar1.jpg" alt="user" class="avatar-img">
-											<div
-												class="badge-icon badge-circle badge-icon-xxs text-white position-bottom-end-overflow-1">
-												<div class="badge-icon-wrap">
-													<i class="ri-group-fill text-light"></i>
-												</div>
-												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141 141">
-													<g transform="translate(-79 -975)">
-														<path d="M70.5,0A70.5,70.5,0,1,1,0,70.5,70.5,70.5,0,0,1,70.5,0Z"
-															transform="translate(79 975)" fill="#fff"></path>
-														<path d="M55.5,0A55.5,55.5,0,1,1,0,55.5,55.5,55.5,0,0,1,55.5,0Z"
-															transform="translate(94 990)" fill="#fff"></path>
-													</g>
-												</svg>
-											</div>
+										<div class="avatar avatar-sm avatar-rounded position-relative">
+											<img src="dist/img/avatar8.jpg" alt="user" class="avatar-img">
+											<span
+												class="badge badge-success badge-indicator badge-indicator-lg position-bottom-end-overflow-1"></span>
 										</div>
 									</div>
 									<div class="media-body">
-										<div class="user-name">Developers Stage</div>
-										<div class="user-status">Active 1min ago</div>
+										<div class="user-name">Huma Therman</div>
+										<div class="user-status">Typing<span class="one">.</span><span
+												class="two">.</span><span class="three">.</span></div>
 									</div>
 								</div>
 								<div class="chat-options-wrap">
@@ -982,7 +1118,7 @@ Contact: contact@hencework.com
 								</div>
 							</header>
 							<div data-simplebar id="chat_body" class="chat-body">
-								<ul class="list-unstyled chat-single-list">
+								<ul id="dummy_avatar" class="list-unstyled chat-single-list">
 									<li class="media received">
 										<div class="avatar avatar-xs avatar-rounded">
 											<img src="dist/img/avatar8.jpg" alt="user" class="avatar-img">
@@ -1034,9 +1170,30 @@ Contact: contact@hencework.com
 									</li>
 									<li class="media media-attachment received">
 										<div class="avatar avatar-xs avatar-rounded">
-											<img src="dist/img/avatar9.jpg" alt="user" class="avatar-img">
+											<img src="dist/img/avatar8.jpg" alt="user" class="avatar-img">
 										</div>
 										<div class="media-body msg-docs">
+											<div class="msg-box">
+												<div>
+													<div class="media">
+														<div class="avatar avatar-icon avatar-sm avatar-blue">
+															<span class="initial-wrap fs-3">
+																<i class="ri-file-excel-2-fill"></i>
+															</span>
+														</div>
+														<div class="media-body">
+															<p class="file-name">Website_content.xls</p>
+															<p class="file-size">2,635 KB</p>
+														</div>
+													</div>
+													<div class="file-overlay">
+														<button
+															class="btn btn-sm btn-icon btn-rounded btn-primary"><span
+																class="icon"><span class="feather-icon"><i
+																		data-feather="arrow-down"></i></span></span></button>
+													</div>
+												</div>
+											</div>
 											<div class="msg-box">
 												<div>
 													<div class="media">
@@ -1073,7 +1230,6 @@ Contact: contact@hencework.com
 														<a class="dropdown-item" href="#">Copy</a>
 													</div>
 												</div>
-
 											</div>
 										</div>
 									</li>
@@ -1084,8 +1240,38 @@ Contact: contact@hencework.com
 										<div class="media-body">
 											<div class="msg-box">
 												<div>
-													<p>I need you help in it.</p>
+													<p>Anyways, I am working on something that you would like to know.
+														This project is based on angular js and you are the keeda in it.
+														I need you help in it.</p>
 													<span class="chat-time">11:52 PM</span>
+												</div>
+												<div class="msg-action">
+													<a href="#"
+														class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover no-caret"><span
+															class="icon"><span class="feather-icon"><i
+																	data-feather="corner-up-right"></i></span></span></a>
+													<a href="#"
+														class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover dropdown-toggle no-caret"
+														data-bs-toggle="dropdown"><span class="icon"><span
+																class="feather-icon"><i
+																	data-feather="more-horizontal"></i></span></span></a>
+													<div class="dropdown-menu dropdown-menu-end">
+														<a class="dropdown-item" href="#">Forward</a>
+														<a class="dropdown-item" href="#">Copy</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="media media-attachment received">
+										<div class="avatar avatar-xs avatar-rounded">
+											<img src="dist/img/avatar8.jpg" alt="user" class="avatar-img">
+										</div>
+										<div class="media-body msg-imgs">
+											<div class="msg-box">
+												<div>
+													<img class="d-block img-fluid" src="dist/img/gallery/mock6.jpg"
+														alt="mock">
 												</div>
 												<div class="msg-action">
 													<a href="#"
@@ -1133,7 +1319,7 @@ Contact: contact@hencework.com
 									</li>
 									<li class="media received">
 										<div class="avatar avatar-xs avatar-rounded">
-											<img src="dist/img/avatar10.jpg" alt="user" class="avatar-img">
+											<img src="dist/img/avatar8.jpg" alt="user" class="avatar-img">
 										</div>
 										<div class="media-body">
 											<div class="msg-box">
@@ -1179,7 +1365,7 @@ Contact: contact@hencework.com
 												</span>
 											</div>
 											<div>
-												<span class="h6 mb-0">Photo or Video Library</span>
+												<span class="fs-7 fw-medium">Photo or Video Library</span>
 											</div>
 										</div>
 									</a>
@@ -1192,7 +1378,7 @@ Contact: contact@hencework.com
 												</span>
 											</div>
 											<div>
-												<span class="h6 mb-0">Documents</span>
+												<span class="fs-7 fw-medium">Documents</span>
 											</div>
 										</div>
 									</a>
@@ -1205,7 +1391,7 @@ Contact: contact@hencework.com
 												</span>
 											</div>
 											<div>
-												<span class="h6 mb-0">Location</span>
+												<span class="fs-7 fw-medium">Location</span>
 											</div>
 										</div>
 									</a>
@@ -1218,7 +1404,7 @@ Contact: contact@hencework.com
 												</span>
 											</div>
 											<div>
-												<span class="h6 mb-0">Contact</span>
+												<span class="fs-7 fw-medium">Contact</span>
 											</div>
 										</div>
 									</a>
@@ -1248,11 +1434,12 @@ Contact: contact@hencework.com
 									</button>
 									<div class="text-center">
 										<div class="avatar avatar-xxl avatar-rounded">
-											<img src="dist/img/avatar1.jpg" alt="user" class="avatar-img">
+											<img src="dist/img/avatar8.jpg" alt="user" class="avatar-img">
 										</div>
-										<div class="cp-name text-truncate mt-2">Developers Stage</div>
-										<p class="text-truncate">Code builders & reviewers stage</p>
+										<div class="cp-name text-truncate mt-2">Huma Therman</div>
+										<p class="text-truncate">No phone calls Always busy</p>
 									</div>
+
 									<ul class="nav nav-justified nav-light nav-tabs nav-segmented-filled-tabs mt-4">
 										<li class="nav-item">
 											<a class="nav-link active" data-bs-toggle="tab" href="#tab_info">
@@ -1274,92 +1461,43 @@ Contact: contact@hencework.com
 											<div class="collapse-simple mt-3">
 												<div class="card">
 													<div class="card-header">
-														<a role="button" data-bs-toggle="collapse" href="#members"
-															aria-expanded="true">Members</a>
+														<a role="button" data-bs-toggle="collapse" href="#gn_info"
+															aria-expanded="true">General Info</a>
 													</div>
-													<div id="members" class="collapse show">
+													<div id="gn_info" class="collapse show">
 														<div class="card-body">
-															<ul class="hk-list">
+															<ul class="cp-info">
 																<li>
-																	<div class="avatar avatar-sm avatar-primary avatar-rounded"
-																		data-bs-toggle="tooltip" data-bs-placement="top"
-																		title="" data-bs-original-title="Hencework">
-																		<span class="initial-wrap">H</span>
-																	</div>
+																	<a href="javascript:void(0);">
+																		<span class="cp-icon-wrap"><span
+																				class="feather-icon"><i
+																					data-feather="briefcase"></i></span></span>
+																		Co-Founder
+																	</a>
 																</li>
 																<li>
-																	<div class="avatar avatar-sm avatar-rounded"
-																		data-bs-toggle="tooltip" data-bs-placement="top"
-																		title="" data-bs-original-title="Morgan">
-																		<img src="dist/img/avatar2.jpg" alt="user"
-																			class="avatar-img">
-																	</div>
-																</li>
-																<li>
-																	<div class="avatar avatar-sm avatar-rounded"
-																		data-bs-toggle="tooltip" data-bs-placement="top"
-																		title="" data-bs-original-title="Charlie">
-																		<img src="dist/img/avatar13.jpg" alt="user"
-																			class="avatar-img">
-																	</div>
-																</li>
-																<li>
-																	<div class="avatar avatar-sm avatar-rounded position-relative"
-																		data-bs-toggle="tooltip" data-bs-placement="top"
-																		title="" data-bs-original-title="Tom">
-																		<img src="dist/img/avatar7.jpg" alt="user"
-																			class="avatar-img">
+																	<a href="javascript:void(0);">
+																		<span class="cp-icon-wrap"><span
+																				class="feather-icon"><i
+																					data-feather="mail"></i></span></span>
 																		<span
-																			class="badge badge-success badge-indicator badge-indicator-lg position-bottom-end-overflow-1"></span>
-																	</div>
+																			class="text-primary">contact@hencework.com</span>
+																	</a>
 																</li>
 																<li>
-																	<div class="avatar avatar-sm avatar-rounded"
-																		data-bs-toggle="tooltip" data-bs-placement="top"
-																		title="" data-bs-original-title="Katherine">
-																		<img src="dist/img/avatar9.jpg" alt="user"
-																			class="avatar-img">
-																	</div>
+																	<a href="javascript:void(0);">
+																		<span class="cp-icon-wrap"><span
+																				class="feather-icon"><i
+																					data-feather="phone"></i></span></span>
+																		+91-25-4125-2365
+																	</a>
 																</li>
 																<li>
-																	<div class="avatar avatar-sm avatar-rounded position-relative"
-																		data-bs-toggle="tooltip" data-bs-placement="top"
-																		title="" data-bs-original-title="Danial">
-																		<img src="dist/img/avatar10.jpg" alt="user"
-																			class="avatar-img">
-																		<span
-																			class="badge badge-success badge-indicator badge-indicator-lg position-bottom-end-overflow-1"></span>
-																	</div>
-																</li>
-																<li>
-																	<div class="avatar avatar-sm avatar-rounded position-relative"
-																		data-bs-toggle="tooltip" data-bs-placement="top"
-																		title="" data-bs-original-title="Boss">
-																		<img src="dist/img/avatar15.jpg" alt="user"
-																			class="avatar-img">
-																		<span
-																			class="badge badge-success badge-indicator badge-indicator-lg position-bottom-end-overflow-1"></span>
-																	</div>
-																</li>
-																<li>
-																	<div class="avatar avatar-sm avatar-soft-danger avatar-rounded"
-																		data-bs-toggle="tooltip" data-bs-placement="top"
-																		title="" data-bs-original-title="Winston">
-																		<span class="initial-wrap">W</span>
-																	</div>
-																</li>
-																<li>
-																	<a href="#"
-																		class="avatar avatar-sm avatar-icon avatar-soft-light avatar-rounded"
-																		data-bs-toggle="modal"
-																		data-bs-target="#invite_people">
-																		<span class="initial-wrap"
-																			data-bs-toggle="tooltip"
-																			data-bs-placement="top" title=""
-																			data-bs-original-title="Add New">
-																			<span class="feather-icon"><i
-																					data-feather="plus"></i></span>
-																		</span>
+																	<a href="javascript:void(0);">
+																		<span class="cp-icon-wrap"><span
+																				class="feather-icon"><i
+																					data-feather="map-pin"></i></span></span>
+																		Oslo, Canada
 																	</a>
 																</li>
 															</ul>
@@ -1368,26 +1506,58 @@ Contact: contact@hencework.com
 												</div>
 												<div class="card">
 													<div class="card-header">
-														<a role="button" data-bs-toggle="collapse" href="#general_info"
-															aria-expanded="true">General Info</a>
+														<a role="button" data-bs-toggle="collapse"
+															href="#social_profile" aria-expanded="true">Social Profile
+														</a>
 													</div>
-													<div id="general_info" class="collapse show">
+													<div id="social_profile" class="collapse show">
 														<div class="card-body">
-															<ul class="cp-info">
+															<ul class="hk-list hk-list-sm">
 																<li>
-																	<a href="javascript:void(0);">
-																		<span class="cp-icon-wrap"><span
-																				class="feather-icon"><i
-																					data-feather="briefcase"></i></span></span>
-																		Managed by Morgan Freeman
-																	</a>
+																	<button
+																		class="btn btn-icon btn-rounded btn-primary"><span
+																			class="icon"><i
+																				class="fab fa-behance"></i></span></button>
 																</li>
 																<li>
-																	<a href="javascript:void(0);">
-																		<span class="cp-icon-wrap">#Developer</span>
-																	</a>
+																	<button
+																		class="btn btn-icon btn-rounded btn-warning"><span
+																			class="icon"><i
+																				class="fab fa-google-drive"></i></span></button>
+																</li>
+																<li>
+																	<button
+																		class="btn btn-icon btn-rounded btn-info"><span
+																			class="icon"><i
+																				class="fab fa-dropbox"></i></span></button>
+																</li>
+																<li>
+																	<button
+																		class="btn btn-icon btn-rounded btn-dark"><span
+																			class="icon"><i
+																				class="fab fa-github"></i></span></button>
+																</li>
+																<li>
+																	<button
+																		class="btn btn-icon btn-rounded btn-danger"><span
+																			class="icon"><i
+																				class="fab fa-google"></i></span></button>
 																</li>
 															</ul>
+														</div>
+													</div>
+												</div>
+												<div class="card">
+													<div class="card-header">
+														<a role="button" data-bs-toggle="collapse" href="#biography"
+															aria-expanded="true">Biography </a>
+													</div>
+													<div id="biography" class="collapse show">
+														<div class="card-body">
+															<p>Hello there, Huma Therman is a brilliant co-founder and a
+																copy writer working for almost a decade for fortune 500
+																companies. I am well verse with multiple foreign
+																languages and I love to produce good quality stuff. </p>
 														</div>
 													</div>
 												</div>
@@ -1572,7 +1742,6 @@ Contact: contact@hencework.com
 																			</div>
 																		</div>
 																	</div>
-
 																</li>
 																<li>
 																	<div class="media">
@@ -1654,7 +1823,6 @@ Contact: contact@hencework.com
 																			</div>
 																		</div>
 																	</div>
-
 																</li>
 																<li>
 																	<div class="media">
@@ -1688,7 +1856,6 @@ Contact: contact@hencework.com
 																			</div>
 																		</div>
 																	</div>
-
 																</li>
 																<li>
 																	<div class="media">
@@ -1759,9 +1926,9 @@ Contact: contact@hencework.com
 									</div>
 									<div class="modal-body">
 										<div class="avatar avatar-xxxl avatar-rounded d-20">
-											<img src="dist/img/avatar1.jpg" alt="user" class="avatar-img">
+											<img src="dist/img/avatar8.jpg" alt="user" class="avatar-img">
 										</div>
-										<h3 class="mt-3">Developers Stage</h3>
+										<h3 class="mt-3">Huma Therman</h3>
 										<p>Audio Calling<span class="one">.</span><span class="two">.</span><span
 												class="three">.</span></p>
 									</div>
@@ -1828,9 +1995,9 @@ Contact: contact@hencework.com
 									</div>
 									<div class="modal-body">
 										<div class="avatar avatar-xxxl avatar-rounded d-20">
-											<img src="dist/img/avatar1.jpg" alt="user" class="avatar-img">
+											<img src="dist/img/avatar8.jpg" alt="user" class="avatar-img">
 										</div>
-										<h3 class="text-white mt-3">Developers Stage</h3>
+										<h3 class="text-white mt-3">Huma Therman</h3>
 										<p class="text-white">Video Calling<span class="one">.</span><span
 												class="two">.</span><span class="three">.</span></p>
 									</div>
@@ -2178,7 +2345,6 @@ Contact: contact@hencework.com
 							</div>
 						</div>
 						<!-- /Search -->
-
 					</div>
 				</div>
 			</div>

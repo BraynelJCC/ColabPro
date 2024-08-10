@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<!-- 
+Zapped
+Author: Hencework
+Contact: contact@hencework.com
+-->
+<html lang="en">
+
+<head>
+	<!-- Meta Tags -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Edit Profile | Zapped - Project management Dashboard Template</title>
+	<meta name="description"
+		content="Project management Dashboard Template with reusable and flexible components for your SaaS web applications by hencework. Based on Bootstrap.">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+	<!-- CSS -->
+	<link href="dist/css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<!-- Wrapper -->
+	<div class="hk-wrapper" data-layout="twocolumn" data-menu="light" data-footer="simple" data-hover="active">
+		<!-- Vertical Nav -->
+		<div class="hk-menu">
+			<div class="main-menu">
+				<!-- Brand -->
+				<div class="menu-header">
+					<a class="navbar-brand" href="index.html">
+
+					</a>
+				</div>
+				<!-- /Brand -->
+
+				<!-- Main Menu -->
+				<div data-simplebar class="nicescroll-bar">
+					<div class="menu-content-wrap">
+						<div class="menu-group">
+							<ul class="navbar-nav flex-column">
+								<li class="nav-item">
+									<a class="nav-link" href="index.html" data-bs-toggle="tooltip"
+										data-bs-placement="right" title="" data-bs-original-title="Overview"
+										data-bs-trigger="hover">
+										<span class="nav-icon-wrap">
+											<span class="svg-icon"><svg xmlns="http://www.w3.org/2000/svg"
+													class="icon icon-tabler icon-tabler-chart-dots-2" width="24"
+													height="24" viewBox="0 0 24 24" stroke-width="2"
+													stroke="currentColor" fill="none" stroke-linecap="round"
+													stroke-linejoin="round">
+													<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+													<path d="M3 3v18h18"></path>
+													<circle cx="9" cy="15" r="2"></circle>
+													<circle cx="13" cy="5" r="2"></circle>
+													<circle cx="18" cy="12" r="2"></circle>
+													<path d="M21 3l-6 1.5"></path>
+													<path d="M14.113 6.65l2.771 3.695"></path>
+													<path d="M16 12.5l-5 2"></path>
+												</svg></span>
+										</span>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="projects-board.html" data-bs-toggle="tooltip"
+										data-bs-placement="right" title="" data-bs-original-title="All Projects"
+										data-bs-trigger="hover">
+										<span class="nav-icon-wrap"><span class="svg-icon"><svg
+													xmlns="http://www.w3.org/2000/svg"
+													class="icon icon-tabler icon-tabler-apps" width="24" height="24"
+													viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+													fill="none" stroke-linecap="round" stroke-linejoin="round">
+													<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+													<rect x="4" y="4" width="6" height="6" rx="1"></rect>
+													<rect x="4" y="14" width="6" height="6" rx="1"></rect>
+													<rect x="14" y="14" width="6" height="6" rx="1"></rect>
+													<line x1="14" y1="7" x2="20" y2="7"></line>
+													<line x1="17" y1="4" x2="17" y2="10"></line>
+												</svg></span></span>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="kanban-board.html" data-bs-toggle="tooltip"
+										data-bs-placement="right" title="" data-bs-original-title="Kanban Board"
+										data-bs-trigger="hover">
+										<span class="nav-icon-wrap"><span class="svg-icon"><svg
+													xmlns="http://www.w3.org/2000/svg"
+													class="icon icon-tabler icon-tabler-layout-kanban" width="24"
+													height="24" viewBox="0 0 24 24" stroke-width="2"
+													stroke="currentColor" fill="none" stroke-linecap="round"
+													stroke-linejoin="round">
+													<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+													<line x1="4" y1="4" x2="10" y2="4"></line>
+													<line x1="14" y1="4" x2="20" y2="4"></line>
+													<rect x="4" y="8" width="6" height="12" rx="2"></rect>
+													<rect x="14" y="8" width="6" height="6" rx="2"></rect>
+												</svg></span></span>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="taskboard.html" data-bs-toggle="tooltip"
+										data-bs-placement="right" title="" data-bs-original-title="Taskboard"
+										data-bs-trigger="hover">
+										<span class="nav-icon-wrap"><span class="svg-icon"><svg
+													xmlns="http://www.w3.org/2000/svg"
+													class="icon icon-tabler icon-tabler-checklist" width="24"
+													height="24" viewBox="0 0 24 24" stroke-width="2"
+													stroke="currentColor" fill="none" stroke-linecap="round"
+													stroke-linejoin="round">
+													<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+													<path
+														d="M9.615 20h-2.615a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v8">
+													</path>
+													<path d="M14 19l2 2l4 -4"></path>
+													<path d="M9 8h4"></path>
+													<path d="M9 12h2"></path>
+												</svg></span></span>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="chats.html" data-bs-toggle="tooltip"
+										data-bs-placement="right" title="" data-bs-original-title="Chat"
+										data-bs-trigger="hover">
+										<span class="nav-icon-wrap"><span class="svg-icon"><svg
+													xmlns="http://www.w3.org/2000/svg"
+													class="icon icon-tabler icon-tabler-message" width="24" height="24"
+													viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+													fill="none" stroke-linecap="round" stroke-linejoin="round">
+													<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+													<path
+														d="M4 21v-13a3 3 0 0 1 3 -3h10a3 3 0 0 1 3 3v6a3 3 0 0 1 -3 3h-9l-4 4">
+													</path>
+													<line x1="8" y1="9" x2="16" y2="9"></line>
+													<line x1="8" y1="13" x2="14" y2="13"></line>
+												</svg></span></span>
+									</a>
+								</li>
+								<li class="nav-item active">
+									<a class="nav-link" href="pages.html" data-bs-toggle="tooltip"
+										data-bs-placement="right" title="" data-bs-original-title="Pages"
+										data-bs-trigger="hover">
+										<span class="nav-icon-wrap"><span class="svg-icon"><svg
+													xmlns="http://www.w3.org/2000/svg"
+													class="icon icon-tabler icon-tabler-files" width="24" height="24"
+													viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+													fill="none" stroke-linecap="round" stroke-linejoin="round">
+													<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+													<path d="M15 3v4a1 1 0 0 0 1 1h4"></path>
+													<path
+														d="M18 17h-7a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h4l5 5v7a2 2 0 0 1 -2 2z">
+													</path>
+													<path
+														d="M16 17v2a2 2 0 0 1 -2 2h-7a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h2">
+													</path>
+												</svg></span></span>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="../documentation/grid-system.html"
+										data-bs-toggle="tooltip" data-bs-placement="right" title=""
+										data-bs-original-title="Components" data-bs-trigger="hover">
+										<span class="nav-icon-wrap"><span class="svg-icon"><svg
+													xmlns="http://www.w3.org/2000/svg"
+													class="icon icon-tabler icon-tabler-circle-letter-c" width="24"
+													height="24" viewBox="0 0 24 24" stroke-width="2"
+													stroke="currentColor" fill="none" stroke-linecap="round"
+													stroke-linejoin="round">
+													<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+													<circle cx="12" cy="12" r="9"></circle>
+													<path d="M14 10a2 2 0 1 0 -4 0v4a2 2 0 1 0 4 0"></path>
+												</svg></span></span>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="../documentation/index.html" data-bs-toggle="tooltip"
+										data-bs-placement="right" title="" data-bs-original-title="Documentation"
+										data-bs-trigger="hover">
+										<span class="nav-icon-wrap"><span class="svg-icon"><svg
+													xmlns="http://www.w3.org/2000/svg"
+													class="icon icon-tabler icon-tabler-book-2" width="24" height="24"
+													viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+													fill="none" stroke-linecap="round" stroke-linejoin="round">
+													<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+													<path d="M19 4v16h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12z">
+													</path>
+													<path d="M19 16h-12a2 2 0 0 0 -2 2"></path>
+													<path d="M9 8h6"></path>
+												</svg></span></span>
+									</a>
+								</li>
+							</ul>
+							<ul class="navbar-nav flex-column d-lg-none">
+								<li class="nav-item">
+									<a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#search_modal">
+										<span class="nav-icon-wrap"><span class="svg-icon"><svg
+													xmlns="http://www.w3.org/2000/svg"
+													class="icon icon-tabler icon-tabler-search" width="24" height="24"
+													viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+													fill="none" stroke-linecap="round" stroke-linejoin="round">
+													<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+													<circle cx="10" cy="10" r="7"></circle>
+													<line x1="21" y1="21" x2="15" y2="15"></line>
+												</svg></span></span>
+									</a>
+								</li>
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle no-caret" href="javascript:void(0);"
+										data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										<span class="nav-icon-wrap"><span class="svg-icon"><svg
+													xmlns="http://www.w3.org/2000/svg"
+													class="icon icon-tabler icon-tabler-settings" width="24" height="24"
+													viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+													fill="none" stroke-linecap="round" stroke-linejoin="round">
+													<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+													<path
+														d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z">
+													</path>
+													<circle cx="12" cy="12" r="3"></circle>
+												</svg></span></span>
+									</a>
+									<div class="dropdown-menu position-fixed">
+										<h6 class="dropdown-header">Dropdown header</h6>
+										<a class="dropdown-item" href="#">Regular link</a>
+										<a class="dropdown-item active" href="#">Active link</a>
+										<a class="dropdown-item" href="#">Disabled link</a>
+										<span class="dropdown-item-text">Dropdown item text</span>
+										<a class="dropdown-item" href="#">Something else here</a>
+										<div class="dropdown-divider"></div>
+										<a class="dropdown-item" href="#">Separated link</a>
+									</div>
+								</li>
+								<li class="nav-item nav-link">
+									<a href="javascript:void(0)"
+										class="d-block mx-auto avatar avatar-sm avatar-rounded dropdown-toggle  no-caret"
+										data-bs-toggle="dropdown">
+										<img src="dist/img/avatar9.jpg" alt="user" class="avatar-img">
+									</a>
+									<div class="dropdown-menu dropdown-menu-right w-250p position-fixed">
+										<h6 class="dropdown-header">Switch account</h6>
+										<div class="dropdown-item py-2 rounded-3">
+											<div class="media align-items-center active-user">
+												<div class="media-head me-2">
+													<div class="avatar avatar-xs avatar-rounded">
+														<img src="dist/img/avatar12.jpg" alt="user" class="avatar-img">
+													</div>
+												</div>
+												<div class="media-body mw-175p">
+													<a href="#" class="d-block name">Zapped Team <i
+															class="ri-checkbox-circle-fill fs-7 text-primary"></i></a>
+													<a href="#"
+														class="d-block fs-7 link-secondary text-truncate">contact@hencework.com</a>
+												</div>
+											</div>
+										</div>
+										<div class="dropdown-item py-2 rounded-3">
+											<div class="media align-items-center">
+												<div class="media-head me-2">
+													<div class="avatar avatar-xs avatar-primary avatar-rounded">
+														<span class="initial-wrap">HK</span>
+													</div>
+												</div>
+												<div class="media-body mw-175p">
+													<a href="#" class="d-flex align-items-center name">Hencework </a>
+													<a href="#"
+														class="d-block fs-7 link-secondary text-truncate">hencework@hencework.com</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- /Main Menu -->
+
+				<!--Bottom Nav-->
+				<div class="bottom-nav d-lg-block d-none">
+					<div class="menu-content-wrap">
+						<div class="menu-group">
+							<ul class="navbar-nav flex-column">
+								<li class="nav-item">
+									<div class="dropup dropdown-notifications">
+										<a class="nav-link dropdown-toggle  no-caret" href="#"
+											data-bs-toggle="dropdown">
+											<span class="nav-icon-wrap position-relative"><span class="svg-icon"><svg
+														xmlns="http://www.w3.org/2000/svg"
+														class="icon icon-tabler icon-tabler-bell" width="24" height="24"
+														viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+														fill="none" stroke-linecap="round" stroke-linejoin="round">
+														<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+														<path
+															d="M10 5a2 2 0 0 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6">
+														</path>
+														<path d="M9 17v1a3 3 0 0 0 6 0v-1"></path>
+													</svg></span><span
+													class="badge badge-success badge-indicator position-top-end-overflow-1"></span></span>
+										</a>
+
+										<div class="dropdown-menu dropdown-menu-end w-350p p-0">
+											<h6 class="dropdown-header px-4 fs-6">Notifications<a href="#"
+													class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"><span
+														class="icon"><span class="feather-icon"><i
+																data-feather="settings"></i></span></span></a>
+											</h6>
+											<div data-simplebar class="dropdown-body  p-2">
+												<a href="javascript:void(0);" class="dropdown-item">
+													<div class="media">
+														<div class="media-head">
+															<div class="avatar avatar-rounded avatar-sm">
+																<img src="dist/img/avatar2.jpg" alt="user"
+																	class="avatar-img">
+															</div>
+														</div>
+														<div class="media-body">
+															<div>
+																<div class="notifications-text">Morgan Freeman accepted
+																	your invitation to join the team</div>
+																<div class="notifications-info">
+																	<span
+																		class="badge badge-soft-success">Collaboration</span>
+																	<div class="notifications-time">Today, 10:14 PM
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</a>
+												<a href="javascript:void(0);" class="dropdown-item">
+													<div class="media">
+														<div class="media-head">
+															<div
+																class="avatar  avatar-icon avatar-sm avatar-success avatar-rounded">
+																<span class="initial-wrap">
+																	<span class="feather-icon"><i
+																			data-feather="inbox"></i></span>
+																</span>
+															</div>
+														</div>
+														<div class="media-body">
+															<div>
+																<div class="notifications-text">New message received
+																	from Alan Rickman</div>
+																<div class="notifications-info">
+																	<div class="notifications-time">Today, 7:51 AM</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</a>
+												<a href="javascript:void(0);" class="dropdown-item">
+													<div class="media">
+														<div class="media-head">
+															<div
+																class="avatar  avatar-icon avatar-sm avatar-pink avatar-rounded">
+																<span class="initial-wrap">
+																	<span class="feather-icon"><i
+																			data-feather="clock"></i></span>
+																</span>
+															</div>
+														</div>
+														<div class="media-body">
+															<div>
+																<div class="notifications-text">You have a follow up
+																	with zapped Head on Friday, Dec 19 at 9:30 am</div>
+																<div class="notifications-info">
+																	<div class="notifications-time">Yesterday, 9:25 PM
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</a>
+												<a href="javascript:void(0);" class="dropdown-item">
+													<div class="media">
+														<div class="media-head">
+															<div class="avatar avatar-sm avatar-rounded">
+																<img src="dist/img/avatar3.jpg" alt="user"
+																	class="avatar-img">
+															</div>
+														</div>
+														<div class="media-body">
+															<div>
+																<div class="notifications-text">Application of Sarah
+																	Williams is waiting for your approval</div>
+																<div class="notifications-info">
+																	<div class="notifications-time">Today 10:14 PM</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</a>
+												<a href="javascript:void(0);" class="dropdown-item">
+													<div class="media">
+														<div class="media-head">
+															<div class="avatar avatar-sm avatar-rounded">
+																<img src="dist/img/avatar10.jpg" alt="user"
+																	class="avatar-img">
+															</div>
+														</div>
+														<div class="media-body">
+															<div>
+																<div class="notifications-text">Winston Churchil shared
+																	a document with you</div>
+																<div class="notifications-info">
+																	<span class="badge badge-soft-violet">File
+																		Manager</span>
+																	<div class="notifications-time">2 Oct, 2021</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</a>
+												<a href="javascript:void(0);" class="dropdown-item">
+													<div class="media">
+														<div class="media-head">
+															<div
+																class="avatar  avatar-icon avatar-sm avatar-danger avatar-rounded">
+																<span class="initial-wrap">
+																	<span class="feather-icon"><i
+																			data-feather="calendar"></i></span>
+																</span>
+															</div>
+														</div>
+														<div class="media-body">
+															<div>
+																<div class="notifications-text">Last 2 days left for the
+																	project to be completed</div>
+																<div class="notifications-info">
+																	<span class="badge badge-soft-orange">Updates</span>
+																	<div class="notifications-time">14 Sep, 2021</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</a>
+											</div>
+											<div class="dropdown-footer"><a href="#"><u>View all notifications</u></a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#search_modal">
+										<span class="nav-icon-wrap"><span class="svg-icon"><svg
+													xmlns="http://www.w3.org/2000/svg"
+													class="icon icon-tabler icon-tabler-search" width="24" height="24"
+													viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+													fill="none" stroke-linecap="round" stroke-linejoin="round">
+													<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+													<circle cx="10" cy="10" r="7"></circle>
+													<line x1="21" y1="21" x2="15" y2="15"></line>
+												</svg></span></span>
+									</a>
+								</li>
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle no-caret" href="javascript:void(0);"
+										data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										<span class="nav-icon-wrap"><span class="svg-icon"><svg
+													xmlns="http://www.w3.org/2000/svg"
+													class="icon icon-tabler icon-tabler-settings" width="24" height="24"
+													viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+													fill="none" stroke-linecap="round" stroke-linejoin="round">
+													<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+													<path
+														d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z">
+													</path>
+													<circle cx="12" cy="12" r="3"></circle>
+												</svg></span></span>
+									</a>
+									<div class="dropdown-menu">
+										<h6 class="dropdown-header">Dropdown header</h6>
+										<a class="dropdown-item" href="#">Regular link</a>
+										<a class="dropdown-item active" href="#">Active link</a>
+										<a class="dropdown-item" href="#">Disabled link</a>
+										<span class="dropdown-item-text">Dropdown item text</span>
+										<a class="dropdown-item" href="#">Something else here</a>
+										<div class="dropdown-divider"></div>
+										<a class="dropdown-item" href="#">Separated link</a>
+									</div>
+								</li>
+								<li class="nav-item nav-link">
+									<a href="javascript:void(0)"
+										class="d-block mx-auto avatar avatar-sm avatar-rounded dropdown-toggle  no-caret"
+										data-bs-toggle="dropdown">
+										<img src="dist/img/avatar9.jpg" alt="user" class="avatar-img">
+									</a>
+									<div class="dropdown-menu dropdown-menu-right w-250p">
+										<h6 class="dropdown-header">Switch account</h6>
+										<div class="dropdown-item py-2 rounded-3">
+											<div class="media align-items-center active-user">
+												<div class="media-head me-2">
+													<div class="avatar avatar-xs avatar-rounded">
+														<img src="dist/img/avatar12.jpg" alt="user" class="avatar-img">
+													</div>
+												</div>
+												<div class="media-body mw-175p">
+													<a href="#" class="d-block name">Zapped Team <i
+															class="ri-checkbox-circle-fill fs-7 text-primary"></i></a>
+													<a href="#"
+														class="d-block fs-7 link-secondary text-truncate">contact@hencework.com</a>
+												</div>
+											</div>
+										</div>
+										<div class="dropdown-item py-2 rounded-3">
+											<div class="media align-items-center">
+												<div class="media-head me-2">
+													<div class="avatar avatar-xs avatar-primary avatar-rounded">
+														<span class="initial-wrap">HK</span>
+													</div>
+												</div>
+												<div class="media-body mw-175p">
+													<a href="#" class="d-flex align-items-center name">Hencework </a>
+													<a href="#"
+														class="d-block fs-7 link-secondary text-truncate">hencework@hencework.com</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!--/Bottom Nav-->
+			</div>
+			<div id="hk_menu_backdrop" class="hk-menu-backdrop"></div>
+		</div>
+		<!-- /Vertical Nav -->
+
+		<!-- Main Content -->
+		<div class="hk-pg-wrapper py-0">
+			<!-- Page Body -->
+			<div class="hk-pg-body py-0">
+				<div class="position-relative vh-100">
+					<div class="d-flex overflow-hidden position-relative h-100">
+						<div class="d-flex flex-grow-1 flex-column h-100">
+							<header class="hk-pg-header">
+								<div class="px-5">
+									<div class="d-flex align-items-center">
+										<button
+											class="btn btn-icon btn-rounded btn-flush-dark flush-soft-hover navbar-toggle me-2 d-xl-none"><span
+												class="icon"><span class="feather-icon"><i
+														data-feather="align-left"></i></span></span></button>
+										<div class="avatar avatar-sm avatar-icon avatar-pumpkin me-3">
+											<span class="initial-wrap rounded-8"><span class="svg-icon"><svg
+														xmlns="http://www.w3.org/2000/svg"
+														class="icon icon-tabler icon-tabler-user-plus" width="24"
+														height="24" viewBox="0 0 24 24" stroke-width="2"
+														stroke="currentColor" fill="none" stroke-linecap="round"
+														stroke-linejoin="round">
+														<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+														<circle cx="9" cy="7" r="4"></circle>
+														<path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"></path>
+														<path d="M16 11h6m-3 -3v6"></path>
+													</svg></span></span>
+										</div>
+										<div class="d-flex flex-wrap justify-content-between flex-1">
+											<div>
+												<h5 class="pg-title fs-5 mb-0">Edit Profile</h5>
+											</div>
+										</div>
+									</div>
+								</div>
+							</header>
+							<div class="d-flex flex-1 overflow-hidden mt-5">
+								<div data-simplebar class="nicescroll-bar">
+									<div class="container-fluid px-5">
+										<div class="row justify-content-center">
+											<div class="col-xxl-8 col-md-10 col-sm-12">
+												<div class="row edit-profile-wrap mb-5 p-sm-4 px-2 rounded-8 bg-white">
+													<div class="col-lg-2 col-sm-3 col-4">
+														<div class="nav-profile mt-4">
+															<div class="nav-header">
+																<span>Account</span>
+															</div>
+															<ul class="nav nav-light nav-vertical nav-tabs">
+																<li class="nav-item">
+																	<a data-bs-toggle="tab" href="#tab_block_1"
+																		class="nav-link active">
+																		<span class="nav-link-text">Public
+																			Profile</span>
+																	</a>
+																</li>
+																<li class="nav-item">
+																	<a data-bs-toggle="tab" href="#tab_block_2"
+																		class="nav-link">
+																		<span class="nav-link-text">Account
+																			Settings</span>
+																	</a>
+																</li>
+																<li class="nav-item">
+																	<a data-bs-toggle="tab" href="#tab_block_3"
+																		class="nav-link">
+																		<span class="nav-link-text">Privacy
+																			Settings</span>
+																	</a>
+																</li>
+																<li class="nav-item">
+																	<a data-bs-toggle="tab" href="#tab_block_4"
+																		class="nav-link">
+																		<span class="nav-link-text">Login &
+																			Security</span>
+																	</a>
+																</li>
+																<li class="nav-item">
+																	<a href="#" class="nav-link">
+																		<span class="nav-link-text">Notifications</span>
+																	</a>
+																</li>
+																<li class="nav-item">
+																	<a data-scroll="" href="#" class="nav-link">
+																		<span class="nav-link-text">Connections</span>
+																	</a>
+																</li>
+																<li class="nav-item">
+																	<a data-scroll="" href="#" class="nav-link">
+																		<span class="nav-link-text">Billing Info</span>
+																	</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+													<div class="col-lg-10 col-sm-9 col-8">
+														<div class="tab-content">
+															<div class="tab-pane fade show active" id="tab_block_1">
+																<form>
+																	<div class="row gx-3">
+																		<div class="col-sm-12">
+																			<div class="form-group">
+																				<div
+																					class="media d-sm-flex d-block align-items-center">
+																					<div
+																						class="media-head me-5 mb-sm-0 mb-3">
+																						<div
+																							class="avatar avatar-rounded avatar-xxl">
+																							<img src="dist/img/avatar3.jpg"
+																								alt="user"
+																								class="avatar-img">
+																						</div>
+																					</div>
+																					<div class="media-body">
+																						<div
+																							class="btn btn-soft-primary btn-file mb-1">
+																							Upload Photo
+																							<input type="file"
+																								class="upload">
+																						</div>
+																						<div
+																							class="form-text text-muted">
+																							For better preview
+																							recommended size is 450px x
+																							450px. Max size 5mb.
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div
+																		class="title title-xs title-wth-divider text-primary text-uppercase my-4">
+																		<span>Personal Info</span></div>
+																	<div class="row gx-3">
+																		<div class="col-sm-6">
+																			<div class="form-group">
+																				<label class="form-label">First
+																					Name</label>
+																				<input class="form-control" type="text"
+																					value="Kate">
+																			</div>
+																		</div>
+																		<div class="col-sm-6">
+																			<div class="form-group">
+																				<label class="form-label">Last
+																					Name</label>
+																				<input class="form-control" type="text"
+																					value="Jones">
+																			</div>
+																		</div>
+																	</div>
+																	<div class="row gx-3">
+																		<div class="col-sm-12">
+																			<div class="form-group">
+																				<label
+																					class="form-label">Location</label>
+																				<input class="form-control" type="text"
+																					value="Lane no 1, Newyork">
+																			</div>
+																		</div>
+																	</div>
+																	<div class="row gx-3">
+																		<div class="col-sm-12">
+																			<div class="form-group">
+																				<div class="form-label-group">
+																					<label
+																						class="form-label">Bio</label>
+																					<small
+																						class="text-muted">1200</small>
+																				</div>
+																				<textarea class="form-control" rows="8"
+																					placeholder="Write an internal note"></textarea>
+																				<small class="form-text text-muted">
+																					Brief bio about yourself. This will
+																					be displayed on your profile page.
+																				</small>
+																			</div>
+																		</div>
+																	</div>
+																	<div
+																		class="title title-xs title-wth-divider text-primary text-uppercase my-4">
+																		<span>Additional Info</span></div>
+																	<div class="row gx-3">
+																		<div class="col-sm-12">
+																			<div class="form-group">
+																				<label class="form-label">Personal
+																					Website</label>
+																				<input class="form-control" type="text"
+																					value="hencework.com">
+																			</div>
+																		</div>
+																		<div class="col-sm-12">
+																			<div class="form-group">
+																				<label class="form-label">Phone</label>
+																				<input class="form-control" type="text"
+																					value="xxxxxxx987">
+																			</div>
+																			<div class="form-check">
+																				<input type="checkbox"
+																					class="form-check-input"
+																					id="customCheckList4">
+																				<label class="form-check-label"
+																					for="customCheckList4">
+																					Keep my number private
+																				</label>
+																			</div>
+																		</div>
+																	</div>
+																	<button type="button"
+																		class="btn btn-primary mt-5">Save
+																		Changes</button>
+																</form>
+															</div>
+															<div class="tab-pane fade" id="tab_block_2">
+																<div class="title-lg fs-4"><span>Account Settings</span>
+																</div>
+																<p class="mb-4">The Avatar component is used to
+																	represent a user, and displays the profile picture,
+																	initials or fallback icon.</p>
+																<form>
+																	<div class="row gx-3">
+																		<div class="col-sm-12">
+																			<div class="form-group">
+																				<label
+																					class="form-label">Username</label>
+																				<input class="form-control" type="text"
+																					value="Kate">
+																			</div>
+																		</div>
+																	</div>
+																	<div class="row gx-3">
+																		<div class="col-sm-12">
+																			<div class="form-group">
+																				<label class="form-label">Email</label>
+																				<input class="form-control" type="text"
+																					value="Lane no 1, Newyork">
+																			</div>
+																		</div>
+																	</div>
+																	<div class="row gx-3">
+																		<div class="col-sm-12">
+																			<div class="form-group">
+																				<label class="form-label">URL</label>
+																				<input class="form-control" type="text"
+																					value="hencework.com">
+																			</div>
+																		</div>
+																	</div>
+																	<div
+																		class="title title-xs title-wth-divider text-primary text-uppercase my-4">
+																		<span>Tracking Code</span></div>
+																	<div class="row gx-3">
+																		<div class="col-sm-12">
+																			<div class="form-group">
+																				<label class="form-label">Google
+																					Analytics tracking code</label>
+																				<input class="form-control" type="text"
+																					value="UA-1387652-1">
+																				<small class="form-text text-muted">
+																					Track shot and profile views in your
+																					Google analytics account, eg.
+																					UA-0000000-0
+																				</small>
+																			</div>
+																		</div>
+																	</div>
+																	<div
+																		class="title title-xs title-wth-divider text-primary text-uppercase my-4">
+																		<span>Account Changes</span></div>
+																	<div class="row gx-3">
+																		<div class="col-sm-6">
+																			<div class="form-group">
+																				<a href="#"
+																					class="h5 d-block mb-0">Delete
+																					Account</a>
+																				<small class="form-text text-muted">
+																					Delete account and all your data
+																				</small>
+																			</div>
+																		</div>
+																		<div class="col-sm-6 text-end">
+																			<div class="form-group">
+																				<button type="button"
+																					class="btn btn-danger">Close
+																					account</button>
+																			</div>
+																		</div>
+																	</div>
+																	<button type="button"
+																		class="btn btn-primary mt-5">Save
+																		Changes</button>
+																</form>
+															</div>
+															<div class="tab-pane fade" id="tab_block_3">
+																<div class="title-lg fs-4 mb-4"><span>Privacy
+																		Settings</span></div>
+																<form>
+																	<div class="row gx-3">
+																		<div class="col-sm-12">
+																			<div class="form-check form-check-lg">
+																				<input type="checkbox"
+																					class="form-check-input"
+																					id="customChecks1">
+																				<label class="form-check-label mt-0"
+																					for="customChecks1">let others find
+																					me by email address</label>
+																				<small
+																					class="form-text text-muted d-block">People
+																					who have your email address will be
+																					able to connect you by
+																					Zapped</small>
+																			</div>
+																			<div class="separator"></div>
+																			<div class="form-check form-check-lg">
+																				<input type="checkbox"
+																					class="form-check-input"
+																					id="customChecks2">
+																				<label class="form-check-label mt-0"
+																					for="customChecks2">Keep my phone
+																					number private</label>
+																				<small
+																					class="form-text text-muted d-block">No
+																					one can find you by your phone
+																					number. Your phone number will not
+																					be shared with your contact
+																					anymore.</small>
+																			</div>
+																			<div class="separator"></div>
+																			<div class="form-check form-check-lg">
+																				<input type="checkbox"
+																					class="form-check-input"
+																					id="customChecks3">
+																				<label class="form-check-label mt-0"
+																					for="customChecks3">All Keep my
+																					location sharing on</label>
+																				<small
+																					class="form-text text-muted d-block">Jmapack
+																					webapp shares your location wherever
+																					you go</small>
+																			</div>
+																			<div class="separator"></div>
+																			<div class="form-check form-check-lg">
+																				<input type="checkbox"
+																					class="form-check-input"
+																					id="customChecks4">
+																				<label class="form-check-label mt-0"
+																					for="customChecks4">Share data
+																					through select partnerships</label>
+																				<small
+																					class="form-text text-muted d-block">Lorem
+																					ipsum dolor sit amet, consectetur
+																					adipiscing elit. Pellentesque
+																					condimentum mauris volutpat enim
+																					ornare iaculis. Curabitur euismod
+																					rutrum lorem id lobortis. Cras ut ex
+																					dui. Nulla sed blandit tortor. In
+																					quam diam, efficitur sit amet
+																					pulvinar eget, consequat placerat
+																					arcu.</small>
+																			</div>
+																		</div>
+																	</div>
+																	<button type="button"
+																		class="btn btn-primary mt-5">Save
+																		Changes</button>
+																</form>
+															</div>
+															<div class="tab-pane fade" id="tab_block_4">
+																<div class="title-lg fs-4"><span>Login & Security</span>
+																</div>
+																<p class="mb-4">The Avatar component is used to
+																	represent a user, and displays the profile picture,
+																	initials or fallback icon.</p>
+																<form>
+																	<div
+																		class="title title-xs title-wth-divider text-primary text-uppercase my-4">
+																		<span>Password Settings</span></div>
+																	<div class="row gx-3">
+																		<div class="col-sm-12">
+																			<div class="form-group">
+																				<label
+																					class="form-label">Password</label>
+																				<input class="form-control"
+																					type="password" value="Katervewe">
+																				<button type="button"
+																					class="btn btn-primary mt-3">Changes
+																					password</button>
+																			</div>
+																		</div>
+																	</div>
+																	<div
+																		class="title title-xs title-wth-divider text-primary text-uppercase my-4">
+																		<span>Additional Security</span></div>
+																	<div class="row gx-3">
+																		<div class="col-sm-12">
+																			<div class="form-group">
+																				<label class="form-label ">2-Step
+																					Verification (2FA)</label>
+																				<small
+																					class="form-text text-muted d-block">
+																					2-step verification drastically
+																					reduces the chances of having the
+																					personal information in your Google
+																					account stolen by someone else. Why?
+																					Because hackers would have to not
+																					only get your password and your
+																					username, they'd have to get a hold
+																					of your phone. A <a href="#"
+																						class="text-primary">6-digit</a>
+																					code may be sent to a number you’ve
+																					previously provided. Codes can be
+																					sent in a text message (SMS) or
+																					through a voice call, which depends
+																					on the setting you chose. To verify
+																					it’s you, enter the code on the
+																					sign-in screen.
+																				</small>
+																				<button type="button"
+																					class="btn btn-primary mt-3">Add
+																					Authentication</button>
+																			</div>
+																		</div>
+																	</div>
+																</form>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Search -->
+				<div class="modal fade" id="search_modal" tabindex="-1" role="dialog">
+					<div class="modal-dialog mt-xl-20 w-xl-400p" role="document">
+						<div class="modal-content overflow-visible bg-transparent">
+							<div class="modal-body p-0">
+								<!-- Search -->
+								<form class="dropdown navbar-search navbar-search-alt">
+									<div class="dropdown-toggle no-caret w-100" data-bs-toggle="dropdown"
+										data-bs-auto-close="outside">
+										<div class="input-group">
+											<span class="input-affix-wrapper input-search affix-border">
+												<input type="text" class="form-control form-control-lg"
+													data-navbar-search-close="false" placeholder="Search..."
+													aria-label="Search">
+												<span class="input-suffix"><span>/</span>
+													<span class="btn-input-clear"><i
+															class="bi bi-x-circle-fill"></i></span>
+													<span
+														class="spinner-border spinner-border-sm input-loader text-primary"
+														role="status">
+														<span class="sr-only">Loading...</span>
+													</span>
+												</span>
+											</span>
+										</div>
+									</div>
+									<div class="dropdown-menu p-0 w-xl-400p w-100">
+										<div data-simplebar class="dropdown-body p-2">
+											<h6 class="dropdown-header">Recent Search
+											</h6>
+											<div class="dropdown-item bg-transparent">
+												<a href="#" class="badge badge-pill badge-soft-secondary">Grunt</a>
+												<a href="#" class="badge badge-pill badge-soft-secondary">Node JS</a>
+												<a href="#" class="badge badge-pill badge-soft-secondary">SCSS</a>
+											</div>
+											<div class="dropdown-divider"></div>
+											<h6 class="dropdown-header">Help
+											</h6>
+											<a href="javascript:void(0);" class="dropdown-item">
+												<div class="media align-items-center">
+													<div class="media-head me-2">
+														<div
+															class="avatar avatar-icon avatar-xs avatar-soft-light avatar-rounded">
+															<span class="initial-wrap">
+																<span class="svg-icon">
+																	<svg xmlns="http://www.w3.org/2000/svg"
+																		class="icon icon-tabler icon-tabler-corner-down-right"
+																		width="24" height="24" viewBox="0 0 24 24"
+																		stroke-width="2" stroke="currentColor"
+																		fill="none" stroke-linecap="round"
+																		stroke-linejoin="round">
+																		<path stroke="none" d="M0 0h24v24H0z"
+																			fill="none"></path>
+																		<path
+																			d="M6 6v6a3 3 0 0 0 3 3h10l-4 -4m0 8l4 -4">
+																		</path>
+																	</svg>
+																</span>
+															</span>
+														</div>
+													</div>
+													<div class="media-body">
+														How to setup theme?
+													</div>
+												</div>
+											</a>
+											<a href="javascript:void(0);" class="dropdown-item">
+												<div class="media align-items-center">
+													<div class="media-head me-2">
+														<div
+															class="avatar avatar-icon avatar-xs avatar-soft-light avatar-rounded">
+															<span class="initial-wrap">
+																<span class="svg-icon">
+																	<svg xmlns="http://www.w3.org/2000/svg"
+																		class="icon icon-tabler icon-tabler-corner-down-right"
+																		width="24" height="24" viewBox="0 0 24 24"
+																		stroke-width="2" stroke="currentColor"
+																		fill="none" stroke-linecap="round"
+																		stroke-linejoin="round">
+																		<path stroke="none" d="M0 0h24v24H0z"
+																			fill="none"></path>
+																		<path
+																			d="M6 6v6a3 3 0 0 0 3 3h10l-4 -4m0 8l4 -4">
+																		</path>
+																	</svg>
+																</span>
+															</span>
+														</div>
+													</div>
+													<div class="media-body">
+														View detail documentation
+													</div>
+												</div>
+											</a>
+											<div class="dropdown-divider"></div>
+											<h6 class="dropdown-header">Users
+											</h6>
+											<a href="javascript:void(0);" class="dropdown-item">
+												<div class="media align-items-center">
+													<div class="media-head me-2">
+														<div class="avatar avatar-xs avatar-rounded">
+															<img src="dist/img/avatar3.jpg" alt="user"
+																class="avatar-img">
+														</div>
+													</div>
+													<div class="media-body">
+														Sarah Jone
+													</div>
+												</div>
+											</a>
+											<a href="javascript:void(0);" class="dropdown-item">
+												<div class="media align-items-center">
+													<div class="media-head me-2">
+														<div
+															class="avatar avatar-xs avatar-soft-primary avatar-rounded">
+															<span class="initial-wrap">J</span>
+														</div>
+													</div>
+													<div class="media-body">
+														Joe Jackson
+													</div>
+												</div>
+											</a>
+											<a href="javascript:void(0);" class="dropdown-item">
+												<div class="media align-items-center">
+													<div class="media-head me-2">
+														<div class="avatar avatar-xs avatar-rounded">
+															<img src="dist/img/avatar4.jpg" alt="user"
+																class="avatar-img">
+														</div>
+													</div>
+													<div class="media-body">
+														Maria Richard
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="dropdown-footer d-xl-flex d-none"><a href="#"><u>Search all</u></a>
+										</div>
+									</div>
+								</form>
+								<!-- /Search -->
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /Search -->
+			</div>
+			<!-- /Page Body -->
+
+		</div>
+		<!-- /Main Content -->
+	</div>
+	<!-- /Wrapper -->
+
+	<!-- jQuery -->
+	<script src="vendors/jquery/dist/jquery.min.js"></script>
+
+	<!-- Bootstrap Core JS -->
+	<script src="vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+	<!-- FeatherIcons JS -->
+	<script src="dist/js/feather.min.js"></script>
+
+	<!-- Fancy Dropdown JS -->
+	<script src="dist/js/dropdown-bootstrap-extended.js"></script>
+
+	<!-- Simplebar JS -->
+	<script src="vendors/simplebar/dist/simplebar.min.js"></script>
+
+	<!-- twitter JS -->
+	<script src="dist/js/twitterFetcher.js"></script>
+	<script src="dist/js/widgets-data.js"></script>
+
+	<!-- Owl JS -->
+	<script src="vendors/owl.carousel/dist/owl.carousel.min.js"></script>
+	<script src="dist/js/owl-data.js"></script>
+
+	<!-- Init JS -->
+	<script src="dist/js/init.js"></script>
+	<script src="dist/js/chips-init.js"></script>
+</body>
+
+</html>

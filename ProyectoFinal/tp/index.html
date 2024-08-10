@@ -1,0 +1,1711 @@
+<!DOCTYPE html>
+<!-- 
+Zapped
+Author: Hencework
+Contact: contact@hencework.com
+-->
+<html lang="en">
+
+<head>
+	<!-- Meta Tags -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Zapped | Project management Dashboard Template</title>
+	<meta name="description"
+		content="Project management Dashboard Template with reusable and flexible components for your SaaS web applications by hencework. Based on Bootstrap.">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+	<!-- Daterangepicker CSS -->
+	<link href="vendors/daterangepicker/daterangepicker.css" rel="stylesheet" type="text/css">
+
+	<!-- Data Table CSS -->
+	<link href="vendors/datatables.net-bs5/css/dataTables.bootstrap5.min.css" rel="stylesheet" type="text/css">
+	<link href="vendors/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css" rel="stylesheet"
+		type="text/css">
+
+	<!-- CSS -->
+	<link href="dist/css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<!-- Wrapper -->
+	<div class="hk-wrapper" data-layout="twocolumn" data-menu="light" data-footer="simple" data-hover="active"
+		data-submenu="active">
+		<!-- Vertical Nav -->
+		<div class="hk-menu">
+			<div class="main-menu">
+				<!-- Brand -->
+				<div class="menu-header">
+					<a class="navbar-brand" href="index.html">
+						<img class="brand-img img-fluid" src="dist/img/colabpro.png" alt="brand">
+					</a>
+				</div>
+				<!-- /Brand -->
+
+				<!-- Main Menu -->
+				<div data-simplebar class="nicescroll-bar">
+					<div class="menu-content-wrap">
+						<div class="menu-group">
+							<ul class="navbar-nav flex-column">
+								<li class="nav-item active">
+									<a class="nav-link" href="javascript:void(0);" data-bs-toggle="tooltip"
+										data-bs-placement="right" title="" data-bs-original-title="Overview"
+										data-bs-trigger="hover" data-target="#submenu_1">
+										<span class="nav-icon-wrap">
+											<span class="svg-icon"><svg xmlns="http://www.w3.org/2000/svg"
+													class="icon icon-tabler icon-tabler-chart-dots-2" width="24"
+													height="24" viewBox="0 0 24 24" stroke-width="2"
+													stroke="currentColor" fill="none" stroke-linecap="round"
+													stroke-linejoin="round">
+													<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+													<path d="M3 3v18h18"></path>
+													<circle cx="9" cy="15" r="2"></circle>
+													<circle cx="13" cy="5" r="2"></circle>
+													<circle cx="18" cy="12" r="2"></circle>
+													<path d="M21 3l-6 1.5"></path>
+													<path d="M14.113 6.65l2.771 3.695"></path>
+													<path d="M16 12.5l-5 2"></path>
+												</svg></span>
+										</span>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="projects-board.html" data-bs-toggle="tooltip"
+										data-bs-placement="right" title="" data-bs-original-title="All Projects"
+										data-bs-trigger="hover">
+										<span class="nav-icon-wrap"><span class="svg-icon"><svg
+													xmlns="http://www.w3.org/2000/svg"
+													class="icon icon-tabler icon-tabler-apps" width="24" height="24"
+													viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+													fill="none" stroke-linecap="round" stroke-linejoin="round">
+													<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+													<rect x="4" y="4" width="6" height="6" rx="1"></rect>
+													<rect x="4" y="14" width="6" height="6" rx="1"></rect>
+													<rect x="14" y="14" width="6" height="6" rx="1"></rect>
+													<line x1="14" y1="7" x2="20" y2="7"></line>
+													<line x1="17" y1="4" x2="17" y2="10"></line>
+												</svg></span></span>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="kanban-board.html" data-bs-toggle="tooltip"
+										data-bs-placement="right" title="" data-bs-original-title="Kanban Board"
+										data-bs-trigger="hover">
+										<span class="nav-icon-wrap"><span class="svg-icon"><svg
+													xmlns="http://www.w3.org/2000/svg"
+													class="icon icon-tabler icon-tabler-layout-kanban" width="24"
+													height="24" viewBox="0 0 24 24" stroke-width="2"
+													stroke="currentColor" fill="none" stroke-linecap="round"
+													stroke-linejoin="round">
+													<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+													<line x1="4" y1="4" x2="10" y2="4"></line>
+													<line x1="14" y1="4" x2="20" y2="4"></line>
+													<rect x="4" y="8" width="6" height="12" rx="2"></rect>
+													<rect x="14" y="8" width="6" height="6" rx="2"></rect>
+												</svg></span></span>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="taskboard.html" data-bs-toggle="tooltip"
+										data-bs-placement="right" title="" data-bs-original-title="Taskboard"
+										data-bs-trigger="hover">
+										<span class="nav-icon-wrap"><span class="svg-icon"><svg
+													xmlns="http://www.w3.org/2000/svg"
+													class="icon icon-tabler icon-tabler-checklist" width="24"
+													height="24" viewBox="0 0 24 24" stroke-width="2"
+													stroke="currentColor" fill="none" stroke-linecap="round"
+													stroke-linejoin="round">
+													<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+													<path
+														d="M9.615 20h-2.615a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v8">
+													</path>
+													<path d="M14 19l2 2l4 -4"></path>
+													<path d="M9 8h4"></path>
+													<path d="M9 12h2"></path>
+												</svg></span></span>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="chats.html" data-bs-toggle="tooltip"
+										data-bs-placement="right" title="" data-bs-original-title="Chat"
+										data-bs-trigger="hover">
+										<span class="nav-icon-wrap"><span class="svg-icon"><svg
+													xmlns="http://www.w3.org/2000/svg"
+													class="icon icon-tabler icon-tabler-message" width="24" height="24"
+													viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+													fill="none" stroke-linecap="round" stroke-linejoin="round">
+													<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+													<path
+														d="M4 21v-13a3 3 0 0 1 3 -3h10a3 3 0 0 1 3 3v6a3 3 0 0 1 -3 3h-9l-4 4">
+													</path>
+													<line x1="8" y1="9" x2="16" y2="9"></line>
+													<line x1="8" y1="13" x2="14" y2="13"></line>
+												</svg></span></span>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="pages.html" data-bs-toggle="tooltip"
+										data-bs-placement="right" title="" data-bs-original-title="Pages"
+										data-bs-trigger="hover">
+										<span class="nav-icon-wrap"><span class="svg-icon"><svg
+													xmlns="http://www.w3.org/2000/svg"
+													class="icon icon-tabler icon-tabler-files" width="24" height="24"
+													viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+													fill="none" stroke-linecap="round" stroke-linejoin="round">
+													<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+													<path d="M15 3v4a1 1 0 0 0 1 1h4"></path>
+													<path
+														d="M18 17h-7a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h4l5 5v7a2 2 0 0 1 -2 2z">
+													</path>
+													<path
+														d="M16 17v2a2 2 0 0 1 -2 2h-7a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h2">
+													</path>
+												</svg></span></span>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="../documentation/index.html" data-bs-toggle="tooltip"
+										data-bs-placement="right" title="" data-bs-original-title="Components"
+										data-bs-trigger="hover">
+										<span class="nav-icon-wrap"><span class="svg-icon"><svg
+													xmlns="http://www.w3.org/2000/svg"
+													class="icon icon-tabler icon-tabler-circle-letter-c" width="24"
+													height="24" viewBox="0 0 24 24" stroke-width="2"
+													stroke="currentColor" fill="none" stroke-linecap="round"
+													stroke-linejoin="round">
+													<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+													<circle cx="12" cy="12" r="9"></circle>
+													<path d="M14 10a2 2 0 1 0 -4 0v4a2 2 0 1 0 4 0"></path>
+												</svg></span></span>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="../documentation/grid-system.html"
+										data-bs-toggle="tooltip" data-bs-placement="right" title=""
+										data-bs-original-title="Documentation" data-bs-trigger="hover">
+										<span class="nav-icon-wrap"><span class="svg-icon"><svg
+													xmlns="http://www.w3.org/2000/svg"
+													class="icon icon-tabler icon-tabler-book-2" width="24" height="24"
+													viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+													fill="none" stroke-linecap="round" stroke-linejoin="round">
+													<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+													<path d="M19 4v16h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12z">
+													</path>
+													<path d="M19 16h-12a2 2 0 0 0 -2 2"></path>
+													<path d="M9 8h6"></path>
+												</svg></span></span>
+									</a>
+								</li>
+							</ul>
+							<ul class="navbar-nav flex-column d-lg-none">
+								<li class="nav-item">
+									<a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#search_modal">
+										<span class="nav-icon-wrap"><span class="svg-icon"><svg
+													xmlns="http://www.w3.org/2000/svg"
+													class="icon icon-tabler icon-tabler-search" width="24" height="24"
+													viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+													fill="none" stroke-linecap="round" stroke-linejoin="round">
+													<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+													<circle cx="10" cy="10" r="7"></circle>
+													<line x1="21" y1="21" x2="15" y2="15"></line>
+												</svg></span></span>
+									</a>
+								</li>
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle no-caret" href="javascript:void(0);"
+										data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										<span class="nav-icon-wrap"><span class="svg-icon"><svg
+													xmlns="http://www.w3.org/2000/svg"
+													class="icon icon-tabler icon-tabler-settings" width="24" height="24"
+													viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+													fill="none" stroke-linecap="round" stroke-linejoin="round">
+													<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+													<path
+														d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z">
+													</path>
+													<circle cx="12" cy="12" r="3"></circle>
+												</svg></span></span>
+									</a>
+									<div class="dropdown-menu position-fixed">
+										<h6 class="dropdown-header">Dropdown header</h6>
+										<a class="dropdown-item" href="#">Regular link</a>
+										<a class="dropdown-item active" href="#">Active link</a>
+										<a class="dropdown-item" href="#">Disabled link</a>
+										<span class="dropdown-item-text">Dropdown item text</span>
+										<a class="dropdown-item" href="#">Something else here</a>
+										<div class="dropdown-divider"></div>
+										<a class="dropdown-item" href="#">Separated link</a>
+									</div>
+								</li>
+								<li class="nav-item nav-link">
+									<a href="javascript:void(0)"
+										class="d-block mx-auto avatar avatar-sm avatar-rounded dropdown-toggle  no-caret"
+										data-bs-toggle="dropdown">
+										<img src="dist/img/avatar9.jpg" alt="user" class="avatar-img">
+									</a>
+									<div class="dropdown-menu dropdown-menu-right w-250p position-fixed">
+										<h6 class="dropdown-header">Switch account</h6>
+										<div class="dropdown-item py-2 rounded-3">
+											<div class="media align-items-center active-user">
+												<div class="media-head me-2">
+													<div class="avatar avatar-xs avatar-rounded">
+														<img src="dist/img/avatar12.jpg" alt="user" class="avatar-img">
+													</div>
+												</div>
+												<div class="media-body mw-175p">
+													<a href="#" class="d-block name">Zapped Team <i
+															class="ri-checkbox-circle-fill fs-7 text-primary"></i></a>
+													<a href="#"
+														class="d-block fs-7 link-secondary text-truncate">contact@hencework.com</a>
+												</div>
+											</div>
+										</div>
+										<div class="dropdown-item py-2 rounded-3">
+											<div class="media align-items-center">
+												<div class="media-head me-2">
+													<div class="avatar avatar-xs avatar-primary avatar-rounded">
+														<span class="initial-wrap">HK</span>
+													</div>
+												</div>
+												<div class="media-body mw-175p">
+													<a href="#" class="d-flex align-items-center name">Hencework </a>
+													<a href="#"
+														class="d-block fs-7 link-secondary text-truncate">hencework@hencework.com</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- /Main Menu -->
+
+				<!--Bottom Nav-->
+				<div class="bottom-nav d-lg-block d-none">
+					<div class="menu-content-wrap">
+						<div class="menu-group">
+							<ul class="navbar-nav flex-column">
+								<li class="nav-item">
+									<div class="dropup dropdown-notifications">
+										<a class="nav-link dropdown-toggle  no-caret" href="#"
+											data-bs-toggle="dropdown">
+											<span class="nav-icon-wrap position-relative"><span class="svg-icon"><svg
+														xmlns="http://www.w3.org/2000/svg"
+														class="icon icon-tabler icon-tabler-bell" width="24" height="24"
+														viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+														fill="none" stroke-linecap="round" stroke-linejoin="round">
+														<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+														<path
+															d="M10 5a2 2 0 0 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6">
+														</path>
+														<path d="M9 17v1a3 3 0 0 0 6 0v-1"></path>
+													</svg></span><span
+													class="badge badge-success badge-indicator position-top-end-overflow-1"></span></span>
+										</a>
+
+										<div class="dropdown-menu dropdown-menu-end w-350p p-0">
+											<h6 class="dropdown-header px-4 fs-6">Notifications<a href="#"
+													class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"><span
+														class="icon"><span class="feather-icon"><i
+																data-feather="settings"></i></span></span></a>
+											</h6>
+											<div data-simplebar class="dropdown-body  p-2">
+												<a href="javascript:void(0);" class="dropdown-item">
+													<div class="media">
+														<div class="media-head">
+															<div class="avatar avatar-rounded avatar-sm">
+																<img src="dist/img/avatar2.jpg" alt="user"
+																	class="avatar-img">
+															</div>
+														</div>
+														<div class="media-body">
+															<div>
+																<div class="notifications-text">Morgan Freeman accepted
+																	your invitation to join the team</div>
+																<div class="notifications-info">
+																	<span
+																		class="badge badge-soft-success">Collaboration</span>
+																	<div class="notifications-time">Today, 10:14 PM
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</a>
+												<a href="javascript:void(0);" class="dropdown-item">
+													<div class="media">
+														<div class="media-head">
+															<div
+																class="avatar  avatar-icon avatar-sm avatar-success avatar-rounded">
+																<span class="initial-wrap">
+																	<span class="feather-icon"><i
+																			data-feather="inbox"></i></span>
+																</span>
+															</div>
+														</div>
+														<div class="media-body">
+															<div>
+																<div class="notifications-text">New message received
+																	from Alan Rickman</div>
+																<div class="notifications-info">
+																	<div class="notifications-time">Today, 7:51 AM</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</a>
+												<a href="javascript:void(0);" class="dropdown-item">
+													<div class="media">
+														<div class="media-head">
+															<div
+																class="avatar  avatar-icon avatar-sm avatar-pink avatar-rounded">
+																<span class="initial-wrap">
+																	<span class="feather-icon"><i
+																			data-feather="clock"></i></span>
+																</span>
+															</div>
+														</div>
+														<div class="media-body">
+															<div>
+																<div class="notifications-text">You have a follow up
+																	with zapped Head on Friday, Dec 19 at 9:30 am</div>
+																<div class="notifications-info">
+																	<div class="notifications-time">Yesterday, 9:25 PM
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</a>
+												<a href="javascript:void(0);" class="dropdown-item">
+													<div class="media">
+														<div class="media-head">
+															<div class="avatar avatar-sm avatar-rounded">
+																<img src="dist/img/avatar3.jpg" alt="user"
+																	class="avatar-img">
+															</div>
+														</div>
+														<div class="media-body">
+															<div>
+																<div class="notifications-text">Application of Sarah
+																	Williams is waiting for your approval</div>
+																<div class="notifications-info">
+																	<div class="notifications-time">Today 10:14 PM</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</a>
+												<a href="javascript:void(0);" class="dropdown-item">
+													<div class="media">
+														<div class="media-head">
+															<div class="avatar avatar-sm avatar-rounded">
+																<img src="dist/img/avatar10.jpg" alt="user"
+																	class="avatar-img">
+															</div>
+														</div>
+														<div class="media-body">
+															<div>
+																<div class="notifications-text">Winston Churchil shared
+																	a document with you</div>
+																<div class="notifications-info">
+																	<span class="badge badge-soft-violet">File
+																		Manager</span>
+																	<div class="notifications-time">2 Oct, 2021</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</a>
+												<a href="javascript:void(0);" class="dropdown-item">
+													<div class="media">
+														<div class="media-head">
+															<div
+																class="avatar  avatar-icon avatar-sm avatar-danger avatar-rounded">
+																<span class="initial-wrap">
+																	<span class="feather-icon"><i
+																			data-feather="calendar"></i></span>
+																</span>
+															</div>
+														</div>
+														<div class="media-body">
+															<div>
+																<div class="notifications-text">Last 2 days left for the
+																	project to be completed</div>
+																<div class="notifications-info">
+																	<span class="badge badge-soft-orange">Updates</span>
+																	<div class="notifications-time">14 Sep, 2021</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</a>
+											</div>
+											<div class="dropdown-footer"><a href="#"><u>View all notifications</u></a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#search_modal">
+										<span class="nav-icon-wrap"><span class="svg-icon"><svg
+													xmlns="http://www.w3.org/2000/svg"
+													class="icon icon-tabler icon-tabler-search" width="24" height="24"
+													viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+													fill="none" stroke-linecap="round" stroke-linejoin="round">
+													<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+													<circle cx="10" cy="10" r="7"></circle>
+													<line x1="21" y1="21" x2="15" y2="15"></line>
+												</svg></span></span>
+									</a>
+								</li>
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle no-caret" href="javascript:void(0);"
+										data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										<span class="nav-icon-wrap"><span class="svg-icon"><svg
+													xmlns="http://www.w3.org/2000/svg"
+													class="icon icon-tabler icon-tabler-settings" width="24" height="24"
+													viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+													fill="none" stroke-linecap="round" stroke-linejoin="round">
+													<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+													<path
+														d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z">
+													</path>
+													<circle cx="12" cy="12" r="3"></circle>
+												</svg></span></span>
+									</a>
+									<div class="dropdown-menu">
+										<h6 class="dropdown-header">Dropdown header</h6>
+										<a class="dropdown-item" href="#">Regular link</a>
+										<a class="dropdown-item active" href="#">Active link</a>
+										<a class="dropdown-item" href="#">Disabled link</a>
+										<span class="dropdown-item-text">Dropdown item text</span>
+										<a class="dropdown-item" href="#">Something else here</a>
+										<div class="dropdown-divider"></div>
+										<a class="dropdown-item" href="#">Separated link</a>
+									</div>
+								</li>
+								<li class="nav-item nav-link">
+									<a href="javascript:void(0)"
+										class="d-block mx-auto avatar avatar-sm avatar-rounded dropdown-toggle  no-caret"
+										data-bs-toggle="dropdown">
+										<img src="dist/img/avatar9.jpg" alt="user" class="avatar-img">
+									</a>
+									<div class="dropdown-menu dropdown-menu-right w-250p">
+										<h6 class="dropdown-header">Switch account</h6>
+										<div class="dropdown-item py-2 rounded-3">
+											<div class="media align-items-center active-user">
+												<div class="media-head me-2">
+													<div class="avatar avatar-xs avatar-rounded">
+														<img src="dist/img/avatar12.jpg" alt="user" class="avatar-img">
+													</div>
+												</div>
+												<div class="media-body mw-175p">
+													<a href="#" class="d-block name">Zapped Team <i
+															class="ri-checkbox-circle-fill fs-7 text-primary"></i></a>
+													<a href="#"
+														class="d-block fs-7 link-secondary text-truncate">contact@hencework.com</a>
+												</div>
+											</div>
+										</div>
+										<div class="dropdown-item py-2 rounded-3">
+											<div class="media align-items-center">
+												<div class="media-head me-2">
+													<div class="avatar avatar-xs avatar-primary avatar-rounded">
+														<span class="initial-wrap">HK</span>
+													</div>
+												</div>
+												<div class="media-body mw-175p">
+													<a href="#" class="d-flex align-items-center name">Hencework </a>
+													<a href="#"
+														class="d-block fs-7 link-secondary text-truncate">hencework@hencework.com</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!--/Bottom Nav-->
+			</div>
+			<div class="sub-menu">
+				<!-- Brand -->
+				<div class="menu-header">
+					<a class="navbar-brand" href="index.html">
+						<img class="brand-img img-fluid" src="dist/img/colabpro.png" alt="brand">
+					</a>
+				</div>
+				<!-- /Brand -->
+
+				<!-- Main Menu -->
+				<div data-simplebar class="nicescroll-bar">
+					<ul id="submenu_1" class="nav subnav-list flex-column d-flex">
+						<li class="nav-item">
+							<div class="menu-content-wrap">
+								<div class="menu-group">
+									<div class="nav-header header-wth-search">
+										<div class="d-flex justify-content-between align-items-center">
+											<div class="d-flex align-items-center">
+												<div class="avatar avatar-icon avatar-xxs avatar-soft-pink me-2">
+													<span class="initial-wrap"><span class="feather-icon"><i
+																data-feather="briefcase"></i></span>
+													</span>
+												</div>
+												<span class="fs-6 text-dark fw-medium">Project Manager</span>
+											</div>
+											<a href="#"
+												class="btn btn-icon btn-rounded btn-flush-dark flush-soft-hover btn-search-toggle">
+												<span class="icon">
+													<span class="svg-icon">
+														<svg xmlns="http://www.w3.org/2000/svg"
+															class="icon icon-tabler icon-tabler-search" width="24"
+															height="24" viewBox="0 0 24 24" stroke-width="2"
+															stroke="currentColor" fill="none" stroke-linecap="round"
+															stroke-linejoin="round">
+															<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+															<circle cx="10" cy="10" r="7"></circle>
+															<line x1="21" y1="21" x2="15" y2="15"></line>
+														</svg>
+													</span>
+												</span>
+											</a>
+										</div>
+										<div class="input-group nav-search">
+											<span class="input-affix-wrapper input-search">
+												<span class="input-prefix ps-0 close-search text-dark">
+													<span class="svg-icon">
+														<svg xmlns="http://www.w3.org/2000/svg"
+															class="icon icon-tabler icon-tabler-arrow-left" width="24"
+															height="24" viewBox="0 0 24 24" stroke-width="2"
+															stroke="currentColor" fill="none" stroke-linecap="round"
+															stroke-linejoin="round">
+															<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+															<line x1="5" y1="12" x2="19" y2="12"></line>
+															<line x1="5" y1="12" x2="11" y2="18"></line>
+															<line x1="5" y1="12" x2="11" y2="6"></line>
+														</svg>
+													</span>
+												</span>
+												<input type="text" class="form-control border-0 shadow-none"
+													placeholder="Search...">
+												<span class="input-suffix"><span class="btn-input-clear"><i
+															class="bi bi-x-circle-fill"></i></span>
+													<span
+														class="spinner-border spinner-border-sm input-loader text-primary"
+														role="status">
+														<span class="sr-only">Loading...</span>
+													</span>
+												</span>
+											</span>
+										</div>
+									</div>
+									<ul class="nav nav-light navbar-nav flex-column mb-3">
+										<li class="nav-item">
+											<div class="card card-shadow rounded-8">
+												<div class="d-flex justify-content-between p-3">
+													<div>
+														<span
+															class="d-block fs-8 fw-medium mb-1 text-uppercase">Pipeline
+															Value</span>
+														<h5 class="mb-0">$23,706</h5>
+													</div>
+													<span
+														class="badge bg-info badge-indicator badge-indicator-nobdr"></span>
+												</div>
+											</div>
+										</li>
+										<li class="nav-item">
+											<div class="card card-shadow rounded-8">
+												<div class="d-flex justify-content-between p-3">
+													<div>
+														<span class="d-block fs-8 fw-medium mb-1 text-uppercase">Total
+															Value</span>
+														<h5 class="mb-0">$100,000</h5>
+													</div>
+													<span
+														class="badge bg-primary badge-indicator badge-indicator-nobdr"></span>
+												</div>
+											</div>
+										</li>
+									</ul>
+									<ul class="nav nav-light navbar-nav flex-column">
+										<li class="nav-item active">
+											<a class="nav-link" href="index.html">
+												<span class="nav-icon-wrap"><span class="svg-icon"><svg
+															xmlns="http://www.w3.org/2000/svg"
+															class="icon icon-tabler icon-tabler-brand-google-analytics"
+															width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
+															stroke="currentColor" fill="none" stroke-linecap="round"
+															stroke-linejoin="round">
+															<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+															<rect x="10" y="9" width="4" height="12" rx="1.105"></rect>
+															<rect x="17" y="3" width="4" height="18" rx="1.105"></rect>
+															<circle cx="5" cy="19" r="2"></circle>
+														</svg></span></span>
+												<span class="nav-link-text">Dashboard</span>
+											</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="projects-board.html">
+												<span class="nav-icon-wrap"><span class="svg-icon"><svg
+															xmlns="http://www.w3.org/2000/svg"
+															class="icon icon-tabler icon-tabler-table" width="24"
+															height="24" viewBox="0 0 24 24" stroke-width="2"
+															stroke="currentColor" fill="none" stroke-linecap="round"
+															stroke-linejoin="round">
+															<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+															<rect x="4" y="4" width="16" height="16" rx="2"></rect>
+															<line x1="4" y1="10" x2="20" y2="10"></line>
+															<line x1="10" y1="4" x2="10" y2="20"></line>
+														</svg></span></span>
+												<span class="nav-link-text">Project Boards</span>
+											</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="kanban-board.html">
+												<span class="nav-icon-wrap"><span class="feather-icon"><svg
+															xmlns="http://www.w3.org/2000/svg"
+															class="icon icon-tabler icon-tabler-layout-columns"
+															width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
+															stroke="currentColor" fill="none" stroke-linecap="round"
+															stroke-linejoin="round">
+															<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+															<rect x="4" y="4" width="16" height="16" rx="2"></rect>
+															<line x1="12" y1="4" x2="12" y2="20"></line>
+														</svg></span></span>
+												<span class="nav-link-text">Kanban Board</span>
+											</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="taskboard.html">
+												<span class="nav-icon-wrap"><span class="svg-icon"><svg
+															xmlns="http://www.w3.org/2000/svg"
+															class="icon icon-tabler icon-tabler-list-check" width="24"
+															height="24" viewBox="0 0 24 24" stroke-width="2"
+															stroke="currentColor" fill="none" stroke-linecap="round"
+															stroke-linejoin="round">
+															<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+															<path d="M3.5 5.5l1.5 1.5l2.5 -2.5"></path>
+															<path d="M3.5 11.5l1.5 1.5l2.5 -2.5"></path>
+															<path d="M3.5 17.5l1.5 1.5l2.5 -2.5"></path>
+															<line x1="11" y1="6" x2="20" y2="6"></line>
+															<line x1="11" y1="12" x2="20" y2="12"></line>
+															<line x1="11" y1="18" x2="20" y2="18"></line>
+														</svg></span></span>
+												<span class="nav-link-text">Taskboard</span>
+											</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="projects-board.html">
+												<span class="nav-icon-wrap"><span class="svg-icon"><svg
+															xmlns="http://www.w3.org/2000/svg"
+															class="icon icon-tabler icon-tabler-brand-asana" width="24"
+															height="24" viewBox="0 0 24 24" stroke-width="2"
+															stroke="currentColor" fill="none" stroke-linecap="round"
+															stroke-linejoin="round">
+															<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+															<circle cx="12" cy="7" r="3"></circle>
+															<circle cx="17" cy="16" r="3"></circle>
+															<circle cx="7" cy="16" r="3"></circle>
+														</svg>
+													</span></span>
+												<span class="nav-link-text">Teams</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="alert alert-warning mt-5 rounded-8" role="alert">
+									<p class="fs-7">Your free board space is almost full. Upgrade to create more boards
+										and start collaborating.</p>
+									<button class="btn btn-xs btn-warning rounded-6 mt-3"><span><span class="icon"><span
+													class="feather-icon"><i
+														data-feather="upload-cloud"></i></span></span><span>Upgrade</span></span></button>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!-- /Main Menu -->
+
+				<!--Bottom Nav-->
+				<div class="bottom-nav">
+					<div class="menu-content-wrap">
+						<button class="btn btn-lg btn-custom btn-white text-primary btn-floating rounded-7"
+							data-bs-toggle="modal" data-bs-target="#add_new_board">
+							<span>
+								<span class="icon shadow-xl bg-white rounded-7">
+									<span class="svg-icon">
+										<svg xmlns="http://www.w3.org/2000/svg" class="icon-tabler icon-tabler-plus"
+											width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
+											stroke="currentColor" fill="none" stroke-linecap="round"
+											stroke-linejoin="round">
+											<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+											<line x1="12" y1="5" x2="12" y2="19"></line>
+											<line x1="5" y1="12" x2="19" y2="12"></line>
+										</svg>
+									</span>
+								</span>
+								<span class="fs-7">Add new board</span>
+							</span>
+						</button>
+					</div>
+				</div>
+				<!--/Bottom Nav-->
+			</div>
+			<div id="hk_menu_backdrop" class="hk-menu-backdrop"></div>
+		</div>
+		<!-- /Vertical Nav -->
+
+		<!-- Main Content -->
+		<div class="hk-pg-wrapper py-0">
+			<!-- Page Body -->
+			<div class="hk-pg-body py-0">
+				<div class="position-relative vh-100">
+					<div class="d-flex overflow-hidden position-relative h-100">
+						<div class="d-flex flex-grow-1 flex-column h-100">
+							<header class="hk-pg-header pg-header-wth-tab">
+								<div class="px-5">
+									<div class="d-flex align-items-center">
+										<button
+											class="btn btn-icon btn-rounded btn-flush-dark flush-soft-hover navbar-toggle me-2 d-xl-none"><span
+												class="icon"><span class="feather-icon"><i
+														data-feather="align-left"></i></span></span></button>
+										<div class="avatar avatar-icon avatar-sm  avatar-violet me-3">
+											<span class="initial-wrap rounded-8"><span class="feather-icon"><i
+														data-feather="bar-chart-2"></i></span></span>
+										</div>
+										<div class="d-flex flex-wrap justify-content-between flex-1">
+											<div>
+												<div class="pg-subtitle">
+													Analytics
+												</div>
+												<h5 class="pg-title fs-5">Welcome back</h5>
+											</div>
+											<div class="pg-header-action-wrap position-relative">
+												<div class="input-group w-300p d-md-flex d-none">
+													<span class="input-affix-wrapper">
+														<span class="input-prefix"><span class="feather-icon"><i
+																	data-feather="calendar"></i></span></span>
+														<input class="form-control form-wth-icon" name="datetimes"
+															value="Aug 18,2020 - Aug 19, 2020">
+													</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<ul class="nav nav-tabs nav-line nav-icon nav-light mt-3">
+										<li class="nav-item">
+											<a class="nav-link active" data-bs-toggle="tab" href="#tab_1">
+												<span class="nav-icon-wrap"><span class="svg-icon">
+														<svg xmlns="http://www.w3.org/2000/svg"
+															class="icon icon-tabler icon-tabler-chart-bar" width="24"
+															height="24" viewBox="0 0 24 24" stroke-width="2"
+															stroke="currentColor" fill="none" stroke-linecap="round"
+															stroke-linejoin="round">
+															<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+															<rect x="3" y="12" width="6" height="8" rx="1"></rect>
+															<rect x="9" y="8" width="6" height="12" rx="1"></rect>
+															<rect x="15" y="4" width="6" height="16" rx="1"></rect>
+															<line x1="4" y1="20" x2="18" y2="20"></line>
+														</svg>
+													</span></span>
+												<span class="nav-link-text">Overview</span>
+											</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" data-bs-toggle="tab" href="#">
+												<span class="nav-icon-wrap"><span class="svg-icon">
+														<svg xmlns="http://www.w3.org/2000/svg"
+															class="icon icon-tabler icon-tabler-chart-bubble" width="24"
+															height="24" viewBox="0 0 24 24" stroke-width="2"
+															stroke="currentColor" fill="none" stroke-linecap="round"
+															stroke-linejoin="round">
+															<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+															<circle cx="6" cy="16" r="3"></circle>
+															<circle cx="16" cy="19" r="2"></circle>
+															<circle cx="14.5" cy="7.5" r="4.5"></circle>
+														</svg>
+													</span></span>
+												<span class="nav-link-text">Analytics</span>
+											</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" data-bs-toggle="tab" href="#">
+												<span class="nav-icon-wrap"><span class="svg-icon">
+														<svg xmlns="http://www.w3.org/2000/svg"
+															class="icon icon-tabler icon-tabler-affiliate" width="24"
+															height="24" viewBox="0 0 24 24" stroke-width="2"
+															stroke="currentColor" fill="none" stroke-linecap="round"
+															stroke-linejoin="round">
+															<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+															<path d="M5.931 6.936l1.275 4.249m5.607 5.609l4.251 1.275">
+															</path>
+															<path d="M11.683 12.317l5.759 -5.759"></path>
+															<circle cx="5.5" cy="5.5" r="1.5"></circle>
+															<circle cx="18.5" cy="5.5" r="1.5"></circle>
+															<circle cx="18.5" cy="18.5" r="1.5"></circle>
+															<circle cx="8.5" cy="15.5" r="4.5"></circle>
+														</svg>
+													</span></span>
+												<span class="nav-link-text">Operations</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</header>
+							<div class="d-flex flex-1 overflow-hidden">
+								<div data-simplebar class="nicescroll-bar" id="tab_1">
+									<div class="container-fluid px-5 pt-5">
+										<div class="d-flex justify-content-between align-items-center mb-5">
+											<h5 class="mb-0">Project Statictics</h5>
+											<div class="d-flex align-items-center">
+												<button class="btn btn-primary"><span><span class="icon"><span
+																class="feather-icon"><i
+																	data-feather="upload-cloud"></i></span></span><span>Export</span></span></button>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-lg-9 mb-4">
+												<div class="row">
+													<div class="col-xxl-12 mb-4">
+														<div class="card card-flush rounded-8 mb-0">
+															<div class="card-body">
+																<div class="row">
+																	<div class="col-lg-6 wdg-1">
+																		<div class="row gx-0">
+																			<div class="col-sm-6 p-0">
+																				<div
+																					class="p-sm-3  pb-4 border-end border-xl-0 border-bottom border-light">
+																					<h6>Finished Projects</h6>
+																					<div
+																						class="d-flex align-items-center">
+																						<span
+																							class="d-block fs-3 fw-medium text-dark mb-0">300</span>
+																						<span
+																							class="badge badge-sm badge-soft-success ms-1">
+																							<i
+																								class="bi bi-arrow-up"></i>
+																							7.5%
+																						</span>
+																					</div>
+																					<span>Projects</span>
+																				</div>
+																			</div>
+																			<div class="col-sm-6 p-0">
+																				<div
+																					class="p-sm-3  pb-4 border-bottom border-light">
+																					<h6>Pending Projects</h6>
+																					<div
+																						class="d-flex align-items-center">
+																						<span
+																							class="d-block fs-3 fw-medium text-dark mb-0">120</span>
+																						<span
+																							class="badge badge-sm badge-soft-danger ms-1">
+																							<i
+																								class="bi bi-arrow-down"></i>
+																							-3%
+																						</span>
+																					</div>
+																					<span>Projects</span>
+																				</div>
+																			</div>
+																			<div class="col-sm-6 p-0">
+																				<div
+																					class="p-sm-3  pb-4 border-end border-light">
+																					<h6>Paid Projects</h6>
+																					<div
+																						class="d-flex align-items-center">
+																						<span
+																							class="d-block fs-3 fw-medium text-dark mb-0">105</span>
+																						<span
+																							class="badge badge-sm badge-soft-danger ms-1">
+																							<i
+																								class="bi bi-arrow-down"></i>
+																							-5%
+																						</span>
+																					</div>
+																					<span>Projects</span>
+																				</div>
+																			</div>
+																			<div class="col-sm-6 p-0">
+																				<div class="p-sm-3  pb-4">
+																					<h6>Unpaid Projects</h6>
+																					<div
+																						class="d-flex align-items-center">
+																						<span
+																							class="d-block fs-3 fw-medium text-dark mb-0">142</span>
+																						<span
+																							class="badge badge-sm badge-soft-success ms-1">
+																							<i
+																								class="bi bi-arrow-up"></i>
+																							9%
+																						</span>
+																					</div>
+																					<span>Projects</span>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="col-lg-6">
+																		<div
+																			class="d-flex align-items-center justify-content-between pt-3">
+																			<h6>Overview</h6>
+																			<div>
+																				<div class="d-inline-block">
+																					<span class="badge-status">
+																						<span
+																							class="badge bg-primary badge-indicator badge-indicator-nobdr"></span>
+																						<span
+																							class="badge-label">Direct</span>
+																					</span>
+																				</div>
+																				<div class="d-inline-block ms-3">
+																					<span class="badge-status">
+																						<span
+																							class="badge bg-primary-light-2 badge-indicator badge-indicator-nobdr"></span>
+																						<span
+																							class="badge-label">Organic</span>
+																					</span>
+																				</div>
+																			</div>
+																		</div>
+																		<div id="column_chart_2"></div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+
+												<div class="row">
+													<div class="col-md-3 col-sm-6 mb-md-0 mb-4">
+														<div class="card card-flush rounded-8 mb-0 h-100">
+															<div class="card-body">
+																<h3>$2103</h3>
+																<span class="d-inline-flex">Budget <span
+																		class="text-opacity-25 text-light mx-1">●</span></span>
+																<span class="text-success">Increased +10%</span>
+															</div>
+														</div>
+													</div>
+													<div class="col-md-3 col-sm-6 mb-md-0 mb-4">
+														<div class="card card-flush rounded-8 mb-0 h-100">
+															<div class="card-body">
+																<h3>$1540</h3>
+																<span class="d-inline-flex">Planned <span
+																		class="text-opacity-25 text-light mx-1">●</span></span>
+																<span class="text-success">Deviated 5%</span>
+															</div>
+														</div>
+													</div>
+													<div class="col-md-3 col-sm-6">
+														<div class="card card-flush rounded-8 mb-0 h-100">
+															<div class="card-body">
+																<h3>$1000</h3>
+																<span class="d-inline-flex">Actual Loss <span
+																		class="text-opacity-25 text-light mx-1">●</span></span>
+																<span class="text-danger">-$2,143</span>
+															</div>
+														</div>
+													</div>
+													<div class="col-md-3 col-sm-6">
+														<div class="card card-flush rounded-8 mb-0 h-100">
+															<div class="card-body">
+																<h3>$8300</h3>
+																<span class="d-inline-flex">Cash Burn <span
+																		class="text-opacity-25 text-light mx-1">●</span></span>
+																<span class="text-danger">-$2,143</span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-3 mb-4">
+												<div class="card card-flush card-simple rounded-8 mb-0 h-100">
+													<div class="card-header card-header-action">
+														<h6>Project Statictics</h6>
+														<div class="card-action-wrap">
+															<div class="dropdown">
+																<a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover ms-1"
+																	href="#" data-bs-toggle="dropdown"><span
+																		class="icon"><span class="feather-icon"><i
+																				data-feather="more-vertical"></i></span></span></a>
+																<div role="menu" class="dropdown-menu">
+																	<a class="dropdown-item" href="#">Action</a>
+																	<a class="dropdown-item" href="#">Another action</a>
+																	<a class="dropdown-item" href="#">Something else
+																		here</a>
+																	<div class="dropdown-divider"></div>
+																	<a class="dropdown-item" href="#">Separated link</a>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="card-body">
+														<div class="d-flex">
+															<div class="me-2"><i
+																	class="zmdi zmdi-alert-circle-o fs-5 pt-1"></i>
+															</div>
+															<p class="fs-7 mb-2">You completed <span
+																	class="text-primary">5% more</span> project this
+																week then last week</p>
+														</div>
+
+														<div id="radial_chart_5"></div>
+														<div class="fs-6 text-center mt-2">Activity Logs</div>
+														<div class="px-xxl-3 px-2">
+															<div
+																class="d-flex justify-content-center text-center position-relative mt-5 mb-4">
+																<div>
+																	<div>Completed</div>
+																	<div class="fs-4 text-primary fw-medium">68%</div>
+																</div>
+																<div class="v-separator"></div>
+
+																<div>
+																	<div>Progress</div>
+																	<div class="fs-4 text-dark fw-medium">35%</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12 mb-md-4 mb-3">
+												<div class="card card-flush card-simple rounded-8 mb-0">
+													<div class="card-header card-header-action">
+														<h6>Clients
+															<span class="badge badge-sm badge-light ms-1">240</span>
+														</h6>
+														<div class="card-action-wrap">
+															<button class="btn btn-sm btn-outline-light"><span><span
+																		class="icon"><span class="feather-icon"><i
+																				data-feather="upload"></i></span></span><span
+																		class="btn-text">import</span></span></button>
+															<button class="btn btn-sm btn-primary ms-3"><span><span
+																		class="icon"><span class="feather-icon"><i
+																				data-feather="plus"></i></span></span><span
+																		class="btn-text">Add new</span></span></button>
+														</div>
+													</div>
+													<div class="card-body">
+														<div class="contact-list-view">
+															<table id="datable_1" class="table nowrap w-100 mb-5">
+																<thead>
+																	<tr>
+																		<th><span class="form-check fs-7 mb-0">
+																				<input type="checkbox"
+																					class="form-check-input check-select-all"
+																					id="customCheck1">
+																				<label class="form-check-label"
+																					for="customCheck1"></label>
+																			</span></th>
+																		<th>Name</th>
+																		<th class="w-15">Email</th>
+																		<th>Teams</th>
+																		<th>Performance</th>
+																		<th>Tags</th>
+																		<th></th>
+																	</tr>
+																</thead>
+																<tbody>
+																	<tr>
+																		<td></td>
+																		<td>
+																			<div class="text-high-em">Phonepay</div>
+																			<div class="fs-7"><a href="#"
+																					class="table-link-text link-medium-em">phonepay.com</a>
+																			</div>
+																		</td>
+																		<td class="text-truncate">morgan@Zapped.com</td>
+																		<td>
+																			<div
+																				class="avatar-group avatar-group-sm avatar-group-overlapped">
+																				<div class="avatar avatar-rounded"
+																					data-bs-toggle="tooltip"
+																					data-bs-placement="top" title=""
+																					data-bs-original-title="Dean">
+																					<img src="dist/img/avatar1.jpg"
+																						alt="user" class="avatar-img">
+																				</div>
+																				<div class="avatar avatar-rounded"
+																					data-bs-toggle="tooltip"
+																					data-bs-placement="top" title=""
+																					data-bs-original-title="Deo">
+																					<img src="dist/img/avatar2.jpg"
+																						alt="user" class="avatar-img">
+																				</div>
+																				<div class="avatar avatar-rounded"
+																					data-bs-toggle="tooltip"
+																					data-bs-placement="top" title=""
+																					data-bs-original-title="Andy">
+																					<img src="dist/img/avatar3.jpg"
+																						alt="user" class="avatar-img">
+																				</div>
+																				<div class="avatar avatar-xs avatar-soft-danger avatar-rounded"
+																					data-bs-toggle="tooltip"
+																					data-bs-placement="top" title=""
+																					data-bs-original-title="Tom">
+																					<span class="initial-wrap">B</span>
+																				</div>
+																			</div>
+																		</td>
+																		<td>
+																			<div id="sparkline_chart_1"></div>
+																		</td>
+																		<td>
+																			<span
+																				class="badge badge-soft-primary  my-1  me-2">admin</span>
+																			<span
+																				class="badge badge-soft-danger my-1  me-2">Finance</span>
+																		</td>
+																		<td>
+																			<div class="d-flex align-items-center">
+																				<a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+																					data-bs-toggle="tooltip"
+																					data-placement="top" title=""
+																					data-bs-original-title="Edit"
+																					href="#"><span class="icon"><span
+																							class="feather-icon"><i
+																								data-feather="edit-2"></i></span></span></a>
+																				<a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover del-button"
+																					data-bs-toggle="tooltip"
+																					data-placement="top" title=""
+																					data-bs-original-title="Delete"
+																					href="#"><span class="icon"><span
+																							class="feather-icon"><i
+																								data-feather="trash"></i></span></span></a>
+																			</div>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td>
+																		</td>
+																		<td>
+																			<div class="text-high-em">Swiggy</div>
+																			<div class="fs-7"><a href="#"
+																					class="table-link-text link-medium-em">swiggy.com</a>
+																			</div>
+																		</td>
+																		<td class="text-truncate">huma@clariesup.au</td>
+																		<td>
+																			<div
+																				class="avatar-group avatar-group-sm avatar-group-overlapped">
+																				<div class="avatar avatar-rounded"
+																					data-bs-toggle="tooltip"
+																					data-bs-placement="top" title=""
+																					data-bs-original-title="Dean">
+																					<img src="dist/img/avatar13.jpg"
+																						alt="user" class="avatar-img">
+																				</div>
+																				<div class="avatar avatar-xs avatar-soft-danger avatar-rounded"
+																					data-bs-toggle="tooltip"
+																					data-bs-placement="top" title=""
+																					data-bs-original-title="Bob">
+																					<span class="initial-wrap">B</span>
+																				</div>
+																			</div>
+																		</td>
+																		<td>
+																			<div id="sparkline_chart_2"></div>
+																		</td>
+																		<td>
+																			<span
+																				class="badge badge-soft-success my-1  me-2">customer
+																				data</span>
+																			<span
+																				class="badge badge-soft-primary  my-1  me-2">admin</span>
+																			<span
+																				class="badge badge-soft-info my-1  me-2">+4</span>
+																		</td>
+																		<td>
+																			<div class="d-flex align-items-center">
+																				<a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+																					data-bs-toggle="tooltip"
+																					data-placement="top" title=""
+																					data-bs-original-title="Edit"
+																					href="#"><span class="icon"><span
+																							class="feather-icon"><i
+																								data-feather="edit-2"></i></span></span></a>
+																				<a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover del-button"
+																					data-bs-toggle="tooltip"
+																					data-placement="top" title=""
+																					data-bs-original-title="Delete"
+																					href="#"><span class="icon"><span
+																							class="feather-icon"><i
+																								data-feather="trash"></i></span></span></a>
+																			</div>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td>
+																		</td>
+																		<td>
+																			<div class="text-high-em">Coursera</div>
+																			<div class="fs-7"><a href="#"
+																					class="table-link-text link-medium-em">coursera.com</a>
+																			</div>
+																		</td>
+																		<td class="text-truncate">
+																			charlie@leernoca.monster</td>
+																		<td>
+																			<div
+																				class="avatar-group avatar-group-sm avatar-group-overlapped">
+																				<div class="avatar avatar-rounded"
+																					data-bs-toggle="tooltip"
+																					data-bs-placement="top" title=""
+																					data-bs-original-title="Dean">
+																					<img src="dist/img/avatar13.jpg"
+																						alt="user" class="avatar-img">
+																				</div>
+																				<div class="avatar avatar-rounded"
+																					data-bs-toggle="tooltip"
+																					data-bs-placement="top" title=""
+																					data-bs-original-title="Jack">
+																					<img src="dist/img/avatar12.jpg"
+																						alt="user" class="avatar-img">
+																				</div>
+																				<div class="avatar avatar-rounded"
+																					data-bs-toggle="tooltip"
+																					data-bs-placement="top" title=""
+																					data-bs-original-title="Bob">
+																					<img src="dist/img/avatar10.jpg"
+																						alt="user" class="avatar-img">
+																				</div>
+																				<div class="avatar avatar-rounded"
+																					data-bs-toggle="tooltip"
+																					data-bs-placement="top" title=""
+																					data-bs-original-title="Dan">
+																					<img src="dist/img/avatar9.jpg"
+																						alt="user" class="avatar-img">
+																				</div>
+																			</div>
+																		</td>
+																		<td>
+																			<div id="sparkline_chart_3"></div>
+																		</td>
+																		<td>
+																			<span
+																				class="badge badge-soft-danger my-1  me-2">education</span>
+																			<span
+																				class="badge badge-soft-primary  my-1  me-2">admin</span>
+																			<span
+																				class="badge badge-soft-info my-1  me-2">+3</span>
+																		</td>
+																		<td>
+																			<div class="d-flex align-items-center">
+																				<a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+																					data-bs-toggle="tooltip"
+																					data-placement="top" title=""
+																					data-bs-original-title="Edit"
+																					href="#"><span class="icon"><span
+																							class="feather-icon"><i
+																								data-feather="edit-2"></i></span></span></a>
+																				<a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover del-button"
+																					data-bs-toggle="tooltip"
+																					data-placement="top" title=""
+																					data-bs-original-title="Delete"
+																					href="#"><span class="icon"><span
+																							class="feather-icon"><i
+																								data-feather="trash"></i></span></span></a>
+																			</div>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td>
+																		</td>
+																		<td>
+																			<div class="text-high-em">Tinder</div>
+																			<div class="fs-7"><a href="#"
+																					class="table-link-text link-medium-em">tinder.com</a>
+																			</div>
+																		</td>
+																		<td class="text-truncate">winston@worthniza.ga
+																		</td>
+																		<td>
+																			<div
+																				class="avatar-group avatar-group-sm avatar-group-overlapped">
+																				<div class="avatar avatar-rounded"
+																					data-bs-toggle="tooltip"
+																					data-bs-placement="top" title=""
+																					data-bs-original-title="Dean">
+																					<img src="dist/img/avatar6.jpg"
+																						alt="user" class="avatar-img">
+																				</div>
+																				<div class="avatar avatar-xs avatar-soft-primary avatar-rounded"
+																					data-bs-toggle="tooltip"
+																					data-bs-placement="top" title=""
+																					data-bs-original-title="Tom">
+																					<span class="initial-wrap">C</span>
+																				</div>
+																			</div>
+																		</td>
+																		<td>
+																			<div id="sparkline_chart_4"></div>
+																		</td>
+																		<td>
+																			<span
+																				class="badge badge-soft-danger my-1  me-2">Social</span>
+																		</td>
+																		<td>
+																			<div class="d-flex align-items-center">
+																				<a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+																					data-bs-toggle="tooltip"
+																					data-placement="top" title=""
+																					data-bs-original-title="Edit"
+																					href="#"><span class="icon"><span
+																							class="feather-icon"><i
+																								data-feather="edit-2"></i></span></span></a>
+																				<a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover del-button"
+																					data-bs-toggle="tooltip"
+																					data-placement="top" title=""
+																					data-bs-original-title="Delete"
+																					href="#"><span class="icon"><span
+																							class="feather-icon"><i
+																								data-feather="trash"></i></span></span></a>
+																			</div>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td>
+																		</td>
+																		<td>
+																			<div class="text-high-em">PCD</div>
+																			<div class="fs-7"><a href="#"
+																					class="table-link-text link-medium-em">pcdeals.com</a>
+																			</div>
+																		</td>
+																		<td class="text-truncate">jaquljoker@Zapped.com
+																		</td>
+																		<td>
+																			<div
+																				class="avatar-group avatar-group-sm avatar-group-overlapped">
+																				<div class="avatar avatar-rounded"
+																					data-bs-toggle="tooltip"
+																					data-bs-placement="top" title=""
+																					data-bs-original-title="Dean">
+																					<img src="dist/img/avatar4.jpg"
+																						alt="user" class="avatar-img">
+																				</div>
+																				<div class="avatar avatar-rounded"
+																					data-bs-toggle="tooltip"
+																					data-bs-placement="top" title=""
+																					data-bs-original-title="Danial">
+																					<img src="dist/img/avatar5.jpg"
+																						alt="user" class="avatar-img">
+																				</div>
+																				<div class="avatar avatar-xs avatar-soft-violet avatar-rounded"
+																					data-bs-toggle="tooltip"
+																					data-bs-placement="top" title=""
+																					data-bs-original-title="Sam">
+																					<span class="initial-wrap">S</span>
+																				</div>
+
+																			</div>
+																		</td>
+																		<td>
+																			<div id="sparkline_chart_5"></div>
+																		</td>
+																		<td>
+																			<span
+																				class="badge badge-soft-danger my-1  me-2">Portal</span>
+																			<span
+																				class="badge badge-soft-primary  my-1  me-2">admin</span>
+																			<span
+																				class="badge badge-soft-info my-1  me-2">+3</span>
+																		</td>
+																		<td>
+																			<div class="d-flex align-items-center">
+																				<a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+																					data-bs-toggle="tooltip"
+																					data-placement="top" title=""
+																					data-bs-original-title="Edit"
+																					href="#"><span class="icon"><span
+																							class="feather-icon"><i
+																								data-feather="edit-2"></i></span></span></a>
+																				<a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover del-button"
+																					data-bs-toggle="tooltip"
+																					data-placement="top" title=""
+																					data-bs-original-title="Delete"
+																					href="#"><span class="icon"><span
+																							class="feather-icon"><i
+																								data-feather="trash"></i></span></span></a>
+																			</div>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td>
+																		</td>
+																		<td>
+																			<div class="text-high-em">Icons 8</div>
+																			<div class="fs-7"><a href="#"
+																					class="table-link-text link-medium-em">icons8.com</a>
+																			</div>
+																		</td>
+																		<td class="text-truncate">tomcz@Zapped.com</td>
+																		<td>
+																			<div
+																				class="avatar-group avatar-group-sm avatar-group-overlapped">
+																				<div class="avatar avatar-rounded"
+																					data-bs-toggle="tooltip"
+																					data-bs-placement="top" title=""
+																					data-bs-original-title="Dean">
+																					<img src="dist/img/avatar13.jpg"
+																						alt="user" class="avatar-img">
+																				</div>
+																				<div class="avatar avatar-xs avatar-soft-danger avatar-rounded"
+																					data-bs-toggle="tooltip"
+																					data-bs-placement="top" title=""
+																					data-bs-original-title="Bob">
+																					<span class="initial-wrap">B</span>
+																				</div>
+																				<div class="avatar avatar-rounded"
+																					data-bs-toggle="tooltip"
+																					data-bs-placement="top" title=""
+																					data-bs-original-title="Danial">
+																					<img src="dist/img/avatar2.jpg"
+																						alt="user" class="avatar-img">
+																				</div>
+																			</div>
+																		</td>
+																		<td>
+																			<div id="sparkline_chart_6"></div>
+																		</td>
+																		<td>
+																			<span
+																				class="badge badge-soft-success my-1  me-2">Library</span>
+																			<span
+																				class="badge badge-soft-warning  my-1  me-2">Asset</span>
+																		</td>
+																		<td>
+																			<div class="d-flex align-items-center">
+																				<a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+																					data-bs-toggle="tooltip"
+																					data-placement="top" title=""
+																					data-bs-original-title="Edit"
+																					href="#"><span class="icon"><span
+																							class="feather-icon"><i
+																								data-feather="edit-2"></i></span></span></a>
+																				<a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover del-button"
+																					data-bs-toggle="tooltip"
+																					data-placement="top" title=""
+																					data-bs-original-title="Delete"
+																					href="#"><span class="icon"><span
+																							class="feather-icon"><i
+																								data-feather="trash"></i></span></span></a>
+																			</div>
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Search -->
+				<div class="modal fade" id="search_modal" tabindex="-1" role="dialog">
+					<div class="modal-dialog mt-xl-20 w-xl-400p" role="document">
+						<div class="modal-content overflow-visible bg-transparent">
+							<div class="modal-body p-0">
+								<!-- Search -->
+								<form class="dropdown navbar-search navbar-search-alt">
+									<div class="dropdown-toggle no-caret w-100" data-bs-toggle="dropdown"
+										data-bs-auto-close="outside">
+										<div class="input-group">
+											<span class="input-affix-wrapper input-search affix-border">
+												<input type="text" class="form-control form-control-lg"
+													data-navbar-search-close="false" placeholder="Search..."
+													aria-label="Search">
+												<span class="input-suffix"><span>/</span>
+													<span class="btn-input-clear"><i
+															class="bi bi-x-circle-fill"></i></span>
+													<span
+														class="spinner-border spinner-border-sm input-loader text-primary"
+														role="status">
+														<span class="sr-only">Loading...</span>
+													</span>
+												</span>
+											</span>
+										</div>
+									</div>
+									<div class="dropdown-menu p-0 w-xl-400p w-100">
+										<div data-simplebar class="dropdown-body p-2">
+											<h6 class="dropdown-header">Recent Search
+											</h6>
+											<div class="dropdown-item bg-transparent">
+												<a href="#" class="badge badge-pill badge-soft-secondary">Grunt</a>
+												<a href="#" class="badge badge-pill badge-soft-secondary">Node JS</a>
+												<a href="#" class="badge badge-pill badge-soft-secondary">SCSS</a>
+											</div>
+											<div class="dropdown-divider"></div>
+											<h6 class="dropdown-header">Help
+											</h6>
+											<a href="javascript:void(0);" class="dropdown-item">
+												<div class="media align-items-center">
+													<div class="media-head me-2">
+														<div
+															class="avatar avatar-icon avatar-xs avatar-soft-light avatar-rounded">
+															<span class="initial-wrap">
+																<span class="svg-icon">
+																	<svg xmlns="http://www.w3.org/2000/svg"
+																		class="icon icon-tabler icon-tabler-corner-down-right"
+																		width="24" height="24" viewBox="0 0 24 24"
+																		stroke-width="2" stroke="currentColor"
+																		fill="none" stroke-linecap="round"
+																		stroke-linejoin="round">
+																		<path stroke="none" d="M0 0h24v24H0z"
+																			fill="none"></path>
+																		<path
+																			d="M6 6v6a3 3 0 0 0 3 3h10l-4 -4m0 8l4 -4">
+																		</path>
+																	</svg>
+																</span>
+															</span>
+														</div>
+													</div>
+													<div class="media-body">
+														How to setup theme?
+													</div>
+												</div>
+											</a>
+											<a href="javascript:void(0);" class="dropdown-item">
+												<div class="media align-items-center">
+													<div class="media-head me-2">
+														<div
+															class="avatar avatar-icon avatar-xs avatar-soft-light avatar-rounded">
+															<span class="initial-wrap">
+																<span class="svg-icon">
+																	<svg xmlns="http://www.w3.org/2000/svg"
+																		class="icon icon-tabler icon-tabler-corner-down-right"
+																		width="24" height="24" viewBox="0 0 24 24"
+																		stroke-width="2" stroke="currentColor"
+																		fill="none" stroke-linecap="round"
+																		stroke-linejoin="round">
+																		<path stroke="none" d="M0 0h24v24H0z"
+																			fill="none"></path>
+																		<path
+																			d="M6 6v6a3 3 0 0 0 3 3h10l-4 -4m0 8l4 -4">
+																		</path>
+																	</svg>
+																</span>
+															</span>
+														</div>
+													</div>
+													<div class="media-body">
+														View detail documentation
+													</div>
+												</div>
+											</a>
+											<div class="dropdown-divider"></div>
+											<h6 class="dropdown-header">Users
+											</h6>
+											<a href="javascript:void(0);" class="dropdown-item">
+												<div class="media align-items-center">
+													<div class="media-head me-2">
+														<div class="avatar avatar-xs avatar-rounded">
+															<img src="dist/img/avatar3.jpg" alt="user"
+																class="avatar-img">
+														</div>
+													</div>
+													<div class="media-body">
+														Sarah Jone
+													</div>
+												</div>
+											</a>
+											<a href="javascript:void(0);" class="dropdown-item">
+												<div class="media align-items-center">
+													<div class="media-head me-2">
+														<div
+															class="avatar avatar-xs avatar-soft-primary avatar-rounded">
+															<span class="initial-wrap">J</span>
+														</div>
+													</div>
+													<div class="media-body">
+														Joe Jackson
+													</div>
+												</div>
+											</a>
+											<a href="javascript:void(0);" class="dropdown-item">
+												<div class="media align-items-center">
+													<div class="media-head me-2">
+														<div class="avatar avatar-xs avatar-rounded">
+															<img src="dist/img/avatar4.jpg" alt="user"
+																class="avatar-img">
+														</div>
+													</div>
+													<div class="media-body">
+														Maria Richard
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="dropdown-footer d-xl-flex d-none"><a href="#"><u>Search all</u></a>
+										</div>
+									</div>
+								</form>
+								<!-- /Search -->
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /Search -->
+			</div>
+			<!-- /Page Body -->
+		</div>
+		<!-- /Main Content -->
+	</div>
+	<!-- /Wrapper -->
+
+	<!-- jQuery -->
+	<script src="vendors/jquery/dist/jquery.min.js"></script>
+
+	<!-- Bootstrap Core JS -->
+	<script src="vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+	<!-- FeatherIcons JS -->
+	<script src="dist/js/feather.min.js"></script>
+
+	<!-- Fancy Dropdown JS -->
+	<script src="dist/js/dropdown-bootstrap-extended.js"></script>
+
+	<!-- Simplebar JS -->
+	<script src="vendors/simplebar/dist/simplebar.min.js"></script>
+
+	<!-- Daterangepicker JS -->
+	<script src="vendors/moment/min/moment.min.js"></script>
+	<script src="vendors/daterangepicker/daterangepicker.js"></script>
+	<script src="dist/js/daterangepicker-data.js"></script>
+
+	<!-- Data Table JS -->
+	<script src="vendors/datatables.net/js/jquery.dataTables.min.js"></script>
+	<script src="vendors/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
+	<script src="vendors/datatables.net-select/js/dataTables.select.min.js"></script>
+
+	<!-- Apex JS -->
+	<script src="vendors/apexcharts/dist/apexcharts.min.js"></script>
+
+	<!-- Init JS -->
+	<script src="dist/js/init.js"></script>
+	<script src="dist/js/chips-init.js"></script>
+	<script src="dist/js/dashboard-data.js"></script>
+</body>
+
+</html>

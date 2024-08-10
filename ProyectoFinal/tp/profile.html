@@ -1,0 +1,1627 @@
+<!DOCTYPE html>
+<!-- 
+ColabPro
+Author: Hencework
+Contact: contact@hencework.com
+-->
+<html lang="en">
+
+<head>
+	<!-- Meta Tags -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Profile | ColabPro - Project management Dashboard Template</title>
+	<meta name="description"
+		content="Project management Dashboard Template with reusable and flexible components for your SaaS web applications by hencework. Based on Bootstrap.">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+	<!-- CSS -->
+	<link href="dist/css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<!-- Wrapper -->
+	<div class="hk-wrapper" data-layout="twocolumn" data-menu="light" data-footer="simple" data-hover="active">
+		<!-- Vertical Nav -->
+		<div class="hk-menu">
+			<div class="main-menu">
+				<!-- Brand -->
+				<div class="menu-header">
+					<a class="navbar-brand" href="index.html">
+						<img class="brand-img img-fluid" src="dist/img/colabpro.png" alt="brand">
+					</a>
+				</div>
+				<!-- /Brand -->
+
+				<!-- Main Menu -->
+				<div data-simplebar class="nicescroll-bar">
+					<div class="menu-content-wrap">
+						<div class="menu-group">
+							<ul class="navbar-nav flex-column">
+								<li class="nav-item">
+									<a class="nav-link" href="index.html" data-bs-toggle="tooltip"
+										data-bs-placement="right" title="" data-bs-original-title="Overview"
+										data-bs-trigger="hover">
+										<span class="nav-icon-wrap">
+											<span class="svg-icon"><svg xmlns="http://www.w3.org/2000/svg"
+													class="icon icon-tabler icon-tabler-chart-dots-2" width="24"
+													height="24" viewBox="0 0 24 24" stroke-width="2"
+													stroke="currentColor" fill="none" stroke-linecap="round"
+													stroke-linejoin="round">
+													<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+													<path d="M3 3v18h18"></path>
+													<circle cx="9" cy="15" r="2"></circle>
+													<circle cx="13" cy="5" r="2"></circle>
+													<circle cx="18" cy="12" r="2"></circle>
+													<path d="M21 3l-6 1.5"></path>
+													<path d="M14.113 6.65l2.771 3.695"></path>
+													<path d="M16 12.5l-5 2"></path>
+												</svg></span>
+										</span>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="projects-board.html" data-bs-toggle="tooltip"
+										data-bs-placement="right" title="" data-bs-original-title="All Projects"
+										data-bs-trigger="hover">
+										<span class="nav-icon-wrap"><span class="svg-icon"><svg
+													xmlns="http://www.w3.org/2000/svg"
+													class="icon icon-tabler icon-tabler-apps" width="24" height="24"
+													viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+													fill="none" stroke-linecap="round" stroke-linejoin="round">
+													<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+													<rect x="4" y="4" width="6" height="6" rx="1"></rect>
+													<rect x="4" y="14" width="6" height="6" rx="1"></rect>
+													<rect x="14" y="14" width="6" height="6" rx="1"></rect>
+													<line x1="14" y1="7" x2="20" y2="7"></line>
+													<line x1="17" y1="4" x2="17" y2="10"></line>
+												</svg></span></span>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="kanban-board.html" data-bs-toggle="tooltip"
+										data-bs-placement="right" title="" data-bs-original-title="Kanban Board"
+										data-bs-trigger="hover">
+										<span class="nav-icon-wrap"><span class="svg-icon"><svg
+													xmlns="http://www.w3.org/2000/svg"
+													class="icon icon-tabler icon-tabler-layout-kanban" width="24"
+													height="24" viewBox="0 0 24 24" stroke-width="2"
+													stroke="currentColor" fill="none" stroke-linecap="round"
+													stroke-linejoin="round">
+													<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+													<line x1="4" y1="4" x2="10" y2="4"></line>
+													<line x1="14" y1="4" x2="20" y2="4"></line>
+													<rect x="4" y="8" width="6" height="12" rx="2"></rect>
+													<rect x="14" y="8" width="6" height="6" rx="2"></rect>
+												</svg></span></span>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="taskboard.html" data-bs-toggle="tooltip"
+										data-bs-placement="right" title="" data-bs-original-title="Taskboard"
+										data-bs-trigger="hover">
+										<span class="nav-icon-wrap"><span class="svg-icon"><svg
+													xmlns="http://www.w3.org/2000/svg"
+													class="icon icon-tabler icon-tabler-checklist" width="24"
+													height="24" viewBox="0 0 24 24" stroke-width="2"
+													stroke="currentColor" fill="none" stroke-linecap="round"
+													stroke-linejoin="round">
+													<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+													<path
+														d="M9.615 20h-2.615a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v8">
+													</path>
+													<path d="M14 19l2 2l4 -4"></path>
+													<path d="M9 8h4"></path>
+													<path d="M9 12h2"></path>
+												</svg></span></span>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="chats.html" data-bs-toggle="tooltip"
+										data-bs-placement="right" title="" data-bs-original-title="Chat"
+										data-bs-trigger="hover">
+										<span class="nav-icon-wrap"><span class="svg-icon"><svg
+													xmlns="http://www.w3.org/2000/svg"
+													class="icon icon-tabler icon-tabler-message" width="24" height="24"
+													viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+													fill="none" stroke-linecap="round" stroke-linejoin="round">
+													<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+													<path
+														d="M4 21v-13a3 3 0 0 1 3 -3h10a3 3 0 0 1 3 3v6a3 3 0 0 1 -3 3h-9l-4 4">
+													</path>
+													<line x1="8" y1="9" x2="16" y2="9"></line>
+													<line x1="8" y1="13" x2="14" y2="13"></line>
+												</svg></span></span>
+									</a>
+								</li>
+								<li class="nav-item active">
+									<a class="nav-link" href="pages.html" data-bs-toggle="tooltip"
+										data-bs-placement="right" title="" data-bs-original-title="Pages"
+										data-bs-trigger="hover">
+										<span class="nav-icon-wrap"><span class="svg-icon"><svg
+													xmlns="http://www.w3.org/2000/svg"
+													class="icon icon-tabler icon-tabler-files" width="24" height="24"
+													viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+													fill="none" stroke-linecap="round" stroke-linejoin="round">
+													<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+													<path d="M15 3v4a1 1 0 0 0 1 1h4"></path>
+													<path
+														d="M18 17h-7a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h4l5 5v7a2 2 0 0 1 -2 2z">
+													</path>
+													<path
+														d="M16 17v2a2 2 0 0 1 -2 2h-7a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h2">
+													</path>
+												</svg></span></span>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="../documentation/grid-system.html"
+										data-bs-toggle="tooltip" data-bs-placement="right" title=""
+										data-bs-original-title="Components" data-bs-trigger="hover">
+										<span class="nav-icon-wrap"><span class="svg-icon"><svg
+													xmlns="http://www.w3.org/2000/svg"
+													class="icon icon-tabler icon-tabler-circle-letter-c" width="24"
+													height="24" viewBox="0 0 24 24" stroke-width="2"
+													stroke="currentColor" fill="none" stroke-linecap="round"
+													stroke-linejoin="round">
+													<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+													<circle cx="12" cy="12" r="9"></circle>
+													<path d="M14 10a2 2 0 1 0 -4 0v4a2 2 0 1 0 4 0"></path>
+												</svg></span></span>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="../documentation/index.html" data-bs-toggle="tooltip"
+										data-bs-placement="right" title="" data-bs-original-title="Documentation"
+										data-bs-trigger="hover">
+										<span class="nav-icon-wrap"><span class="svg-icon"><svg
+													xmlns="http://www.w3.org/2000/svg"
+													class="icon icon-tabler icon-tabler-book-2" width="24" height="24"
+													viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+													fill="none" stroke-linecap="round" stroke-linejoin="round">
+													<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+													<path d="M19 4v16h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12z">
+													</path>
+													<path d="M19 16h-12a2 2 0 0 0 -2 2"></path>
+													<path d="M9 8h6"></path>
+												</svg></span></span>
+									</a>
+								</li>
+							</ul>
+							<ul class="navbar-nav flex-column d-lg-none">
+								<li class="nav-item">
+									<a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#search_modal">
+										<span class="nav-icon-wrap"><span class="svg-icon"><svg
+													xmlns="http://www.w3.org/2000/svg"
+													class="icon icon-tabler icon-tabler-search" width="24" height="24"
+													viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+													fill="none" stroke-linecap="round" stroke-linejoin="round">
+													<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+													<circle cx="10" cy="10" r="7"></circle>
+													<line x1="21" y1="21" x2="15" y2="15"></line>
+												</svg></span></span>
+									</a>
+								</li>
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle no-caret" href="javascript:void(0);"
+										data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										<span class="nav-icon-wrap"><span class="svg-icon"><svg
+													xmlns="http://www.w3.org/2000/svg"
+													class="icon icon-tabler icon-tabler-settings" width="24" height="24"
+													viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+													fill="none" stroke-linecap="round" stroke-linejoin="round">
+													<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+													<path
+														d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z">
+													</path>
+													<circle cx="12" cy="12" r="3"></circle>
+												</svg></span></span>
+									</a>
+									<div class="dropdown-menu position-fixed">
+										<h6 class="dropdown-header">Dropdown header</h6>
+										<a class="dropdown-item" href="#">Regular link</a>
+										<a class="dropdown-item active" href="#">Active link</a>
+										<a class="dropdown-item" href="#">Disabled link</a>
+										<span class="dropdown-item-text">Dropdown item text</span>
+										<a class="dropdown-item" href="#">Something else here</a>
+										<div class="dropdown-divider"></div>
+										<a class="dropdown-item" href="#">Separated link</a>
+									</div>
+								</li>
+								<li class="nav-item nav-link">
+									<a href="javascript:void(0)"
+										class="d-block mx-auto avatar avatar-sm avatar-rounded dropdown-toggle  no-caret"
+										data-bs-toggle="dropdown">
+										<img src="dist/img/avatar9.jpg" alt="user" class="avatar-img">
+									</a>
+									<div class="dropdown-menu dropdown-menu-right w-250p position-fixed">
+										<h6 class="dropdown-header">Switch account</h6>
+										<div class="dropdown-item py-2 rounded-3">
+											<div class="media align-items-center active-user">
+												<div class="media-head me-2">
+													<div class="avatar avatar-xs avatar-rounded">
+														<img src="dist/img/avatar12.jpg" alt="user" class="avatar-img">
+													</div>
+												</div>
+												<div class="media-body mw-175p">
+													<a href="#" class="d-block name">ColabPro Team <i
+															class="ri-checkbox-circle-fill fs-7 text-primary"></i></a>
+													<a href="#"
+														class="d-block fs-7 link-secondary text-truncate">contact@hencework.com</a>
+												</div>
+											</div>
+										</div>
+										<div class="dropdown-item py-2 rounded-3">
+											<div class="media align-items-center">
+												<div class="media-head me-2">
+													<div class="avatar avatar-xs avatar-primary avatar-rounded">
+														<span class="initial-wrap">HK</span>
+													</div>
+												</div>
+												<div class="media-body mw-175p">
+													<a href="#" class="d-flex align-items-center name">Hencework </a>
+													<a href="#"
+														class="d-block fs-7 link-secondary text-truncate">hencework@hencework.com</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- /Main Menu -->
+
+				<!--Bottom Nav-->
+				<div class="bottom-nav d-lg-block d-none">
+					<div class="menu-content-wrap">
+						<div class="menu-group">
+							<ul class="navbar-nav flex-column">
+								<li class="nav-item">
+									<div class="dropup dropdown-notifications">
+										<a class="nav-link dropdown-toggle  no-caret" href="#"
+											data-bs-toggle="dropdown">
+											<span class="nav-icon-wrap position-relative"><span class="svg-icon"><svg
+														xmlns="http://www.w3.org/2000/svg"
+														class="icon icon-tabler icon-tabler-bell" width="24" height="24"
+														viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+														fill="none" stroke-linecap="round" stroke-linejoin="round">
+														<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+														<path
+															d="M10 5a2 2 0 0 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6">
+														</path>
+														<path d="M9 17v1a3 3 0 0 0 6 0v-1"></path>
+													</svg></span><span
+													class="badge badge-success badge-indicator position-top-end-overflow-1"></span></span>
+										</a>
+
+										<div class="dropdown-menu dropdown-menu-end w-350p p-0">
+											<h6 class="dropdown-header px-4 fs-6">Notifications<a href="#"
+													class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"><span
+														class="icon"><span class="feather-icon"><i
+																data-feather="settings"></i></span></span></a>
+											</h6>
+											<div data-simplebar class="dropdown-body  p-2">
+												<a href="javascript:void(0);" class="dropdown-item">
+													<div class="media">
+														<div class="media-head">
+															<div class="avatar avatar-rounded avatar-sm">
+																<img src="dist/img/avatar2.jpg" alt="user"
+																	class="avatar-img">
+															</div>
+														</div>
+														<div class="media-body">
+															<div>
+																<div class="notifications-text">Morgan Freeman accepted
+																	your invitation to join the team</div>
+																<div class="notifications-info">
+																	<span
+																		class="badge badge-soft-success">Collaboration</span>
+																	<div class="notifications-time">Today, 10:14 PM
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</a>
+												<a href="javascript:void(0);" class="dropdown-item">
+													<div class="media">
+														<div class="media-head">
+															<div
+																class="avatar  avatar-icon avatar-sm avatar-success avatar-rounded">
+																<span class="initial-wrap">
+																	<span class="feather-icon"><i
+																			data-feather="inbox"></i></span>
+																</span>
+															</div>
+														</div>
+														<div class="media-body">
+															<div>
+																<div class="notifications-text">New message received
+																	from Alan Rickman</div>
+																<div class="notifications-info">
+																	<div class="notifications-time">Today, 7:51 AM</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</a>
+												<a href="javascript:void(0);" class="dropdown-item">
+													<div class="media">
+														<div class="media-head">
+															<div
+																class="avatar  avatar-icon avatar-sm avatar-pink avatar-rounded">
+																<span class="initial-wrap">
+																	<span class="feather-icon"><i
+																			data-feather="clock"></i></span>
+																</span>
+															</div>
+														</div>
+														<div class="media-body">
+															<div>
+																<div class="notifications-text">You have a follow up
+																	with ColabPro Head on Friday, Dec 19 at 9:30 am
+																</div>
+																<div class="notifications-info">
+																	<div class="notifications-time">Yesterday, 9:25 PM
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</a>
+												<a href="javascript:void(0);" class="dropdown-item">
+													<div class="media">
+														<div class="media-head">
+															<div class="avatar avatar-sm avatar-rounded">
+																<img src="dist/img/avatar3.jpg" alt="user"
+																	class="avatar-img">
+															</div>
+														</div>
+														<div class="media-body">
+															<div>
+																<div class="notifications-text">Application of Sarah
+																	Williams is waiting for your approval</div>
+																<div class="notifications-info">
+																	<div class="notifications-time">Today 10:14 PM</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</a>
+												<a href="javascript:void(0);" class="dropdown-item">
+													<div class="media">
+														<div class="media-head">
+															<div class="avatar avatar-sm avatar-rounded">
+																<img src="dist/img/avatar10.jpg" alt="user"
+																	class="avatar-img">
+															</div>
+														</div>
+														<div class="media-body">
+															<div>
+																<div class="notifications-text">Winston Churchil shared
+																	a document with you</div>
+																<div class="notifications-info">
+																	<span class="badge badge-soft-violet">File
+																		Manager</span>
+																	<div class="notifications-time">2 Oct, 2021</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</a>
+												<a href="javascript:void(0);" class="dropdown-item">
+													<div class="media">
+														<div class="media-head">
+															<div
+																class="avatar  avatar-icon avatar-sm avatar-danger avatar-rounded">
+																<span class="initial-wrap">
+																	<span class="feather-icon"><i
+																			data-feather="calendar"></i></span>
+																</span>
+															</div>
+														</div>
+														<div class="media-body">
+															<div>
+																<div class="notifications-text">Last 2 days left for the
+																	project to be completed</div>
+																<div class="notifications-info">
+																	<span class="badge badge-soft-orange">Updates</span>
+																	<div class="notifications-time">14 Sep, 2021</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</a>
+											</div>
+											<div class="dropdown-footer"><a href="#"><u>View all notifications</u></a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#search_modal">
+										<span class="nav-icon-wrap"><span class="svg-icon"><svg
+													xmlns="http://www.w3.org/2000/svg"
+													class="icon icon-tabler icon-tabler-search" width="24" height="24"
+													viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+													fill="none" stroke-linecap="round" stroke-linejoin="round">
+													<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+													<circle cx="10" cy="10" r="7"></circle>
+													<line x1="21" y1="21" x2="15" y2="15"></line>
+												</svg></span></span>
+									</a>
+								</li>
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle no-caret" href="javascript:void(0);"
+										data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										<span class="nav-icon-wrap"><span class="svg-icon"><svg
+													xmlns="http://www.w3.org/2000/svg"
+													class="icon icon-tabler icon-tabler-settings" width="24" height="24"
+													viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+													fill="none" stroke-linecap="round" stroke-linejoin="round">
+													<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+													<path
+														d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z">
+													</path>
+													<circle cx="12" cy="12" r="3"></circle>
+												</svg></span></span>
+									</a>
+									<div class="dropdown-menu">
+										<h6 class="dropdown-header">Dropdown header</h6>
+										<a class="dropdown-item" href="#">Regular link</a>
+										<a class="dropdown-item active" href="#">Active link</a>
+										<a class="dropdown-item" href="#">Disabled link</a>
+										<span class="dropdown-item-text">Dropdown item text</span>
+										<a class="dropdown-item" href="#">Something else here</a>
+										<div class="dropdown-divider"></div>
+										<a class="dropdown-item" href="#">Separated link</a>
+									</div>
+								</li>
+								<li class="nav-item nav-link">
+									<a href="javascript:void(0)"
+										class="d-block mx-auto avatar avatar-sm avatar-rounded dropdown-toggle  no-caret"
+										data-bs-toggle="dropdown">
+										<img src="dist/img/avatar9.jpg" alt="user" class="avatar-img">
+									</a>
+									<div class="dropdown-menu dropdown-menu-right w-250p">
+										<h6 class="dropdown-header">Switch account</h6>
+										<div class="dropdown-item py-2 rounded-3">
+											<div class="media align-items-center active-user">
+												<div class="media-head me-2">
+													<div class="avatar avatar-xs avatar-rounded">
+														<img src="dist/img/avatar12.jpg" alt="user" class="avatar-img">
+													</div>
+												</div>
+												<div class="media-body mw-175p">
+													<a href="#" class="d-block name">ColabPro Team <i
+															class="ri-checkbox-circle-fill fs-7 text-primary"></i></a>
+													<a href="#"
+														class="d-block fs-7 link-secondary text-truncate">contact@hencework.com</a>
+												</div>
+											</div>
+										</div>
+										<div class="dropdown-item py-2 rounded-3">
+											<div class="media align-items-center">
+												<div class="media-head me-2">
+													<div class="avatar avatar-xs avatar-primary avatar-rounded">
+														<span class="initial-wrap">HK</span>
+													</div>
+												</div>
+												<div class="media-body mw-175p">
+													<a href="#" class="d-flex align-items-center name">Hencework </a>
+													<a href="#"
+														class="d-block fs-7 link-secondary text-truncate">hencework@hencework.com</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!--/Bottom Nav-->
+			</div>
+			<div id="hk_menu_backdrop" class="hk-menu-backdrop"></div>
+		</div>
+		<!-- /Vertical Nav -->
+
+		<!-- Main Content -->
+		<div class="hk-pg-wrapper py-0">
+			<!-- Page Body -->
+			<div class="hk-pg-body py-0">
+				<div class="position-relative vh-100">
+					<div class="d-flex overflow-hidden position-relative h-100">
+						<div class="d-flex flex-grow-1 flex-column h-100">
+							<header class="hk-pg-header">
+								<div class="px-5">
+									<div class="d-flex align-items-center">
+										<button
+											class="btn btn-icon btn-rounded btn-flush-dark flush-soft-hover navbar-toggle me-2 d-xl-none"><span
+												class="icon"><span class="feather-icon"><i
+														data-feather="align-left"></i></span></span></button>
+										<div class="avatar avatar-sm avatar-icon avatar-purple me-3">
+											<span class="initial-wrap rounded-8"><span class="svg-icon"><svg
+														xmlns="http://www.w3.org/2000/svg"
+														class="icon icon-tabler icon-tabler-user-check" width="24"
+														height="24" viewBox="0 0 24 24" stroke-width="2"
+														stroke="currentColor" fill="none" stroke-linecap="round"
+														stroke-linejoin="round">
+														<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+														<circle cx="9" cy="7" r="4"></circle>
+														<path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"></path>
+														<path d="M16 11l2 2l4 -4"></path>
+													</svg></span></span>
+										</div>
+										<div class="d-flex flex-wrap justify-content-between flex-1">
+											<div>
+												<h5 class="pg-title fs-5 mb-0">Profile Page</h5>
+											</div>
+										</div>
+									</div>
+								</div>
+							</header>
+							<div class="d-flex flex-1 overflow-hidden mt-5">
+								<div data-simplebar class="nicescroll-bar">
+									<div class="container-fluid px-5">
+										<div class="row justify-content-center">
+											<div class="col-xxl-8 col-md-10 col-sm-12">
+												<div class="profile-wrap mb-5">
+													<div class="profile-img-wrap">
+														<img class="img-fluid rounded-8" src="dist/img/profile-bg.jpg"
+															alt="Image Description">
+													</div>
+													<div class="profile-intro">
+														<div class="card card-flush mw-400p bg-transparent">
+															<div class="card-body">
+																<div
+																	class="avatar avatar-xxl avatar-rounded position-relative mb-2">
+																	<img src="dist/img/avatar3.jpg" alt="user"
+																		class="avatar-img border border-4 border-white">
+																	<span
+																		class="badge badge-indicator badge-success  badge-indicator-xl position-bottom-end-overflow-1 me-1"></span>
+																</div>
+																<h4>Kate Jones
+																	<i class="bi-check-circle-fill fs-6 text-blue"
+																		data-bs-toggle="tooltip" data-bs-placement="top"
+																		title=""
+																		data-bs-original-title="Top endorsed"></i>
+																</h4>
+																<p class="fw-medium">
+																	Venenatis tellus in metus vulputate
+																</p>
+																<ul class="list-inline fs-7 fw-medium mt-2 mb-0">
+																	<li
+																		class="list-inline-item d-sm-inline-block d-block mb-sm-0 mb-1 me-3">
+																		<i class="bi bi-briefcase me-1"></i>
+																		<a href="#">Co-Founder,</a>
+																		<a href="#">ColabPro</a>
+																	</li>
+
+																	<li
+																		class="list-inline-item d-sm-inline-block d-block mb-sm-0 mb-1 me-3">
+																		<i class="bi bi-geo-alt me-1"></i>
+																		<a href="#">San Francisco,</a>
+																		<a href="#">US</a>
+																	</li>
+																</ul>
+															</div>
+														</div>
+													</div>
+													<div class="row mt-4">
+														<div class="col-lg-4 mb-lg-0 mb-3">
+															<div
+																class="card card-flush card-simple rounded-8 mb-lg-4 mb-3">
+																<div class="card-header card-header-action">
+																	<div class="media align-items-center">
+																		<div class="media-head me-2">
+																			<div
+																				class="avatar avatar-sm avatar-rounded">
+																				<img src="dist/img/avatar3.jpg"
+																					alt="user" class="avatar-img">
+																			</div>
+																		</div>
+																		<div class="media-body">
+																			<div class="fw-medium text-dark">Kate Jones
+																			</div>
+																			<div class="fs-7">Business Manager</div>
+																		</div>
+																	</div>
+																	<div class="card-action-wrap">
+																		<a class="btn btn-icon btn-rounded btn-flush-dark flush-soft-hover dropdown-toggle no-caret"
+																			href="#" data-bs-toggle="dropdown"><span
+																				class="icon"><span
+																					class="feather-icon"><i
+																						data-feather="settings"></i></span></span></a>
+																		<div class="dropdown-menu dropdown-menu-end">
+																			<a class="dropdown-item" href="#">Action</a>
+																			<a class="dropdown-item" href="#">Another
+																				action</a>
+																			<a class="dropdown-item" href="#">Something
+																				else here</a>
+																			<div class="dropdown-divider"></div>
+																			<a class="dropdown-item" href="#">Separated
+																				link</a>
+																		</div>
+																	</div>
+																</div>
+																<div class="card-body">
+																	<div class="d-flex text-center">
+																		<div class="flex-1 border-end border-light">
+																			<div>
+																				<span
+																					class="d-block fs-4 text-dark mb-1">154</span>
+																				<span
+																					class="d-block text-capitalize fs-7">photos</span>
+																			</div>
+																		</div>
+																		<div class="flex-1 border-end border-light">
+																			<div>
+																				<span
+																					class="d-block fs-4 text-dark mb-1">65</span>
+																				<span
+																					class="d-block text-capitalize fs-7">followers</span>
+																			</div>
+																		</div>
+																		<div class="flex-1">
+																			<div>
+																				<span
+																					class="d-block fs-4 text-dark mb-1">433</span>
+																				<span
+																					class="d-block text-capitalize fs-7">views</span>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+
+																<ul class="list-group list-group-flush">
+																	<li class="list-group-item border-0"><span><i
+																				class="bi bi-calendar-check-fill text-disabled me-2"></i><span
+																				class="text-muted">Went
+																				to:</span></span><span class="ms-2">Oh,
+																			Canada</span></li>
+																	<li class="list-group-item border-0"><span><i
+																				class="bi bi-briefcase-fill text-disabled me-2"></i><span
+																				class="text-muted">Worked
+																				at:</span></span><span
+																			class="ms-2">Companey</span></li>
+																	<li class="list-group-item border-0"><span><i
+																				class="bi bi-house-door-fill text-disabled me-2"></i><span
+																				class="text-muted">Lives
+																				in:</span></span><span class="ms-2">San
+																			Francisco, CA</span></li>
+																	<li class="list-group-item border-0 rounded-8">
+																		<span><i
+																				class="bi bi-geo-alt-fill text-disabled me-2"></i><span
+																				class="text-muted">From:</span></span><span
+																			class="ms-2">Settle, WA</span>
+																	</li>
+																</ul>
+															</div>
+															<div
+																class="card card-flush card-simple rounded-8 mb-lg-4 mb-3">
+																<div class="card-header card-header-action">
+																	<h6>You know these people ?</h6>
+																	<div class="card-action-wrap">
+																		<a class="btn btn-icon btn-rounded btn-flush-dark flush-soft-hover dropdown-toggle no-caret"
+																			href="#" data-bs-toggle="dropdown"><span
+																				class="icon"><span
+																					class="feather-icon"><i
+																						data-feather="more-horizontal"></i></span></span></a>
+																		<div class="dropdown-menu dropdown-menu-end">
+																			<a class="dropdown-item" href="#">Action</a>
+																			<a class="dropdown-item" href="#">Another
+																				action</a>
+																			<a class="dropdown-item" href="#">Something
+																				else here</a>
+																			<div class="dropdown-divider"></div>
+																			<a class="dropdown-item" href="#">Separated
+																				link</a>
+																		</div>
+																	</div>
+																</div>
+																<ul class="list-group list-group-flush">
+																	<li class="list-group-item border-0">
+																		<div class="media align-items-center">
+																			<div class="media-head me-3">
+																				<div
+																					class="avatar avatar-sm avatar-rounded">
+																					<img src="dist/img/avatar8.jpg"
+																						alt="user" class="avatar-img">
+																				</div>
+																			</div>
+																			<div class="media-body">
+																				<span
+																					class="d-block text-capitalize">Evie
+																					Ono</span>
+																				<span
+																					class="d-block text-muted fs-7">Apple
+																					Inc</span>
+																			</div>
+																			<a class="btn btn-icon btn-rounded btn-sm btn-light"
+																				href="#"><span class="icon"><span
+																						class="feather-icon"><i
+																							data-feather="plus"></i></span></span></a>
+																		</div>
+																	</li>
+																	<li class="list-group-item border-0">
+																		<div class="media align-items-center">
+																			<div class="media-head me-3">
+																				<div
+																					class="avatar avatar-sm avatar-rounded">
+																					<img src="dist/img/avatar7.jpg"
+																						alt="user" class="avatar-img">
+																				</div>
+																			</div>
+																			<div class="media-body">
+																				<span
+																					class="d-block text-capitalize">Clay
+																					Masse</span>
+																				<span
+																					class="d-block text-muted fs-7">Hencework.com</span>
+																			</div>
+																			<a class="btn btn-icon btn-rounded btn-sm btn-light "
+																				href="#"><span class="icon"><span
+																						class="feather-icon"><i
+																							data-feather="plus"></i></span></span></a>
+																		</div>
+																	</li>
+																	<li class="list-group-item border-0">
+																		<div class="media align-items-center">
+																			<div class="media-head me-3">
+																				<div
+																					class="avatar avatar-sm avatar-rounded">
+																					<img src="dist/img/avatar5.jpg"
+																						alt="user" class="avatar-img">
+																				</div>
+																			</div>
+																			<div class="media-body">
+																				<span
+																					class="d-block text-capitalize">Madelyn
+																					Rascon</span>
+																				<span
+																					class="d-block text-muted fs-7">Godaddy.co.in</span>
+																			</div>
+																			<a class="btn btn-icon btn-rounded btn-sm btn-primary "
+																				href="#"><span class="icon"><span
+																						class="feather-icon"><i
+																							data-feather="check"></i></span></span></a>
+																		</div>
+																	</li>
+																	<li class="list-group-item border-0">
+																		<div class="media align-items-center">
+																			<div class="media-head me-3">
+																				<div
+																					class="avatar avatar-sm avatar-rounded">
+																					<img src="dist/img/avatar4.jpg"
+																						alt="user" class="avatar-img">
+																				</div>
+																			</div>
+																			<div class="media-body">
+																				<span
+																					class="d-block text-capitalize">Mitsoku
+																					Heid</span>
+																				<span
+																					class="d-block text-muted fs-7">Flipkart</span>
+																			</div>
+																			<a class="btn btn-icon btn-rounded btn-sm btn-primary"
+																				href="#"><span class="icon"><span
+																						class="feather-icon"><i
+																							data-feather="check"></i></span></span></a>
+																		</div>
+																	</li>
+																	<li class="list-group-item border-0">
+																		<div class="media align-items-center">
+																			<div class="media-head me-3">
+																				<div
+																					class="avatar avatar-sm avatar-rounded">
+																					<img src="dist/img/avatar3.jpg"
+																						alt="user" class="avatar-img">
+																				</div>
+																			</div>
+																			<div class="media-body">
+																				<span
+																					class="d-block text-capitalize">Eziquiel
+																					Merideth</span>
+																				<span
+																					class="d-block text-muted fs-7">Paypal</span>
+																			</div>
+																			<a class="btn btn-icon btn-rounded btn-sm btn-light"
+																				href="#"><span class="icon"><span
+																						class="feather-icon"><i
+																							data-feather="plus"></i></span></span></a>
+																		</div>
+																	</li>
+																	<li class="list-group-item border-0 rounded-8">
+																		<div class="media align-items-center">
+																			<div class="media-head me-3">
+																				<div
+																					class="avatar avatar-sm avatar-rounded">
+																					<img src="dist/img/avatar2.jpg"
+																						alt="user" class="avatar-img">
+																				</div>
+																			</div>
+																			<div class="media-body">
+																				<span
+																					class="d-block text-capitalize">Johnie
+																					Metoyer</span>
+																				<span
+																					class="d-block text-muted fs-7">Robocon</span>
+																			</div>
+																			<a class="btn btn-icon btn-rounded btn-sm btn-primary"
+																				href="#"><span class="icon"><span
+																						class="feather-icon"><i
+																							data-feather="check"></i></span></span></a>
+																		</div>
+																	</li>
+																</ul>
+															</div>
+															<div
+																class="card card-flush card-simple rounded-8 mb-lg-4 mb-3">
+																<div class="card-header card-header-action">
+																	<h6>Friends
+																		<span
+																			class="badge badge-sm badge-light me-1">212</span>
+																	</h6>
+																	<div class="card-action-wrap">
+																		<a href="#">View all</a>
+																	</div>
+																</div>
+																<div class="card-body">
+																	<div class="row gx-3 text-center">
+																		<div class="col-3 mb-3">
+																			<div class="mb-2">
+																				<img src="dist/img/avatar1.jpg"
+																					alt="user"
+																					class="img-fluid rounded">
+																			</div>
+																			<span
+																				class="d-block fs-7 text-truncate">Evie
+																				Ono</span>
+																		</div>
+																		<div class="col-3 mb-3">
+																			<div class="mb-2">
+																				<img src="dist/img/avatar2.jpg"
+																					alt="user"
+																					class="img-fluid rounded">
+																			</div>
+																			<span
+																				class="d-block fs-7 text-truncate">Clay
+																				Masse</span>
+																		</div>
+																		<div class="col-3 mb-3">
+																			<div class="mb-2">
+																				<img src="dist/img/avatar3.jpg"
+																					alt="user"
+																					class="img-fluid rounded">
+																			</div>
+																			<span
+																				class="d-block fs-7 text-truncate">Madelyn
+																				Rascon</span>
+																		</div>
+																		<div class="col-3 mb-3">
+																			<div class="mb-2">
+																				<img src="dist/img/avatar4.jpg"
+																					alt="user"
+																					class="img-fluid rounded">
+																			</div>
+																			<span
+																				class="d-block fs-7 text-truncate">Mitsoku
+																				Heid</span>
+																		</div>
+																		<div class="col-3 mb-3">
+																			<div class="mb-2">
+																				<img src="dist/img/avatar5.jpg"
+																					alt="user"
+																					class="img-fluid rounded">
+																			</div>
+																			<span
+																				class="d-block fs-7 text-truncate">Eziquiel
+																				Merideth</span>
+																		</div>
+																		<div class="col-3 mb-3">
+																			<div class="mb-2">
+																				<img src="dist/img/avatar6.jpg"
+																					alt="user"
+																					class="img-fluid rounded">
+																			</div>
+																			<span
+																				class="d-block fs-7 text-truncate">Johnie
+																				Metoyer</span>
+																		</div>
+																		<div class="col-3 mb-3">
+																			<div class="mb-2">
+																				<img src="dist/img/avatar7.jpg"
+																					alt="user"
+																					class="img-fluid rounded">
+																			</div>
+																			<span
+																				class="d-block fs-7 text-truncate">Angelic
+																				Lauver</span>
+																		</div>
+																		<div class="col-3 mb-3">
+																			<div class="mb-2">
+																				<img src="dist/img/avatar8.jpg"
+																					alt="user"
+																					class="img-fluid rounded">
+																			</div>
+																			<span
+																				class="d-block fs-7 text-truncate">Cecilia
+																				Rios</span>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div
+																class="card card-flush card-simple rounded-8 mb-lg-4 mb-3">
+																<div class="card-header card-header-action">
+																	<h6>Groups
+																		<span
+																			class="badge badge-sm badge-light me-1">12</span>
+																	</h6>
+																	<div class="card-action-wrap">
+																		<a href="#">View all</a>
+																	</div>
+																</div>
+																<ul class="list-group list-group-flush">
+																	<li class="list-group-item border-0">
+																		<div class="media align-items-center">
+																			<div class="media-head me-3">
+																				<div
+																					class="avatar avatar-sm avatar-rounded">
+																					<img src="dist/img/avatar1.jpg"
+																						alt="user" class="avatar-img">
+																				</div>
+																			</div>
+																			<div class="media-body">
+																				<span
+																					class="d-block text-capitalize">Landscape
+																					Group</span>
+																				<span
+																					class="d-block text-muted fs-7">1.25K
+																					Members</span>
+																			</div>
+																		</div>
+																	</li>
+																	<li class="list-group-item border-0">
+																		<div class="media align-items-center">
+																			<div class="media-head me-3">
+																				<div
+																					class="avatar avatar-sm avatar-rounded">
+																					<img src="dist/img/avatar2.jpg"
+																						alt="user" class="avatar-img">
+																				</div>
+																			</div>
+																			<div class="media-body">
+																				<span
+																					class="d-block text-capitalize">Josh
+																					Groben Fanclub</span>
+																				<span class="d-block text-muted fs-7">2M
+																					Members</span>
+																			</div>
+																		</div>
+																	</li>
+																	<li class="list-group-item border-0">
+																		<div class="media align-items-center">
+																			<div class="media-head me-3">
+																				<div
+																					class="avatar avatar-sm avatar-rounded">
+																					<img src="dist/img/avatar3.jpg"
+																						alt="user" class="avatar-img">
+																				</div>
+																			</div>
+																			<div class="media-body">
+																				<span
+																					class="d-block text-capitalize">UI/UX
+																					Lead</span>
+																				<span class="d-block text-muted fs-7">8K
+																					Members</span>
+																			</div>
+																		</div>
+																	</li>
+																	<li class="list-group-item border-0 rounded-8">
+																		<div class="media align-items-center">
+																			<div class="media-head me-3">
+																				<div
+																					class="avatar avatar-sm avatar-rounded">
+																					<img src="dist/img/avatar4.jpg"
+																						alt="user" class="avatar-img">
+																				</div>
+																			</div>
+																			<div class="media-body">
+																				<span
+																					class="d-block text-capitalize">Design
+																					Yatra</span>
+																				<span
+																					class="d-block text-muted fs-7">14K
+																					Members</span>
+																			</div>
+																		</div>
+																	</li>
+																</ul>
+															</div>
+															<div
+																class="card card-flush card-simple rounded-8 mb-lg-4 mb-3">
+																<div class="card-header card-header-action">
+																	<h6>Links
+																		<span
+																			class="badge badge-sm badge-light me-1">5</span>
+																	</h6>
+																	<div class="card-action-wrap">
+																		<a href="#">View all</a>
+																	</div>
+																</div>
+																<ul class="list-group list-group-flush">
+																	<li class="list-group-item border-0">
+																		<div class="media align-items-center">
+																			<div class="media-head me-3">
+																				<div
+																					class="avatar avatar-sm avatar-primary avatar-rounded">
+																					<span class="initial-wrap">G</span>
+																				</div>
+																			</div>
+																			<div class="media-body">
+																				<span
+																					class="d-block text-capitalize text-truncate mw-150p">
+																					Google</span>
+																				<span
+																					class="d-block text-muted fs-7 text-truncate mw-150p">google.com</span>
+																			</div>
+																		</div>
+																	</li>
+																	<li class="list-group-item border-0">
+																		<div class="media align-items-center">
+																			<div class="media-head me-3">
+																				<div
+																					class="avatar avatar-sm avatar-pink avatar-rounded">
+																					<span class="initial-wrap">AR</span>
+																				</div>
+																			</div>
+																			<div class="media-body">
+																				<span
+																					class="d-block text-capitalize text-truncate mw-150p">Improve
+																					Your Business</span>
+																				<span
+																					class="d-block text-muted fs-7 text-truncate mw-150p">yahoo.com</span>
+																			</div>
+																		</div>
+																	</li>
+																	<li class="list-group-item border-0">
+																		<div class="media align-items-center">
+																			<div class="media-head me-3">
+																				<div
+																					class="avatar avatar-sm avatar-warning avatar-rounded">
+																					<span class="initial-wrap">PR</span>
+																				</div>
+																			</div>
+																			<div class="media-body">
+																				<span
+																					class="d-block text-capitalize text-truncate mw-150p">Cast
+																					The Cookware</span>
+																				<span
+																					class="d-block text-muted fs-7 text-truncate mw-150p">yahoo.com</span>
+																			</div>
+																		</div>
+																	</li>
+																	<li class="list-group-item border-0 rounded-8">
+																		<div class="media align-items-center">
+																			<div class="media-head me-3">
+																				<div
+																					class="avatar avatar-sm avatar-success avatar-rounded">
+																					<span class="initial-wrap">PR</span>
+																				</div>
+																			</div>
+																			<div class="media-body">
+																				<span
+																					class="d-block text-capitalize text-truncate mw-150p">The
+																					Universe Thought Sds</span>
+																				<span
+																					class="d-block text-muted fs-7 text-truncate mw-150p">facebook.com</span>
+																			</div>
+																		</div>
+																	</li>
+																</ul>
+															</div>
+															<div
+																class="card card-flush card-simple rounded-8 bg-primary text-center">
+																<div class="twitter-slider-wrap card-body">
+																	<div class="twitter-icon text-center mb-3">
+																		<i class="fab fa-twitter"></i>
+																	</div>
+																	<div id="tweets_fetch"
+																		class="owl-carousel light-owl-dots owl-theme">
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="col-lg-8">
+															<div
+																class="card card-flush card-simple rounded-8 card-profile-feed mb-lg-4 mb-3">
+																<div class="card-header card-header-action">
+																	<div class="media align-items-center">
+																		<div class="media-head me-2">
+																			<div
+																				class="avatar avatar-sm avatar-rounded">
+																				<img src="dist/img/avatar8.jpg"
+																					alt="user" class="avatar-img">
+																			</div>
+																		</div>
+																		<div class="media-body">
+																			<div class="fw-medium text-dark">Huma
+																				Therman</div>
+																			<div class="fs-7">25 Min</div>
+																		</div>
+																	</div>
+																	<div class="card-action-wrap">
+																		<a class="btn btn-icon btn-rounded btn-flush-dark flush-soft-hover dropdown-toggle no-caret"
+																			href="#" data-bs-toggle="dropdown"><span
+																				class="icon"><span
+																					class="feather-icon"><i
+																						data-feather="more-horizontal"></i></span></span></a>
+																		<div class="dropdown-menu dropdown-menu-end">
+																			<a class="dropdown-item" href="#">Action</a>
+																			<a class="dropdown-item" href="#">Another
+																				action</a>
+																			<a class="dropdown-item" href="#">Something
+																				else here</a>
+																			<div class="dropdown-divider"></div>
+																			<a class="dropdown-item" href="#">Separated
+																				link</a>
+																		</div>
+																	</div>
+																</div>
+																<div class="card-body">
+																	<p class="card-text mb-5">There was that time
+																		artists at Sequence opted to hand-Sharpie the
+																		lorem ipsum passage on a line of paper bags they
+																		designed for Chipotle.</p>
+																	<div class="card card-flush shadow-xl">
+																		<div class="position-relative">
+																			<img class="card-img-top d-block"
+																				src="dist/img/gallery/mock12.jpg"
+																				alt="Card image cap">
+																			<a href="#"
+																				class="btn btn-dark btn-rounded btn-pg-link"><span><span
+																						class="icon"><span
+																							class="feather-icon"><i
+																								data-feather="link-2"></i></span></span><span>Website</span></span></a>
+
+																		</div>
+																		<div class="card-body">
+																			<h5>Bacon chicken turducken spare ribs.</h5>
+																			<p class="card-text">Of course, we'd be
+																				remiss not to include the veritable
+																				cadre of lorem ipsum knock offs
+																				featuring: Bacon Ipsum, Hipster Ipsum,
+																				Corporate Ipsum, Legal Ipsum.</p>
+																		</div>
+																	</div>
+																</div>
+																<div class="card-footer justify-content-between">
+																	<div>
+																		<a href="#"><i
+																				class="bi bi-heart-fill text-primary"></i>30K</a>
+																	</div>
+																	<div>
+																		<a href="#">1K comments</a>
+																		<a href="#">12 shares</a>
+																	</div>
+																</div>
+															</div>
+															<div class="mb-lg-4 mb-lg-4 mb-3">
+																<div
+																	class="card card-flush card-simple rounded-8 card-profile-feed mb-0 rounded-bottom-0">
+																	<div class="card-header card-header-action">
+																		<div class="media align-items-center">
+																			<div class="media-head me-2">
+																				<div
+																					class="avatar avatar-sm avatar-rounded">
+																					<img src="dist/img/avatar10.jpg"
+																						alt="user" class="avatar-img">
+																				</div>
+																			</div>
+																			<div class="media-body">
+																				<div class="fw-medium text-dark">Johnie
+																					Metoyer</div>
+																				<div class="fs-7">03 hrs</div>
+																			</div>
+																		</div>
+																		<div class="card-action-wrap">
+																			<a class="btn btn-icon btn-rounded btn-flush-dark flush-soft-hover dropdown-toggle no-caret"
+																				href="#" data-bs-toggle="dropdown"><span
+																					class="icon"><span
+																						class="feather-icon"><i
+																							data-feather="more-horizontal"></i></span></span></a>
+																			<div
+																				class="dropdown-menu dropdown-menu-end">
+																				<a class="dropdown-item"
+																					href="#">Action</a>
+																				<a class="dropdown-item"
+																					href="#">Another action</a>
+																				<a class="dropdown-item"
+																					href="#">Something else here</a>
+																				<div class="dropdown-divider"></div>
+																				<a class="dropdown-item"
+																					href="#">Separated link</a>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="card-body">
+																		<p class="card-text mb-5">Not to mention,
+																			Cupcake Ipsum, Bob Ross Ipsum (“happy little
+																			clouds”), and the furry Cat Ipsum.</p>
+																		<div class="feed-img-layout">
+																			<div class="row h-200p">
+																				<div class="col-6 h-100">
+																					<div class="feed-img rounded-4 h-100"
+																						style="background-image:url(dist/img/gallery/mock11.jpg);">
+																					</div>
+																				</div>
+																				<div class="col-6 h-100">
+																					<div class="row h-100">
+																						<div
+																							class="col-sm-12 h-50 pb-2">
+																							<div class="feed-img rounded-4 h-100"
+																								style="background-image:url(dist/img/gallery/mock12.jpg);">
+																							</div>
+																						</div>
+																						<div class="col-sm-12 h-50">
+																							<div class="row h-100">
+																								<div
+																									class="col-6 h-100">
+																									<div class="feed-img rounded-4 h-100"
+																										style="background-image:url(dist/img/gallery/mock13.jpg);">
+																									</div>
+																								</div>
+																								<div
+																									class="col-6 h-100">
+																									<div class="feed-img rounded-4 h-100"
+																										style="background-image:url(dist/img/gallery/mock14.jpg);">
+																									</div>
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="card-footer justify-content-between">
+																		<div>
+																			<a href="#"><i
+																					class="bi bi-heart-fill text-primary"></i>30K</a>
+																		</div>
+																		<div>
+																			<a href="#">1K comments</a>
+																			<a href="#">12 shares</a>
+																		</div>
+																	</div>
+																</div>
+																<div
+																	class="card card-flush card-simple rounded-8 card-profile-feed border-top-0 rounded-top-0 mb-0">
+																	<div class="card-body">
+																		<button
+																			class="btn btn-light btn-sm btn-block mb-4">Hide
+																			comments</button>
+																		<div class="comment-block">
+																			<div class="media">
+																				<div class="media-head">
+																					<div
+																						class="avatar avatar-xs avatar-rounded">
+																						<img src="dist/img/avatar4.jpg"
+																							alt="user"
+																							class="avatar-img">
+																					</div>
+																				</div>
+																				<div class="media-body">
+																					<div>
+																						<span class="cm-name">Martin
+																							Luther</span>
+																					</div>
+																					<p>From there, you can run truffle
+																						compile, truffle migrate and
+																						truffle test to compile your
+																						contracts, deploy those
+																						contracts to the network, and
+																						run their associated unit tests.
+																					</p>
+																					<div
+																						class="comment-action-wrap mt-3">
+																						<span>3 hours ago</span>
+																						<span
+																							class="comment-dot-sep">●</span>
+																						<a href="#">Reply</a>
+																						<span
+																							class="comment-dot-sep">●</span>
+																						<a href="#">Like</a>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="card-footer comment-block">
+																		<form class="w-100">
+																			<div class="form-group mb-0">
+																				<div class="media">
+																					<div class="media-head">
+																						<div
+																							class="avatar avatar-xs avatar-rounded">
+																							<img src="dist/img/avatar3.jpg"
+																								alt="user"
+																								class="avatar-img">
+																						</div>
+																					</div>
+																					<div class="media-body">
+																						<textarea
+																							class="form-control border-0 bg-transparent shadow-none"
+																							rows="1"
+																							placeholder="Leave a comment..."></textarea>
+																					</div>
+																				</div>
+																			</div>
+																		</form>
+																	</div>
+																</div>
+															</div>
+															<div
+																class="card card-flush card-simple rounded-8 card-profile-feed">
+																<div class="card-header card-header-action">
+																	<div class="media align-items-center">
+																		<div class="media-head me-2">
+																			<div
+																				class="avatar avatar-sm avatar-rounded">
+																				<img src="dist/img/avatar9.jpg"
+																					alt="user" class="avatar-img">
+																			</div>
+																		</div>
+																		<div class="media-body">
+																			<div class="fw-medium text-dark">Mitsoku
+																				Heid</div>
+																			<div class="fs-7">11 hrs</div>
+																		</div>
+																	</div>
+																	<div class="card-action-wrap">
+																		<a class="btn btn-icon btn-rounded btn-flush-dark flush-soft-hover dropdown-toggle no-caret"
+																			href="#" data-bs-toggle="dropdown"><span
+																				class="icon"><span
+																					class="feather-icon"><i
+																						data-feather="more-horizontal"></i></span></span></a>
+																		<div class="dropdown-menu dropdown-menu-end">
+																			<a class="dropdown-item" href="#">Action</a>
+																			<a class="dropdown-item" href="#">Another
+																				action</a>
+																			<a class="dropdown-item" href="#">Something
+																				else here</a>
+																			<div class="dropdown-divider"></div>
+																			<a class="dropdown-item" href="#">Separated
+																				link</a>
+																		</div>
+																	</div>
+																</div>
+																<div class="card-body">
+																	<p class="card-text mb-5">There was that time
+																		artists at Sequence opted to hand-Sharpie the
+																		lorem ipsum passage on a line of paper bags they
+																		designed for Chipotle.</p>
+																	<div class="card card-flush">
+																		<div class="position-relative">
+																			<img class="card-img"
+																				src="dist/img/gallery/mock7.jpg"
+																				alt="Card image cap">
+																			<a href="#" class="btn-video-link"></a>
+																		</div>
+																	</div>
+																</div>
+																<div class="card-footer justify-content-between">
+																	<div>
+																		<a href="#"><i
+																				class="bi bi-heart-fill text-primary"></i>30K</a>
+																	</div>
+																	<div>
+																		<a href="#">1K comments</a>
+																		<a href="#">12 shares</a>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Search -->
+				<div class="modal fade" id="search_modal" tabindex="-1" role="dialog">
+					<div class="modal-dialog mt-xl-20 w-xl-400p" role="document">
+						<div class="modal-content overflow-visible bg-transparent">
+							<div class="modal-body p-0">
+								<!-- Search -->
+								<form class="dropdown navbar-search navbar-search-alt">
+									<div class="dropdown-toggle no-caret w-100" data-bs-toggle="dropdown"
+										data-bs-auto-close="outside">
+										<div class="input-group">
+											<span class="input-affix-wrapper input-search affix-border">
+												<input type="text" class="form-control form-control-lg"
+													data-navbar-search-close="false" placeholder="Search..."
+													aria-label="Search">
+												<span class="input-suffix"><span>/</span>
+													<span class="btn-input-clear"><i
+															class="bi bi-x-circle-fill"></i></span>
+													<span
+														class="spinner-border spinner-border-sm input-loader text-primary"
+														role="status">
+														<span class="sr-only">Loading...</span>
+													</span>
+												</span>
+											</span>
+										</div>
+									</div>
+									<div class="dropdown-menu p-0 w-xl-400p w-100">
+										<div data-simplebar class="dropdown-body p-2">
+											<h6 class="dropdown-header">Recent Search
+											</h6>
+											<div class="dropdown-item bg-transparent">
+												<a href="#" class="badge badge-pill badge-soft-secondary">Grunt</a>
+												<a href="#" class="badge badge-pill badge-soft-secondary">Node JS</a>
+												<a href="#" class="badge badge-pill badge-soft-secondary">SCSS</a>
+											</div>
+											<div class="dropdown-divider"></div>
+											<h6 class="dropdown-header">Help
+											</h6>
+											<a href="javascript:void(0);" class="dropdown-item">
+												<div class="media align-items-center">
+													<div class="media-head me-2">
+														<div
+															class="avatar avatar-icon avatar-xs avatar-soft-light avatar-rounded">
+															<span class="initial-wrap">
+																<span class="svg-icon">
+																	<svg xmlns="http://www.w3.org/2000/svg"
+																		class="icon icon-tabler icon-tabler-corner-down-right"
+																		width="24" height="24" viewBox="0 0 24 24"
+																		stroke-width="2" stroke="currentColor"
+																		fill="none" stroke-linecap="round"
+																		stroke-linejoin="round">
+																		<path stroke="none" d="M0 0h24v24H0z"
+																			fill="none"></path>
+																		<path
+																			d="M6 6v6a3 3 0 0 0 3 3h10l-4 -4m0 8l4 -4">
+																		</path>
+																	</svg>
+																</span>
+															</span>
+														</div>
+													</div>
+													<div class="media-body">
+														How to setup theme?
+													</div>
+												</div>
+											</a>
+											<a href="javascript:void(0);" class="dropdown-item">
+												<div class="media align-items-center">
+													<div class="media-head me-2">
+														<div
+															class="avatar avatar-icon avatar-xs avatar-soft-light avatar-rounded">
+															<span class="initial-wrap">
+																<span class="svg-icon">
+																	<svg xmlns="http://www.w3.org/2000/svg"
+																		class="icon icon-tabler icon-tabler-corner-down-right"
+																		width="24" height="24" viewBox="0 0 24 24"
+																		stroke-width="2" stroke="currentColor"
+																		fill="none" stroke-linecap="round"
+																		stroke-linejoin="round">
+																		<path stroke="none" d="M0 0h24v24H0z"
+																			fill="none"></path>
+																		<path
+																			d="M6 6v6a3 3 0 0 0 3 3h10l-4 -4m0 8l4 -4">
+																		</path>
+																	</svg>
+																</span>
+															</span>
+														</div>
+													</div>
+													<div class="media-body">
+														View detail documentation
+													</div>
+												</div>
+											</a>
+											<div class="dropdown-divider"></div>
+											<h6 class="dropdown-header">Users
+											</h6>
+											<a href="javascript:void(0);" class="dropdown-item">
+												<div class="media align-items-center">
+													<div class="media-head me-2">
+														<div class="avatar avatar-xs avatar-rounded">
+															<img src="dist/img/avatar3.jpg" alt="user"
+																class="avatar-img">
+														</div>
+													</div>
+													<div class="media-body">
+														Sarah Jone
+													</div>
+												</div>
+											</a>
+											<a href="javascript:void(0);" class="dropdown-item">
+												<div class="media align-items-center">
+													<div class="media-head me-2">
+														<div
+															class="avatar avatar-xs avatar-soft-primary avatar-rounded">
+															<span class="initial-wrap">J</span>
+														</div>
+													</div>
+													<div class="media-body">
+														Joe Jackson
+													</div>
+												</div>
+											</a>
+											<a href="javascript:void(0);" class="dropdown-item">
+												<div class="media align-items-center">
+													<div class="media-head me-2">
+														<div class="avatar avatar-xs avatar-rounded">
+															<img src="dist/img/avatar4.jpg" alt="user"
+																class="avatar-img">
+														</div>
+													</div>
+													<div class="media-body">
+														Maria Richard
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="dropdown-footer d-xl-flex d-none"><a href="#"><u>Search all</u></a>
+										</div>
+									</div>
+								</form>
+								<!-- /Search -->
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /Search -->
+			</div>
+			<!-- /Page Body -->
+
+		</div>
+		<!-- /Main Content -->
+	</div>
+	<!-- /Wrapper -->
+
+	<!-- jQuery -->
+	<script src="vendors/jquery/dist/jquery.min.js"></script>
+
+	<!-- Bootstrap Core JS -->
+	<script src="vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+	<!-- FeatherIcons JS -->
+	<script src="dist/js/feather.min.js"></script>
+
+	<!-- Fancy Dropdown JS -->
+	<script src="dist/js/dropdown-bootstrap-extended.js"></script>
+
+	<!-- Simplebar JS -->
+	<script src="vendors/simplebar/dist/simplebar.min.js"></script>
+
+	<!-- twitter JS -->
+	<script src="dist/js/twitterFetcher.js"></script>
+	<script src="dist/js/widgets-data.js"></script>
+
+	<!-- Owl JS -->
+	<script src="vendors/owl.carousel/dist/owl.carousel.min.js"></script>
+	<script src="dist/js/owl-data.js"></script>
+
+	<!-- Init JS -->
+	<script src="dist/js/init.js"></script>
+	<script src="dist/js/chips-init.js"></script>
+</body>
+
+</html>

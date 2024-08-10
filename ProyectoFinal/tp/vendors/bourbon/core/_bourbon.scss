@@ -1,0 +1,54 @@
+// Bourbon 7.2.0
+// https://www.bourbon.io/
+// Copyright 2011-2020 thoughtbot, inc.
+// MIT License
+
+@import "../core/bourbon/helpers/_buttons-list";
+@import "../core/bourbon/helpers/_scales";
+@import "../core/bourbon/helpers/_text-inputs-list";
+
+@import "../core/bourbon/settings/_settings";
+
+@import "../core/bourbon/validators/_contains";
+@import "../core/bourbon/validators/_contains-falsy";
+@import "../core/bourbon/validators/_is-color";
+@import "../core/bourbon/validators/_is-length";
+@import "../core/bourbon/validators/_is-number";
+@import "../core/bourbon/validators/_is-size";
+
+@import "../core/bourbon/utilities/_assign-inputs";
+@import "../core/bourbon/utilities/_compact-shorthand";
+@import "../core/bourbon/utilities/_directional-property";
+@import "../core/bourbon/utilities/_fetch-bourbon-setting";
+@import "../core/bourbon/utilities/_font-source-declaration";
+@import "../core/bourbon/utilities/_gamma";
+@import "../core/bourbon/utilities/_lightness";
+@import "../core/bourbon/utilities/_contrast-ratio";
+@import "../core/bourbon/utilities/_unpack-shorthand";
+
+@import "../core/bourbon/library/_border-color";
+@import "../core/bourbon/library/_border-radius";
+@import "../core/bourbon/library/_border-style";
+@import "../core/bourbon/library/_border-width";
+@import "../core/bourbon/library/_buttons";
+@import "../core/bourbon/library/_clearfix";
+@import "../core/bourbon/library/_contrast-switch";
+@import "../core/bourbon/library/_ellipsis";
+@import "../core/bourbon/library/_font-face";
+@import "../core/bourbon/library/_font-stacks";
+@import "../core/bourbon/library/_hide-text";
+@import "../core/bourbon/library/_hide-visually";
+@import "../core/bourbon/library/_margin";
+@import "../core/bourbon/library/_modular-scale";
+@import "../core/bourbon/library/_overflow-wrap";
+@import "../core/bourbon/library/_padding";
+@import "../core/bourbon/library/_position";
+@import "../core/bourbon/library/_prefixer";
+@import "../core/bourbon/library/_shade";
+@import "../core/bourbon/library/_size";
+@import "../core/bourbon/library/_strip-unit";
+@import "../core/bourbon/library/_text-inputs";
+@import "../core/bourbon/library/_timing-functions";
+@import "../core/bourbon/library/_tint";
+@import "../core/bourbon/library/_triangle";
+@import "../core/bourbon/library/_value-prefixer";
